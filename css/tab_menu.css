@@ -1,0 +1,28 @@
+.tab_menu {
+  border: 1px solid #cccccc;
+  height: 130px;
+}
+
+.tab_menu .wrap {
+  display: inline-block;
+  width: 10.9%;
+  text-align: center;
+}
+
+.tab_menu .wrap a {
+  display: inline-block;
+  padding: 35px;
+}
+
+.tab_menu .icImg img {
+  width: 32px;
+  height: 32px;
+}
+
+.tab_menu .icText {
+  font-size: 15px;
+}
+
+.tab_menu .wrap a:hover .icText {
+  color: #3f3fff;
+}

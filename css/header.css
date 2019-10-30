@@ -35,6 +35,7 @@
 
 /* 헤더 왼쪽 네비 */
 .header_nav_left {
+  float: left;
 }
 
 .header_nav_left > ul {
@@ -57,14 +58,36 @@
 }
 
 /* --헤더 오른쪽 네비 */
-.header_nav_right {
+.header_nav_right > div {
   float: right;
 }
 
-.header_nav_right > a {
+.header_nav_right > div > a {
   display: inline-block;
   padding: 18px 16px 16px 16px;
   text-align: center;
   font-weight: 500;
   font-size: 15px;
+}
+
+/* --배너-- */
+/* background: url(/img/index_banner1.png) no-repeat center center; */
+.slider {
+  width: 100%;
+  height: 450px;
+}
+
+.slider_item1 {
+  background: url(/img/banner_main1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.slider_item2 {
+  background: url(/img/banner_main2.png) no-repeat center;
+  background-size: cover;
+}
+
+.slider_item3 {
+  background: url(/img/banner_main3.png) no-repeat center;
+  background-size: cover;
 }

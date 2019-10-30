@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/tab_menu.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -52,7 +53,9 @@
             </div>
             <!-- //헤더 왼쪽 네비 -->
             <div class="header_nav_right">
-              <a href="#">대규모 시공문의</a>
+              <div>
+                <a href="#">대규모 시공문의</a>
+              </div>
             </div>
             <!-- //헤더 오른쪽 네비 -->
           </div>
@@ -62,32 +65,136 @@
     </div>
     <!-- //#헤더 -->
 
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide .main_banner_item1">Slide 1</div>
-        <div class="swiper-slide item2">Slide 2</div>
-        <div class="swiper-slide .main_banner_item3">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
+    <div class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider_item1"></div>
+          <div class="swiper-slide slider_item2"></div>
+          <div class="swiper-slide slider_item3"></div>
+        </div>
       </div>
     </div>
-    <!-- //스와이퍼 -->
+    <!-- //슬라이드 -->
+
+    <div id="tab_menu">
+      <div class="container">
+        <div class="row">
+          <div class="tab_menu">
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_maru_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  마루
+                </div>
+              </a>
+            </div>
+            <!-- 아이템1 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_dacotile_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  데코타일
+                </div>
+              </a>
+            </div>
+            <!-- 아이템2 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_linoleum_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  장판
+                </div>
+              </a>
+            </div>
+            <!-- 아이템3 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_paper_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  도배
+                </div>
+              </a>
+            </div>
+            <!-- 아이템4 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_film_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  필름
+                </div>
+              </a>
+            </div>
+            <!-- 아이템5 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_furniture_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  가구
+                </div>
+              </a>
+            </div>
+            <!-- 아이템6 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_sink_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  싱크대
+                </div>
+              </a>
+            </div>
+            <!-- 아이템7 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_toilet_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  화장실
+                </div>
+              </a>
+            </div>
+            <!-- 아이템8 -->
+            <div class="wrap item1">
+              <a href="#">
+                <div class="icImg">
+                  <img src="img/icon_mix_off.png" alt="" />
+                </div>
+                <div class="icText">
+                  믹스
+                </div>
+              </a>
+            </div>
+            <!-- 아이템9 -->
+          </div>
+          <!-- //탭메뉴 -->
+        </div>
+      </div>
+    </div>
+    <!-- //#탭메뉴 -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    // var mySwiper = new Swiper(".swiper-container");
-    // // $(document).ready(function() {
-    // //   var mySwiper = new Swiper(".swiper-container", {
-    // //     direction: "vertical",
-    // //     loop: true
-    // //   });
-    // // });
+    // --슬라이드--
+    var swiper = new Swiper(".swiper-container", {
+      autoplay: {
+        delay: 3000
+      }
+    });
   </script>
 </html>
