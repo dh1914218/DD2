@@ -1,0 +1,622 @@
+/* --추천시공사례-- */
+.recommend_review {
+  overflow: hidden;
+}
+
+.recommend_review h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.recommend_review h1 em {
+  font-weight: 500;
+}
+
+.recommend_review .wrap {
+}
+
+.recommend_review .wrap .img img {
+  width: 380px;
+  height: 253px;
+  transition: all 0.3s ease-in-out;
+}
+
+.recommend_review .wrap .desc {
+  padding: 15px;
+}
+
+.recommend_review .wrap .desc .tag {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.recommend_review .wrap .desc .tit {
+  font-size: 18px;
+}
+
+.recommend_review .wrap .desc .price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recommend_review .wrap .desc .price span {
+  font-weight: 400;
+}
+.recommend_review .img {
+  overflow: hidden;
+  width: 380px;
+  height: 253px;
+}
+
+.recommend_review .wrap .img {
+  overflow: hidden;
+}
+
+.recommend_review .wrap .img:hover img {
+  transform: scale(1.2);
+}
+
+/* --함께하면 인이 가득가득-- */
+.mixsale {
+}
+
+.mixsale .wrap {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.mixsale .item4 {
+  margin-right: 0;
+}
+
+.mixsale .item8 {
+  margin-right: 0;
+}
+
+.index_mixsale h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.index_mixsale h1 em {
+  font-weight: 500;
+}
+
+.mixsale .img img {
+  width: 280px;
+  height: 280px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.mixsale .desc {
+  padding: 15px;
+}
+.mixsale .desc .tit {
+  font-size: 18px;
+}
+.mixsale .desc .sub_tit {
+  font-size: 13px;
+  color: #9b9b9b;
+}
+.mixsale .desc .price {
+  font-size: 20px;
+  font-weight: 500;
+}
+.mixsale .desc .price em {
+  font-weight: 500;
+  color: #3f3fff;
+}
+
+.mixsale .desc .price span {
+  font-weight: 300;
+}
+
+.mixsale .wrap .img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.mixsale .wrap .img:hover img {
+  transform: scale(1.2);
+}
+
+/* --수치-- */
+.numerical {
+  padding: 50px 0px;
+}
+
+.numerical > div {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.numerical > div > em {
+  font-weight: 500;
+  color: #3f3fff;
+}
+
+.numerical > div.a {
+  animation-duration: 0.75s;
+  animation-delay: 0.25s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-name: numerical;
+}
+.numerical > div.b {
+  animation-duration: 0.75s;
+  animation-delay: 0.45s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-name: numerical;
+}
+
+.numerical > div.c {
+  animation-duration: 0.75s;
+  animation-delay: 0.65s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-name: numerical;
+}
+
+@keyframes numerical {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* --따끈따끈 시공사례-- */
+.index_build_review {
+}
+
+.index_build_review h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.index_build_review h1 > em {
+  font-weight: 500;
+}
+.build_review > .wrap {
+  display: inline-block;
+  margin-right: 17px;
+}
+
+.build_review > .item3 {
+  margin-right: 0;
+}
+.build_review > .item6 {
+  margin-right: 0;
+}
+
+.build_review .wrap .img img {
+  width: 380px;
+  height: 253px;
+  transition: all 0.3s ease-in-out;
+}
+
+.build_review .wrap .desc {
+  padding: 15px;
+}
+
+.build_review .wrap .desc .tag {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.build_review .wrap .desc .tit {
+  font-size: 18px;
+}
+
+.build_review .wrap .desc .price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.build_review .wrap .desc .price span {
+  font-weight: 400;
+}
+
+.build_review .wrap .img {
+  overflow: hidden;
+  width: 380px;
+  height: 253px;
+}
+
+.build_review .wrap .img:hover img {
+  transform: scale(1.2);
+}
+
+/* --시공전 자재구경-- */
+.index_materials_view h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.index_materials_view h1 > em {
+  font-weight: 500;
+}
+
+.index_materials_view .wrap {
+  display: inline-block;
+  margin-right: 6px;
+  width: 228px;
+  width: 228px;
+}
+.materials_view .item5 {
+  margin-right: 0;
+}
+.materials_view .wrap.item10 {
+  margin-right: 0;
+}
+
+.materials_view .wrap .img {
+  width: 228px;
+  width: 228px;
+}
+
+.materials_view img {
+  width: 228px;
+  height: 228px;
+  display: block;
+}
+
+/* --자주묻는질문-- */
+.question {
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.question .topic {
+  border: 1px solid #3f3fff;
+  width: 380px;
+  margin: 0 auto;
+  line-height: 60px;
+  text-align: center;
+  color: #3f3fff;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.topic_form {
+  position: relative;
+}
+.question .topic_list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  background-color: #ffffff;
+  z-index: 10;
+  border: 1px solid #3f3fff;
+}
+
+.topic img {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 20px;
+  top: 30px;
+}
+
+.question .topicList > div {
+  padding: 10px;
+}
+.question .topic_list > div:hover {
+  color: #ffffff;
+  background-color: #3f3fff;
+}
+
+/* 섹션css */
+.question .tit {
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  width: 590px;
+  margin: 0px auto;
+  padding: 20px;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  margin-top: 10px;
+}
+.question .tit img {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 20px;
+  top: 30px;
+}
+
+.question .tit .desc {
+  color: #666666;
+  font-weight: 300;
+  display: none;
+}
+
+.topic_list {
+  display: none;
+}
+.topic_list_section2 {
+  display: none;
+}
+
+/* --고객님들의 감동시공후기-- */
+.user_review {
+  overflow: hidden;
+  width: 100%;
+}
+.swiper-container3 {
+}
+.user_review .wrap {
+  /* border: 1px solid #f7f7f7;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  height: 320px; */
+  /* margin-bottom: 5px; */
+}
+
+.user_review h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.user_review h1 em {
+  font-weight: 500;
+}
+.user_review .wrap .tit {
+  text-align: center;
+  font-size: 20px;
+}
+
+.user_review .wrap .star {
+}
+
+.user_review .wrap .desc {
+  font-weight: 300;
+}
+
+.user_review .star {
+  text-align: center;
+}
+.user_review .star img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.wrap2 {
+  width: 230px;
+  height: 320px;
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+/* --인테리어 꿀팁-- */
+
+.index_interior_tip h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.index_interior_tip h1 em {
+  font-weight: 500;
+}
+
+.index_interior_tip > .tip {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.index_interior_tip > .tip5 {
+  margin-right: 0;
+}
+
+.index_interior_tip > .tip10 {
+  margin-right: 0;
+  margin-top: 3px;
+}
+.index_interior_tip .img {
+  width: 228px;
+  height: 228px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.index_interior_tip .img img {
+  width: 228px;
+  height: 228px;
+}
+
+.black_cover {
+  width: 228px;
+  height: 228px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* --대규모 수장공사 의뢰-- */
+.big_bulid_consult {
+  padding: 50px;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+}
+
+.big_bulid_consult .textbox {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: -5px;
+}
+
+.big_bulid_consult .textbox em {
+  font-weight: 500;
+}
+
+.big_bulid_consult .textbox > div:nth-child(2n) {
+  margin-top: -10px;
+}
+
+.big_bulid_consult > input {
+  width: 688px;
+  height: 60px;
+  border: 0px;
+  padding-left: 20px;
+}
+
+.big_bulid_consult .personal_data {
+  width: 688px;
+  color: #ffffff;
+  margin: 0px auto;
+}
+
+.big_bulid_consult .personal_data .agree {
+  width: 300px;
+  text-align: left;
+  position: relative;
+  float: left;
+}
+
+.big_bulid_consult .personal_data .agree a {
+  color: #ffffff;
+}
+
+.big_bulid_consult .personal_data .agree > input[id="personal_data"] {
+  display: none;
+}
+
+.big_bulid_consult .personal_data .agree > input[id="personal_data"] + label {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.big_bulid_consult
+  .personal_data
+  .agree
+  > input[id="personal_data"]
+  + label
+  span {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.big_bulid_consult
+  .personal_data
+  .agree
+  > input[id="personal_data"]:checked
+  + label {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background-color: #111111;
+}
+
+/* 더보기 */
+.personal_data .plus {
+  float: right;
+}
+
+.personal_data .plus a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.btn_box {
+  float: left;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.big_bulid_consult .btn_box > div {
+  display: inline-block;
+}
+
+.big_bulid_consult .btn {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: all 0.55s ease-in-out;
+}
+
+.big_bulid_consult .item1 {
+  margin-right: 10px;
+  color: #111111;
+  background-color: #ebe6ff;
+}
+
+.big_bulid_consult .item1 a {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.big_bulid_consult .item1:hover a {
+  color: #ffffff;
+}
+.big_bulid_consult .item1:hover {
+  background-color: #3f3fff;
+}
+
+.big_bulid_consult .item2 {
+  margin-left: 10px;
+}
+
+.big_bulid_consult .item2 a {
+  color: #ffffff;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.big_bulid_consult .item2:hover a {
+  color: #111111;
+}
+.big_bulid_consult .item2:hover {
+  background-color: #ffffff;
+}
+/* 
+.big_bulid_consult .item2 {
+  color: #ffffff !important;
+}
+
+.big_bulid_consult .item2 a:hover {
+  background-color: #4d2bff;
+} */
