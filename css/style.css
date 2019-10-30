@@ -1,0 +1,14 @@
+#header_sub {
+  background-color: #f7f7f7;
+  height: 40px;
+}
+
+#header {
+  height: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1180px;
+  height: inherit;
+}
