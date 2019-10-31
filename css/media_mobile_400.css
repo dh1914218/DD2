@@ -402,11 +402,12 @@
   /* --index 대규모 수장공사 의뢰--*/
 
   #big_bulid_consult {
-    display: none;
+    /* display: none; */
   }
   .big_bulid_consult {
-    padding: 0;
-    width: calc(100%-20px);
+    width: 100%;
+    padding: 20px;
+    display: block;
   }
 
   .big_bulid_consult .textbox {
@@ -422,9 +423,55 @@
   }
 
   .big_bulid_consult > input {
-    width: calc(100% - 20px) !important;
+    width: calc(100% - 20px);
     height: 40px;
   }
+
+  .personal_data {
+    width: calc(100% - 20px) !important;
+    font-size: 13px;
+  }
+
+  .personal_data .agree span {
+    font-size: 13px;
+  }
+  .big_bulid_consult .personal_data .agree {
+    float: left;
+    width: 150px;
+    font-size: 13px;
+  }
+
+  .big_bulid_consult
+    .personal_data
+    .agree
+    > input[id="personal_data"]
+    + label
+    span {
+    font-size: 13px;
+    top: 1px;
+  }
+
+  .personal_data .plus {
+    float: right;
+  }
+
+  .btn_box {
+    width: calc(100% - 50px) !important;
+    margin-top: 40px;
+  }
+
+  .btn_box .btn {
+    width: 47%;
+    margin-right: 1%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+  .btn_box .item1 {
+    margin-right: 0;
+  }
+
   /* --특수-- */
 
   #footer {
