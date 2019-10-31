@@ -36,7 +36,24 @@ var swiper = new Swiper(".swiper-container3", {
   slidesPerView: 4,
   spaceBetween: 15,
   autoplay: {
-    delay: 2500
+    delay: 1500
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 15
+    }
   }
 });
 
@@ -91,6 +108,7 @@ $(".question .tit").click(function() {
 // topic리스트 on&off 및 화살표변경
 $(".topic_form").click(function() {
   $(".topic_list").toggle();
+  // : 자주묻는질문 form 리스트 토글
 
   $(".topic")
     .find("img")
@@ -101,6 +119,7 @@ $(".topic_form").click(function() {
         return attr.replace("down", "up");
       }
     });
+  // 화살표 변경
 });
 
 // topic_form 텍스트 입력 및 섹션 none,block 및 화살표변경
@@ -136,4 +155,38 @@ $(".topic_list > div").click(function() {
       }
     });
   // .text를 할경우 아예 초기화 된상태에서 text를 입력하므로 화살표도 다시 입력해줘야한다.
+});
+
+// --모바일 햄버거메뉴 on&off--
+$(".m_menu_icon > a").click(function() {
+  console.log(1);
+  $(".m_backgorund_black").show();
+  $(".m_nav").animate({
+    marginLeft: "100%"
+  });
+});
+
+$(".m_backgorund_black").click(function() {
+  $(".m_backgorund_black").hide();
+  $(".m_nav").animate({
+    marginLeft: "-100%"
+  });
+});
+
+// --모바일 네비게이션 드로어 서브메뉴 on&off--
+$(".m_nav > .wrap").click(function() {
+  $(this)
+    .find(".m_nav_sub")
+    .stop()
+    .slideToggle();
+
+  $(this)
+    .find("img")
+    .attr("src", function(index, attr) {
+      if (attr.match("up")) {
+        return attr.replace("up", "down");
+      } else {
+        return attr.replace("down", "up");
+      }
+    });
 });
