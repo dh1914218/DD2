@@ -402,7 +402,8 @@
   /* --index 대규모 수장공사 의뢰--*/
 
   #big_bulid_consult {
-    /* display: none; */
+    margin-top: 20px;
+    height: 350px;
   }
   .big_bulid_consult {
     width: 100%;
@@ -472,11 +473,33 @@
     margin-right: 0;
   }
 
-  /* --특수-- */
-
-  #footer {
-    display: none;
+  /* --푸터-- */
+  .footer {
+    padding: 20px 0;
   }
+
+  .footer > .col {
+    display: block;
+  }
+  .footer > .col .desc.mt30 {
+    margin-top: 15px;
+  }
+
+  .footer > .col1 {
+    width: 100%;
+  }
+  .footer > .col2 {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .footer .col4 {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  /* --특수-- */
 
   .blank70 {
     display: none;
