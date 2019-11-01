@@ -77,7 +77,7 @@
 }
 
 .index_mixsale h1 {
-  text-align: center;
+  text-align: center !important;
   font-weight: 300;
   font-size: 25px;
 }

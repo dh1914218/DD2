@@ -118,6 +118,11 @@ button {
   border: 0;
 }
 
+/* input박스 클릭시 테두리 없대기 */
+input:focus {
+  outline: none;
+}
+
 /* IR 효과 */
 
 .ir_pm {
@@ -273,8 +278,282 @@ button {
   clear: both;
   height: 100px;
 }
+/* --모바일 블랭크-- */
+.m_blank5 {
+  clear: both;
+  height: 5px;
+  display: none;
+}
+.m_blank10 {
+  clear: both;
+  height: 10px;
+  display: none;
+}
+.m_blank15 {
+  clear: both;
+  height: 15px;
+  display: none;
+}
+.m_blank20 {
+  clear: both;
+  height: 20px;
+  display: none;
+}
+.m_blank25 {
+  clear: both;
+  height: 25px;
+  display: none;
+}
+.m_blank30 {
+  clear: both;
+  height: 30px;
+  display: none;
+}
+.m_blank35 {
+  clear: both;
+  height: 35px;
+  display: none;
+}
+.m_blank40 {
+  clear: both;
+  height: 40px;
+  display: none;
+}
+.m_blank45 {
+  clear: both;
+  height: 45px;
+  display: none;
+}
+.m_blank50 {
+  clear: both;
+  height: 50px;
+  display: none;
+}
 
-/* 버튼초기화 */
+/* --블랭크취소용-- */
+/* .blank5 {
+  clear: both;
+  height: 5px;
+  display: none;
+}
+.blank10 {
+  clear: both;
+  height: 10px;
+  display: none;
+}
+.blank15 {
+  clear: both;
+  height: 15px;
+  display: none;
+}
+.blank20 {
+  clear: both;
+  height: 20px;
+  display: none;
+}
+.blank25 {
+  clear: both;
+  height: 25px;
+  display: none;
+}
+.blank30 {
+  clear: both;
+  height: 30px;
+  display: none;
+}
+.blank35 {
+  clear: both;
+  height: 35px;
+  display: none;
+}
+.blank40 {
+  clear: both;
+  height: 40px;
+  display: none;
+}
+.blank45 {
+  clear: both;
+  height: 45px;
+  display: none;
+}
+.blank50 {
+  clear: both;
+  height: 50px;
+  display: none;
+}
+.blank55 {
+  clear: both;
+  height: 55px;
+  display: none;
+}
+.blank60 {
+  clear: both;
+  height: 60px;
+  display: none;
+}
+.blank65 {
+  clear: both;
+  height: 65px;
+  display: none;
+}
+.blank70 {
+  clear: both;
+  height: 70px;
+  display: none;
+}
+.blank75 {
+  clear: both;
+  height: 75px;
+  display: none;
+}
+.blank80 {
+  clear: both;
+  height: 80px;
+}
+.blank85 {
+  clear: both;
+  height: 85px;
+  display: none;
+}
+.blank90 {
+  clear: both;
+  height: 90px;
+  display: none;
+}
+.blank95 {
+  clear: both;
+  height: 95px;
+  display: none;
+}
+.blank100 {
+  clear: both;
+  height: 100px;
+  display: none;
+} */
+
+.blank5 {
+  clear: both;
+  height: 5px;
+}
+.blank10 {
+  clear: both;
+  height: 10px;
+}
+.blank15 {
+  clear: both;
+  height: 15px;
+}
+.blank20 {
+  clear: both;
+  height: 20px;
+}
+.blank25 {
+  clear: both;
+  height: 25px;
+}
+.blank30 {
+  clear: both;
+  height: 30px;
+}
+.blank35 {
+  clear: both;
+  height: 35px;
+}
+.blank40 {
+  clear: both;
+  height: 40px;
+}
+.blank45 {
+  clear: both;
+  height: 45px;
+}
+.blank50 {
+  clear: both;
+  height: 50px;
+}
+.blank55 {
+  clear: both;
+  height: 55px;
+}
+.blank60 {
+  clear: both;
+  height: 60px;
+}
+.blank65 {
+  clear: both;
+  height: 65px;
+}
+.blank70 {
+  clear: both;
+  height: 70px;
+}
+.blank75 {
+  clear: both;
+  height: 75px;
+}
+.blank80 {
+  clear: both;
+  height: 80px;
+}
+.blank85 {
+  clear: both;
+  height: 85px;
+}
+.blank90 {
+  clear: both;
+  height: 90px;
+}
+.blank95 {
+  clear: both;
+  height: 95px;
+}
+.blank100 {
+  clear: both;
+  height: 100px;
+}
+/* --모바일 블랭크 block-- */
+/* .m_blank5 {
+  clear: both;
+  height: 5px;
+}
+.m_blank10 {
+  clear: both;
+  height: 10px;
+}
+.m_blank15 {
+  clear: both;
+  height: 15px;
+}
+.m_blank20 {
+  clear: both;
+  height: 20px;
+}
+.m_blank25 {
+  clear: both;
+  height: 25px;
+}
+.m_blank30 {
+  clear: both;
+  height: 30px;
+}
+.m_blank35 {
+  clear: both;
+  height: 35px;
+}
+.m_blank40 {
+  clear: both;
+  height: 40px;
+}
+.m_blank45 {
+  clear: both;
+  height: 45px;
+}
+.m_blank50 {
+  clear: both;
+  height: 50px;
+} */
+
+/* --버튼초기화-- */
 button {
   border: 0;
   outline: 0;

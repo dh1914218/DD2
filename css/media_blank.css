@@ -1,0 +1,154 @@
+@media (max-width: 400px) {
+  /* --블랭크취소-- */
+  .blank5 {
+    clear: both;
+    height: 5px;
+    display: none;
+  }
+  .blank10 {
+    clear: both;
+    height: 10px;
+    display: none;
+  }
+  .blank15 {
+    clear: both;
+    height: 15px;
+    display: none;
+  }
+  .blank20 {
+    clear: both;
+    height: 20px;
+    display: none;
+  }
+  .blank25 {
+    clear: both;
+    height: 25px;
+    display: none;
+  }
+  .blank30 {
+    clear: both;
+    height: 30px;
+    display: none;
+  }
+  .blank35 {
+    clear: both;
+    height: 35px;
+    display: none;
+  }
+  .blank40 {
+    clear: both;
+    height: 40px;
+    display: none;
+  }
+  .blank45 {
+    clear: both;
+    height: 45px;
+    display: none;
+  }
+  .blank50 {
+    clear: both;
+    height: 50px;
+    display: none;
+  }
+  .blank55 {
+    clear: both;
+    height: 55px;
+    display: none;
+  }
+  .blank60 {
+    clear: both;
+    height: 60px;
+    display: none;
+  }
+  .blank65 {
+    clear: both;
+    height: 65px;
+    display: none;
+  }
+  .blank70 {
+    clear: both;
+    height: 70px;
+    display: none;
+  }
+  .blank75 {
+    clear: both;
+    height: 75px;
+    display: none;
+  }
+  .blank80 {
+    clear: both;
+    height: 80px;
+  }
+  .blank85 {
+    clear: both;
+    height: 85px;
+    display: none;
+  }
+  .blank90 {
+    clear: both;
+    height: 90px;
+    display: none;
+  }
+  .blank95 {
+    clear: both;
+    height: 95px;
+    display: none;
+  }
+  .blank100 {
+    clear: both;
+    height: 100px;
+    display: none;
+  }
+
+  /* --모바일블랭크 블락-- */
+  .m_blank5 {
+    clear: both;
+    height: 5px;
+    display: block;
+  }
+  .m_blank10 {
+    clear: both;
+    height: 10px;
+    display: block;
+  }
+  .m_blank15 {
+    clear: both;
+    height: 15px;
+    display: block;
+  }
+  .m_blank20 {
+    clear: both;
+    height: 20px;
+    display: block;
+  }
+  .m_blank25 {
+    clear: both;
+    height: 25px;
+    display: block;
+  }
+  .m_blank30 {
+    clear: both;
+    height: 30px;
+    display: block;
+  }
+  .m_blank35 {
+    clear: both;
+    height: 35px;
+    display: block;
+  }
+  .m_blank40 {
+    clear: both;
+    height: 40px;
+    display: block;
+  }
+  .m_blank45 {
+    clear: both;
+    height: 45px;
+    display: block;
+  }
+  .m_blank50 {
+    clear: both;
+    height: 50px;
+    display: block;
+  }
+}

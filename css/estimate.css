@@ -1,0 +1,336 @@
+/* 셀렉터 엑티브 */
+.box_active {
+  border-color: #3f3fff !important;
+  color: #3f3fff !important;
+}
+/* 셀렉터 전체값조정 */
+.estimate_selector {
+  padding: 70px 0px 50px 0px;
+}
+
+.estimate_selector_wrap {
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  /* 전체 font-size */
+}
+
+/* 박스나열 */
+.estimate_selector_wrap .wrap {
+  float: left;
+  cursor: pointer;
+  /* 커서 */
+}
+.estimate_selector_wrap .form {
+  margin-top: 5px;
+}
+
+.estimate_selector_wrap h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.estimate_selector_wrap h1 em {
+  font-weight: 500;
+}
+
+.estimate_selector_wrap h2 {
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* --공간구분-- */
+/* warp 크기조정 */
+.estimate_selector_wrap .wrap.place {
+  width: 38%;
+}
+
+/* box 크기조정 */
+.estimate_selector_wrap .wrap.place ul li {
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.place {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .place .box2 {
+  border-left: 0px !important;
+  margin-left: -0.6%;
+}
+
+/* --면적구분-- */
+/* wrap 크기조정 */
+.estimate_selector_wrap .wrap.area {
+  /* width: 52.2%; */
+  width: 57%;
+}
+
+/* 첫번째 tabbox 크기조정 */
+.estimate_selector_wrap .wrap.area ul.form li {
+  float: left;
+  width: 24%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .area .form2,
+.estimate_selector_wrap .area .form3 {
+  display: inline-block;
+}
+/* 면적 크기*/
+.estimate_selector_wrap .area .form2 {
+  width: 24%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  /* color: #b6b6b6; */
+  /* border: 1px solid #b6b6b6; */
+  border: 1px solid red;
+  color: red;
+
+  position: relative;
+}
+
+.estimate_selector_wrap .area .form2 .cover {
+  text-align: left;
+  padding-left: 20px;
+}
+/* 방개수 크기*/
+.estimate_selector_wrap .area .form3 {
+  width: 24%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  /* color: #b6b6b6; */
+  /* border: 1px solid #b6b6b6; */
+  border: 1px solid red;
+  color: red;
+  position: relative;
+}
+.estimate_selector_wrap .area .form3 .cover {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.estimate_selector_wrap .area .box2,
+.estimate_selector_wrap .area .form2 {
+  margin-right: 1.6%;
+}
+
+.estimate_selector_wrap .area .box2 {
+  border-left: 0px !important;
+  margin-left: -0.09% !important;
+}
+
+/* 화살표 */
+.estimate_selector_wrap img {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+/* 면적 / 방개수 고르기 (서브)*/
+.area_list {
+  display: none;
+  position: absolute;
+  top: 39px;
+  width: 100%;
+  border: 1px solid #b6b6b6;
+  border-top: 0px;
+  background-color: #ffffff;
+  height: 200px;
+  overflow: scroll;
+}
+
+.area_list ul {
+}
+
+.area_list li {
+  padding-left: 20px;
+  text-align: left;
+  border-top: 1px solid #b6b6b6;
+  color: #b6b6b6;
+}
+
+.area_list li:nth-child(1) {
+  border-top: 0px;
+}
+
+/* --배란다확장여부-- */
+/* warp 크기조정 */
+.estimate_selector_wrap .wrap.bananda {
+  width: 38%;
+}
+
+/* tabbox 크기조정 */
+.estimate_selector_wrap .wrap.bananda ul li {
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.bananda {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .bananda .box2 {
+  border-left: 0px !important;
+  margin-left: -0.6%;
+}
+
+/* --빈집 / 공실여부-- */
+.estimate_selector_wrap .wrap.empty_house {
+  width: 57%;
+}
+
+/* box 크기조정 */
+.estimate_selector_wrap .wrap.empty_house ul li {
+  float: left;
+  width: 33.3%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.place {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .empty_house .box2,
+.estimate_selector_wrap .empty_house .box3 {
+  border-left: 0px !important;
+  margin-left: -0.1%;
+}
+
+/* --덧방여부-- */
+/* warp 크기조정 */
+.estimate_selector_wrap .wrap.add_floor {
+  width: 38%;
+}
+
+/* box 크기조정 */
+.estimate_selector_wrap .wrap.add_floor ul li {
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.add_floor {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .add_floor .box2 {
+  border-left: 0px !important;
+  margin-left: -0.6%;
+}
+
+/* --예상견적 확인하기-- */
+.estimate {
+  position: relative;
+}
+
+.estimate h1 {
+  text-align: left;
+  font-weight: 500;
+}
+.estimate h1 em {
+  font-weight: 300;
+}
+
+.estimate > div {
+  display: inline-block;
+}
+
+.estimate .consult_card .card {
+  position: absolute;
+  top: 70px;
+}
+
+.estimate .consult_card .card {
+  text-align: center;
+  background-color: #f6f9ff;
+  width: 280px;
+  height: 380px;
+  padding: 100px 30px;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.estimate .consult_card .card .text {
+  padding-top: 100px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.estimate .consult_card .card:hover {
+  background-color: #3f3fff;
+  color: #ffffff;
+}
+
+/* 예상견적확인하기 면 할인이 가득가득 */
+.mixsale {
+  animation-name: mixsale;
+
+  animation-duration: 0.75s;
+  animation-delay: 0.7s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: both;
+}
+
+.mixsale h1 {
+  text-align: left;
+}
+.mixsale h1 em {
+}
+
+@keyframes mixsale {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

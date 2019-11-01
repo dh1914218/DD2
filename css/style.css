@@ -6,6 +6,20 @@
 
 #header {
   height: 60px;
+  background-color: #ffffff;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+}
+
+#m_tab_menu_draw {
+  display: none;
 }
 
 #numerical {
@@ -19,6 +33,15 @@
   background-color: #3f3fff;
   height: 600px;
 }
+#estimate_aside {
+  height: 350px;
+  background-color: #3f3fff;
+}
+
+#estimate_selector {
+  margin-top: -35px;
+}
+
 #footer {
   background-color: #f6f9ff;
 }

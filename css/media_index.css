@@ -1,3 +1,9 @@
+@media (max-width: 400px) {
+  .index_build_review {
+    display: block !important;
+  }
+}
+
 /* 헤더 햄버거메뉴 */
 .m_menu_icon {
   display: none;
@@ -5,10 +11,6 @@
 
 /* 모바일 탭 메뉴 */
 #m_tab_menu {
-  display: none;
-}
-
-#estimate_selector .m_estimate_result {
   display: none;
 }
 
@@ -29,7 +31,7 @@
 }
 
 /* 견적결과 */
-.m_estimate_selector_result {
+#m_estimate_selector_result {
   display: none;
 }
 /* 상담신청 */
@@ -45,15 +47,10 @@
 
 /* ------미디어쿼리 400px-------- */
 @media (max-width: 400px) {
-  /* 견적결과 */
-
   .container {
     width: 100%;
   }
 
-  .index_mixsale {
-    display: none;
-  }
   .row {
     padding: 0 20px;
   }
@@ -618,7 +615,7 @@
     width: 100%;
   }
   /* 견적확인버튼 btn */
-  #estimate_selector .m_estimate_result {
+  .m_estimate_result {
     width: 100%;
     height: 60px;
     border-radius: 5px;
@@ -629,10 +626,6 @@
     box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
     display: block;
   }
-  /*   
-  div.m_estimate_result.btn.mt30 {
-    display: none;
-  } */
 
   /* 모바일 견적결과 페이지 */
   .m_estimate_selector_result .warp > div {
@@ -796,11 +789,6 @@
 
   /* 상담카드*/
   .estimate .consult_card .card {
-    display: none;
-  }
-
-  /* --따끈따끈시공-- */
-  .build_review {
     display: none;
   }
 
