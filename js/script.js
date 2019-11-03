@@ -333,16 +333,14 @@ $(".add_floor ul li").click(function() {
   }
 });
 
-m_estimate_selector_result;
+// m_estimate_selector_result;
 // 모바일 견적내기
 $(".m_estimate_result").click(function() {
   console.log(1111);
+  $(".m_estimate_selector_result").show();
   $(".m_estimate_selector_box").slideUp();
   $(".estimate_selector_wrap .m_arrow").show();
-  $(".m_estimate_selector_result").show();
 });
-
-$("#m_estimate_selector_result").hide();
 
 $(".estimate_selector h1").click(function() {
   $(".m_estimate_selector_box").slideDown();
@@ -394,4 +392,33 @@ function windowSize() {
 
 windowSize();
 
-// $(".m_estimate_consult_request .btn").click(function() {});
+//시공후기 셀렉터 리스트 on&off
+$(".build_review_selector >.wrap > .item").click(function() {
+  $(this)
+    .find(".list")
+    .toggle();
+
+  $(".build_review_selector >.wrap > .item")
+    .not($(this))
+    .find(".list")
+    .hide();
+});
+
+// 시공후기 셀렉터 리스트 클릭시 태그 발생
+$(".build_review_selector_list > div").click(function() {
+  let innerText = $(this).text();
+  let innerHtml = `<div class="item">${innerText}</div>`;
+  let innerImg = `<img src="img/error.png"/>`;
+
+  $(".build_review_selector_tag >.wrap ").append(innerHtml);
+  $(".build_review_selector_tag >.wrap >.item").append(innerImg);
+
+  // 태그클릭시 삭제
+  $(".build_review_selector_tag .wrap div").click(function() {
+    $(this).hide();
+  });
+});
+
+function init() {}
+
+init();
