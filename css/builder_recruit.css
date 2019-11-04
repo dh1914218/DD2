@@ -1,0 +1,156 @@
+/* --반장님모집-- */
+
+/* _인덱스 */
+#index_builder_recruit h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+
+#index_builder_recruit h1 em {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  color: #3f3ff3;
+}
+
+.builder_recruit ul li {
+  width: 19%;
+  float: left;
+  margin-right: 1%;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.builder_recruit ul li img {
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.builder_recruit ul li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.builder_recruit ul li .desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+  display: none;
+}
+
+.builder_recruit ul li .desc .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.builder_recruit ul li:hover .desc {
+  display: block;
+}
+
+/* .builder_recruit .wrap {
+  width: 19%;
+  margin-right: 1%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.builder_recruit .img {
+  border-radius: 10px;
+}
+.builder_recruit .img img {
+  border-radius: 10px;
+}
+
+.builder_recruit .wrap:nth-child(n + 5) {
+  margin-right: 0;
+  border: 1px solid red;
+}
+
+.builder_recruit .wrap:hover .desc {
+  display: block;
+}
+
+.builder_recruit .desc {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+
+.builder_recruit .desc .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.builder_recrui .desc .job {
+}
+.builder_recruit .desc .motto {
+} */
+
+#index_builder_recruit .btn_plus {
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  height: 80px;
+  width: 33.89%;
+  background-color: #3f3fff;
+  color: #ffffff;
+  line-height: 80px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#index_builder_recruit .btn_plus:hover {
+  background-color: #ffffff;
+  color: #3f3fff;
+}
+
+/* _개인정보수집동의 */
+.builder_recruit input[id="personal_data2"] {
+  display: none;
+}
+
+.builder_recruit input[id="personal_data2"] + label {
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.builder_recruit input[id="personal_data2"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.builder_recruit input[id="personal_data2"]:checked + label::before {
+  background-color: #111111;
+  border: 1px solid #ffffff;
+}
+/* _더보기 */
+.builder_recruit span {
+  float: right;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
