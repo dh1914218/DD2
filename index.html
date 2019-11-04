@@ -27,7 +27,75 @@
     <!-- WOW.js -->
     <script src="js/wow.min.js"></script>
   </head>
+
+ 
+
+
   <body>
+
+      <div id="popUp_consultFirst">
+          <div class="backgorund_black"></div>
+          <!-- 배경화면 -->
+          <div class="popUp_consultFirst">
+            <div class="wrap">
+              <h2>결정이 어려우신가요??</h2>
+              <h1><em>바로견적</em>에서 최대한 빨리 연락드리겠습니다 : )</h1>
+              <img src="img/close.svg" alt="">
+              <div class="blank50"></div>
+              <input type="text" placeholder="연락처">
+              <div class="blank20"></div>
+              <div class="agree">
+                <input type="checkBox" id="personal_data">
+                <label for="personal_data">
+                  개인정보수집동의
+                </label>
+                <span>더보기</span>
+              </div>
+              <!-- //개인정보동의 -->
+              <div class="blank20"></div>
+              <div class="confirm_btn">
+                신청완료
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상담먼저 -->
+
+        <div id="popUp_personal_data">
+            <div class="backgorund_black"></div>
+            <!-- 배경화면 -->
+            <div class="popUp_personal_data">
+              <div class="wrap">
+                <h1>개인정보 처리방침</h1>
+                <img src="img/close.svg" alt="">
+                <div class="blank50"></div>
+                <div class="desc">
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                </div>
+    
+              </div>
+            </div>
+          </div>
+           <!-- //개인정보처리방침 -->
+
+
     <div id="header_sub">
       <div class="container">
         <div class="row">
@@ -35,7 +103,7 @@
             <ul class="clearfix">
               <li><a href="#">반장님모집</a></li>
               <li><a href="#">시공안내문 다운로드</a></li>
-              <li><a href="#">개인정보 처리방침</a></li>
+              <li class="personalData"><a href="#">개인정보 처리방침</a></li>
             </ul>
           </div>
           <!-- //헤더 서브 -->
@@ -64,9 +132,9 @@
             <div class="header_nav_left">
               <ul class="clearfix">
                 <li><a href="estimate_dacotile.html">바로견적</a></li>
-                <li><a href="#">시공사례</a></li>
-                <li><a href="#">자재구경</a></li>
-                <li><a href="#">상담먼저</a></li>
+                <li><a href="build_review.html">시공사례</a></li>
+                <li><a href="materials_view.html">자재구경</a></li>
+                <li class="consultFirst"><a href="#">상담먼저</a></li>
                 <li><a href="#">자주묻는질문</a></li>
               </ul>
             </div>
@@ -97,16 +165,16 @@
                 <div><a href="estimate_dacotile.html">데코타일</a></div>
                 <div><a href="estimate_linoleum.html">장판</a></div>
                 <div><a href="estimate_paper.html">도배</a></div>
-                <div><a href="#">필름</a></div>
-                <div><a href="#">화장실</a></div>
-                <div><a href="#">가구</a></div>
-                <div><a href="#">싱크대</a></div>
-                <div><a href="#">믹스상품</a></div>
+                <div><a href="estimate_film.html">필름</a></div>
+                <div><a href="estimate_film.html">가구</a></div>
+                <div><a href="estimate_sink.html">싱크대</a></div>
+                <div><a href="estimate_toilet.html">화장실</a></div>
+                <div><a href="estimate_mixsale.html">믹스상품</a></div>
               </div>
             </div>
-            <!-- 아이템1 -->
+            <!-- //모바일 네비게이션 드로어_바로견적 -->
             <div class="wrap item2">
-              <a href="#">상담먼저</a>
+              <a href="#" class="consultFirst">상담먼저</a>
               <!-- <img src="img/arrow_down_black.png" alt=""> -->
             </div>
             <!-- 아이템2 -->
@@ -169,42 +237,42 @@
             </div>
             <!--//아이템3  -->
             <div class="wrap item4">
-              <a href="#">
+              <a href="estimate_toilet.html">
               <div class="img"><img src="img/m_icon_linoleum.png" alt=""></div>
               <div class="tit">장판</div>
             </a>
             </div>
             <!--//아이템4  -->
             <div class="wrap item5 mt20">
-              <a href="#">
+              <a href="estimate_film.html">
                 <div class="img"><img src="img/m_icon_film.png" alt=""></div>
                 <div class="tit">필름</div>
              </a>
             </div>
             <!--//아이템5  -->
             <div class="wrap item6">
-              <a href="#">
+              <a href="estimate_furniture.html">
                 <div class="img"><img src="img/m_icon_furniture.png" alt=""></div>
                 <div class="tit">가구</div>
              </a>
             </div>
             <!--//아이템6  -->
             <div class="wrap item7">
-              <a href="#">
+              <a href="estimate_toilet.html">
                 <div class="img"><img src="img/m_icon_toilet.png" alt=""></div>
                 <div class="tit">화장실</div>
              </a>
             </div>
             <!--//아이템7  -->
             <div class="wrap item8">
-              <a href="#">
+              <a href="estimate_sink.html">
                 <div class="img"><img src="img/m_icon_sink.png" alt=""></div>
                 <div class="tit">싱크대</div>
              </a>
             </div>
             <!--//아이템8  -->
             <div class="wrap item9 mt20">
-              <a href="#">
+              <a href="estimate_mixsale.html">
                 <div class="img"><img src="img/m_icon_mix.png" alt=""></div>
                 <div class="tit">믹스상품</div>
               </a>
@@ -1219,44 +1287,45 @@
   <!-- //#인테리어 꿀팁 -->
 
   <div class="blank50"></div>
-    <section id="big_bulid_consult">
+    <section id="bigBuild_consult">
       <div class="container">
         <div class="row">
-          <div class="big_bulid_consult">
-            <div class="textbox">
-              <div><em>대규모 수장공사</em>를 의뢰하시나요?</div>
-              <div><em>30년 경력</em>의 바로견적과 함께해보세요!</div>
-            </div>
-            <input type="text" placeholder="이름" class="mt50">
-            <input type="text" placeholder="연락처" class="mt10">            
-            <div class="personal_data mt30">
+          <div class="bigBuild_consult">
+            <div class="wrap">
+
+              <h1><em>대규모 수장공사</em>를 문의하시나요?</h1>
+              <h1><em>30년경력 바로견적</em>과 함께해보세요!</h1>
+              
+              <div class="blank30"></div>
+              <div class="input_box">
+                <input type="text" placeholder="이름 / 직함">
+                <div class="blank10"></div>
+                <input type="text" placeholder="연락처">
+              </div>
+              <div class="blank15"></div>
               <div class="agree">
-                <input type="checkbox" id="personal_data">
-                <label for="personal_data">
-                  <span>개인정보수집동의</span>
+                <input type="checkbox" id="personal_data2">
+                <label for="personal_data2">
+                  개인정보수집동의
                 </label>
+                <span class="personalData">더보기</span>
               </div>
-              <div class="plus"><a href="#">더보기</a></div>
-            </div>
-            <!-- //개인정보수집동의 -->
-            <div class="blank50"></div>
-            <div class="btn_box clearfix">
-              <div class="item1 btn">
-                <a href="#">
-                  문의하기
-                </a>
+              <!-- //더보기 -->
+              <div class="blank20"></div>
+              <div class="btn">
+                <ul>
+                  <li class="confirm_btn"><a href="#">문의하기</a></li>
+                  <li class="btn2"><a href="#">이력보기</a></li>
+                </ul>
               </div>
-              <div class="item2 btn">
-                <a href="#">
-                  이력보기
-                </a>
-              </div>
+              
             </div>
           </div>
-          <!-- //대규모 수장공사 문의 -->
         </div>
       </div>
+      <!-- //대규모수장공사문의 -->
     </section>
+    <!-- #대규모수장공사문의 -->
 
     <footer id="footer">
       <div class="container">
@@ -1273,7 +1342,7 @@
             <div class="col col2 ">
               <div class="tit">이용안내</div>
               <div class="desc mt30">
-                 <div class="sub_tit"><a href="#">개인정보 취급방침</a></div>
+                 <div class="sub_tit"><a href="#" class="personalData">개인정보 취급방침</a></div>
                  <div class="sub_tit mt10"><a href="#">자주묻는질문</a></div>
                  <div class="sub_tit mt10"><a href="#">변경 및 환불안내</a></div>
                 </div>

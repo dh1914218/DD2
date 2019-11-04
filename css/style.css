@@ -29,9 +29,8 @@
 #index_question {
   background-color: #f6f9ff;
 }
-#big_bulid_consult {
+#bigBuild_consult {
   background-color: #3f3fff;
-  height: 600px;
 }
 #estimate_aside {
   height: 350px;
@@ -51,4 +50,9 @@
   margin: 0 auto;
   width: 1180px;
   height: inherit;
+}
+
+/* --공통클래스-- */
+.display_none {
+  display: none !important;
 }

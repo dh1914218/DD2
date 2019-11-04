@@ -34,6 +34,37 @@
         <script src="js/wow.min.js"></script>
       </head>
       <body>
+
+        <div id="popUp_consultFirst">
+                    <div class="backgorund_black"></div>
+                    <!-- 배경화면 -->
+                    <div class="popUp_consultFirst">
+                      <div class="wrap">
+                        <h2>결정이 어려우신가요??</h2>
+                        <h1><em>바로견적</em>에서 최대한 빨리 연락드리겠습니다 : )</h1>
+                        <img src="img/close.svg" alt="">
+                        <div class="blank50"></div>
+                        <input type="text" placeholder="연락처">
+                        <div class="blank20"></div>
+                        <div class="agree">
+                          <input type="checkBox" id="personal_data">
+                          <label for="personal_data">
+                            개인정보수집동의
+                          </label>
+                          <span>더보기</span>
+                        </div>
+                        <!-- //개인정보동의 -->
+                        <div class="blank20"></div>
+                        <div class="confirm_btn">
+                          신청완료
+                        </div>
+                      </div>
+                    </div>
+          </div>
+       <!-- //상담먼저 -->
+
+       
+
         <div id="header_sub">
           <div class="container">
             <div class="row">
@@ -185,29 +216,29 @@
                 </div>
                 <!-- //장판아이콘 -->
                 <div class="wrap item1">
-                  <a href="estimate_paper.html" class="none">
+                  <a href="estimate_paper.html">
                     <div class="icImg " >
-                      <img src="img/icon_paper_on.png" alt="" />
+                      <img src="img/icon_paper_off.png" alt="" />
                     </div>
-                    <div class="icText" style="color: #3f3fff">
+                    <div class="icText" >
                       도배
                     </div>
                   </a>
                 </div>
-                <!-- //도배아이콘 -->
+                <!-- 도배아이콘 -->
                 <div class="wrap item1">
-                  <a href="estimate_film.html">
+                  <a href="estimate_film.html" class="none"> 
                     <div class="icImg">
-                      <img src="img/icon_film_off.png" alt="" />
+                      <img src="img/icon_film_on.png" alt="" />
                     </div>
-                    <div class="icText">
+                    <div class="icText" style="color: #3f3fff">
                       필름
                     </div>
                   </a>
                 </div>
-                <!-- //필름아이콘 -->
+                <!-- 필름아이콘 -->
                 <div class="wrap item1">
-                  <a href="estimate_furniture.html">
+                  <a href="estimate_film.html">
                     <div class="icImg">
                       <img src="img/icon_furniture_off.png" alt="" />
                     </div>
@@ -216,7 +247,7 @@
                     </div>
                   </a>
                 </div>
-                <!-- //가구아이콘 -->
+                <!-- 가구아이콘 -->
                 <div class="wrap item1">
                   <a href="estimate_sink.html">
                     <div class="icImg">
@@ -227,7 +258,7 @@
                     </div>
                   </a>
                 </div>
-                <!-- //싱크대아이콘 -->
+                <!-- 싱크대아이콘 -->
                 <div class="wrap item1">
                   <a href="estimate_toilet.html">
                     <div class="icImg">
@@ -238,24 +269,24 @@
                     </div>
                   </a>
                 </div>
-                <!-- //화장실아이콘 -->
+                <!-- 화장실아이콘 -->
                 <div class="wrap item1">
                   <a href="estimate_mixsale.html">
                     <div class="icImg">
                       <img src="img/icon_mix_off.png" alt="" />
                     </div>
                     <div class="icText">
-                      믹스상품
+                      믹스
                     </div>
                   </a>
                 </div>
-                <!-- 믹스상품아이콘 -->
+                <!-- 믹스아이콘 -->
               </div>
-              <!-- //탭메뉴 -->
+              <!-- //자재보기 탭메뉴 -->
             </div>
           </div>
         </div>
-        <!-- //#탭메뉴 -->
+        <!-- //#자재보기 탭메뉴 -->
     
         <section id="m_tab_menu_draw">
           <div>
@@ -280,20 +311,12 @@
               <div class="estimate_selector">
                 <div class="estimate_selector_wrap maru clearfix">
                   <h1>
-                    <em>도배시공</em> 견적내기
+                    <em>필름시공</em> 견적내기
                     <img class="m_arrow" src="/img/arrow_down_black.png" alt="" />
                   </h1>
                   <div class="blank30"></div>
     
                   <div class="m_estimate_selector_box">
-                    <div class="wrap place ">
-                      <div class="tit">공간구분</div>
-                      <ul class="form clearfix">
-                        <li class="box box1 box_active">주거공간</li>
-                        <li class="box box2">상업공간</li>
-                      </ul>
-                    </div>
-                    <!-- //공간구분 -->
     
                     <div class="m_blank10"></div>
     
@@ -342,30 +365,10 @@
                     </div>
                     <!-- //면적구분 -->
     
-                    <div class="blank30"></div>
                     <div class="m_blank10"></div>
-                    <div class="wrap bananda ">
-                      <div class="tit">배란다 확장여부</div>
-                      <ul class="form clearfix">
-                        <li class="box box1 box_active">미확장</li>
-                        <li class="box box2">확장</li>
-                      </ul>
-                    </div>
-                    <!-- //배란다확장여부 -->
-    
-                    <div class="m_blank10"></div>
-    
-                    <div class="wrap empty_house ">
-                      <div class="tit">빈집 / 공실여부</div>
-                      <ul class="form clearfix">
-                        <li class="box box1 box_active">
-                          빈집 / 공실 <em>짐 없음</em>
-                        </li>
-                        <li class="box box2">거주중 / 운영중 <em>짐 있음</em></li>
-                        <li class="box box3">이사당일 시공</li>
-                      </ul>
-                    </div>
-                    <!-- //빈집 / 공실여부 -->
+               
+                 
+                   
     
                     <div class="m_blank10"></div>
     

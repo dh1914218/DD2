@@ -1,3 +1,18 @@
+/* --백그라운드-- */
+body {
+  position: relative;
+}
+/* --백그라운드 블랙-- */
+.backgorund_black {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 80;
+}
+
 /* --추천시공사례-- */
 .recommend_review {
   overflow: hidden;
@@ -473,161 +488,271 @@
   font-size: 20px;
 }
 
-/* --대규모 수장공사 의뢰-- */
-.big_bulid_consult {
-  padding: 50px;
-  margin: 0px auto;
-  text-align: center;
-  position: relative;
+/* --대규모 수장공사 문의-- */
+.bigBuild_consult {
+  padding: 50px 300px;
 }
 
-.big_bulid_consult .textbox {
-  text-align: center;
-  font-size: 50px;
-  color: #ffffff;
+.bigBuild_consult h1 {
+  font-size: 40px;
   font-weight: 300;
-  letter-spacing: -5px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.big_bulid_consult .textbox em {
+.bigBuild_consult h1 em {
   font-weight: 500;
 }
 
-.big_bulid_consult .textbox > div:nth-child(2n) {
-  margin-top: -10px;
+.bigBuild_consult .input_box {
+  text-align: center;
 }
 
-.big_bulid_consult > input {
-  width: 688px;
-  height: 60px;
-  border: 0px;
-  padding-left: 20px;
+.bigBuild_consult .input_box input {
+  display: block;
+  width: 100%;
+  padding: 15px;
 }
 
-.big_bulid_consult .personal_data {
-  width: 688px;
-  color: #ffffff;
-  margin: 0px auto;
-}
-
-.big_bulid_consult .personal_data .agree {
-  width: 300px;
-  text-align: left;
-  position: relative;
-  float: left;
-}
-
-.big_bulid_consult .personal_data .agree a {
-  color: #ffffff;
-}
-
-.big_bulid_consult .personal_data .agree > input[id="personal_data"] {
+/* _개인정보수집동의 */
+.bigBuild_consult input[id="personal_data2"] {
   display: none;
 }
 
-.big_bulid_consult .personal_data .agree > input[id="personal_data"] + label {
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
+.bigBuild_consult input[id="personal_data2"] + label {
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
 }
-.big_bulid_consult
-  .personal_data
-  .agree
-  > input[id="personal_data"]
-  + label
-  span {
+
+.bigBuild_consult input[id="personal_data2"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  display: inline-block;
   position: absolute;
   top: 4px;
-  left: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
+  left: 0;
 }
 
-.big_bulid_consult
-  .personal_data
-  .agree
-  > input[id="personal_data"]:checked
-  + label {
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  border: 1px solid #ffffff;
+.bigBuild_consult input[id="personal_data2"]:checked + label::before {
   background-color: #111111;
+  border: 1px solid #ffffff;
 }
-
-/* 더보기 */
-.personal_data .plus {
+/* _더보기 */
+.bigBuild_consult span {
   float: right;
-}
-
-.personal_data .plus a {
   color: #ffffff;
   text-decoration: underline;
+  cursor: pointer;
 }
-.btn_box {
+
+/* _버튼 */
+.bigBuild_consult .btn {
+}
+.bigBuild_consult .btn ul {
+  overflow: hidden;
+}
+
+.bigBuild_consult .btn ul li {
+  width: 48%;
+  height: 50px;
+  border: 1px solid #111111;
   float: left;
-  line-height: 60px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.bigBuild_consult .btn ul li {
+  transition: all 0.5s ease-in-out;
 }
 
-.big_bulid_consult .btn_box > div {
-  display: inline-block;
-}
-
-.big_bulid_consult .btn {
-  width: 180px;
-  height: 60px;
-  border-radius: 10px;
+/* __문의하기 버튼 */
+.bigBuild_consult .btn ul li.confirm_btn {
+  margin-right: 4%;
   border: 1px solid #ffffff;
-  transition: all 0.55s ease-in-out;
-}
-
-.big_bulid_consult .item1 {
-  margin-right: 10px;
-  color: #111111;
   background-color: #ebe6ff;
 }
 
-.big_bulid_consult .item1 a {
+.bigBuild_consult .btn ul li.confirm_btn:hover {
+  background-color: #111111;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn a {
+  color: #111111;
   display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 1px 105px;
 }
 
-.big_bulid_consult .item1:hover a {
-  color: #ffffff;
-}
-.big_bulid_consult .item1:hover {
-  background-color: #3f3fff;
-}
-
-.big_bulid_consult .item2 {
-  margin-left: 10px;
-}
-
-.big_bulid_consult .item2 a {
+.bigBuild_consult .btn ul li.confirm_btn:hover a {
   color: #ffffff;
   display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 1px 105px;
+}
+/* __이력보기 버튼 */
+.bigBuild_consult .btn ul li.btn2 {
+  border: 1px solid #ffffff;
 }
 
-.big_bulid_consult .item2:hover a {
+.bigBuild_consult .btn ul li.btn2 a {
+  color: #ffffff;
+}
+
+.bigBuild_consult .btn ul li.btn2:hover {
+  background-color: #f6f9ff;
+}
+
+.bigBuild_consult .btn ul li.btn2:hover a {
   color: #111111;
 }
-.big_bulid_consult .item2:hover {
-  background-color: #ffffff;
-}
-/* 
-.big_bulid_consult .item2 {
-  color: #ffffff !important;
+
+/* --상담먼저 팝업-- */
+#popUp_consultFirst {
+  display: none;
 }
 
-.big_bulid_consult .item2 a:hover {
-  background-color: #4d2bff;
-} */
+.popUp_consultFirst img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -60px;
+  right: -120px;
+  cursor: pointer;
+}
+
+.popUp_consultFirst {
+  padding: 100px 150px;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.popUp_consultFirst .wrap {
+  position: relative;
+}
+
+.popUp_consultFirst .wrap h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.popUp_consultFirst .wrap h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.popUp_consultFirst .wrap h1 em {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.popUp_consultFirst .wrap > input {
+  width: 100%;
+  padding: 10px;
+}
+
+.popUp_consultFirst .wrap input[id="personal_data"] {
+  display: none;
+}
+.popUp_consultFirst .wrap input[id="personal_data"] + label {
+  font-size: 13px;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.popUp_consultFirst .wrap input[id="personal_data"] + label::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0px;
+  border: 1px solid #999999;
+}
+
+.popUp_consultFirst .wrap input[id="personal_data"]:checked + label::before {
+  background-color: #111111;
+  width: 16px;
+  height: 16px;
+}
+
+/* 더보기 */
+.popUp_consultFirst .wrap .agree span {
+  float: right;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 확인하기 */
+.popUp_consultFirst .wrap .confirm_btn {
+  background-color: #3f3fff;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* --개인정보수징동의-- */
+#popUp_personal_data {
+  display: none;
+}
+
+.popUp_personal_data .wrap {
+  position: relative;
+}
+
+.popUp_personal_data .wrap h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.popUp_personal_data .wrap h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.popUp_personal_data .wrap h1 em {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.popUp_personal_data .wrap .desc {
+  height: 300px;
+  overflow: auto;
+}
+
+.popUp_personal_data img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -60px;
+  right: -120px;
+  cursor: pointer;
+}
+
+.popUp_personal_data {
+  padding: 100px 150px;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #ffffff;
+  border-radius: 30px;
+}

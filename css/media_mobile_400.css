@@ -582,10 +582,17 @@
     float: none;
   }
 
-  /* 주거공간 구분*/
+  /* 공간구분*/
   .estimate_selector_wrap .wrap.place {
     width: 100%;
   }
+
+  /* 공간구분 (장판) */
+  .estimate_selector_wrap.linoleum .wrap.place {
+    width: 100%;
+  }
+
+  /* 면적구분 */
   .estimate_selector_wrap .wrap.area {
     width: 100%;
   }
@@ -614,9 +621,15 @@
   .estimate_selector_wrap .wrap.empty_house em {
     display: none;
   }
+  /* 덧방여부 */
   .estimate_selector_wrap .wrap.add_floor {
     width: 100%;
   }
+  /* 시공범위 */
+  .estimate_selector_wrap .wrap.build_range {
+    width: 100%;
+  }
+
   /* 견적확인버튼 btn */
   #estimate_selector .m_estimate_result {
     width: 100%;

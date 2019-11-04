@@ -249,7 +249,7 @@ $(".area .form2 >ul >li").click(function() {
   $(".area .form2").css("color", "#111111");
 });
 
-// 방개수 서브 on&off
+// 방개수 리스트 on&off
 $(".area .form3").click(function() {
   $(this)
     .find(".area_list")
@@ -333,6 +333,107 @@ $(".add_floor ul li").click(function() {
   }
 });
 
+// 시공범위
+var selctorbuildRange = 0;
+$(".build_range ul li ").click(function() {
+  selctorbuildRange = $(this).index();
+  $(".build_range ul li").removeClass("box_active");
+  $(this).addClass("box_active");
+
+  if (selctorbuildRange == 1) {
+    $(".build_range ul li")
+      .eq(0)
+      .css("border-right", "1px solid #3f3fff");
+  }
+});
+
+//시공범위(거실만) on_off (index값은 공간구분 전역변수 사용)
+$(".place  ul li").click(function() {
+  selctorPlace = $(this).index();
+  if (selctorPlace == 0) {
+    $(".estimate_selector_wrap.maru .build_range").show();
+    $(".estimate_selector_wrap.dacotile .build_range").show();
+  } else {
+    $(".estimate_selector_wrap.maru .build_range").hide();
+    $(".estimate_selector_wrap.dacotile .build_range").hide();
+  }
+});
+
+// 가구시공 플랜구분
+var selctorFurniturePlan = 0;
+$(".furniture_plan ul li").click(function() {
+  selctorFurniturePlan = $(this).index();
+  $(".furniture_plan ul li").removeClass("box_active");
+  $(this).addClass("box_active");
+
+  if (selctorFurniturePlan == 1) {
+    $(".furniture_plan ul li")
+      .eq(0)
+      .css("border-right", "1px solid #3f3fff");
+  }
+});
+
+// 가구시공면적구분
+$(".furniture_area .cover").click(function() {
+  $(this)
+    .find("ul.area_list")
+    .stop()
+    .toggle();
+});
+
+// 가구시공면적 cm 고르기
+var cm = "cm";
+var selctorFurnitureArea = 0;
+$(".furniture_area .form2 >ul >li").click(function() {
+  selctorFurnitureArea = $(this).index();
+  $(".furniture_area .form2 .cover").text(selctorFurnitureArea + 15 + cm);
+});
+
+// 싱크대 시공면적구분
+$(".sink_area .form").click(function() {
+  $(this)
+    .find("ul.area_list")
+    .stop()
+    .toggle();
+});
+
+// 싱크대 시공면적 mm 고르기
+var selctorSinkInnerText = 0;
+$(".sink_area .form >ul >li").click(function() {
+  selctorSinkInnerText = $(this).text();
+  $(".sink_area .form .cover").text(selctorSinkInnerText);
+});
+
+// 화장실 시공면적구분
+$(".toilet_area .form").click(function() {
+  $(this)
+    .find("ul.area_list")
+    .stop()
+    .toggle();
+});
+
+// 화장실 시공면적 mm 고르기
+var selctorToiletInnerText = 0;
+$(".toilet_area .form >ul >li").click(function() {
+  selctorToiletInnerText = $(this).text();
+  $(".toilet_area .form .cover").text(selctorToiletInnerText);
+});
+
+// 믹스상품 면적구분 clcik 후 list on/off
+// var selctorMixsaleIndex = 0;
+// $(".mixsaleE .wrap > ul > li").click(function() {
+//   selctorMixsaleIndex = $(this).index();
+//   $(".mixsaleE .wrap")
+//     .stop()
+//     .hide();
+//   console.log(selctorMixsaleIndex);
+//   if (selctorMixsaleIndex == 0) {
+//     $(".mixsaleE .wrap")
+//       .find(".area_list")
+//       .show();
+//   }
+// });
+
 // m_estimate_selector_result;
 // 모바일 견적내기
 $(".m_estimate_result").click(function() {
@@ -357,7 +458,7 @@ $(".m_estimate_selector_result .warp .desc .btn").click(function() {
   console.log(1);
 });
 
-// 검은화면 클릭시
+// 모바일 검은화면 클릭시
 $(".m_backgorund_black").click(function() {
   $(".m_backgorund_black").hide();
   $("#m_estimate_consult_request").animate({
@@ -419,6 +520,34 @@ $(".build_review_selector_list > div").click(function() {
   });
 });
 
-function init() {}
+// --상담먼저--//
+// _클래스추가
+$(".consultFirst").click(function() {
+  $("#popUp_consultFirst").show();
+});
 
-init();
+// _취소버튼
+$("#popUp_consultFirst img").click(function() {
+  $("#popUp_consultFirst").hide();
+});
+
+// _견적신청버튼
+$("#popUp_consultFirst .confirm_btn").click(function() {
+  $("#popUp_consultFirst").hide();
+});
+
+// _개인정보수집동의 더보기 클릭시
+$("#popUp_consultFirst .wrap span").click(function() {
+  $("#popUp_personal_data").show();
+  console.log(111);
+});
+
+// _클래스추가 개인정보처리방침
+$(".personalData").click(function() {
+  $("#popUp_personal_data").show();
+});
+
+// 취소버튼
+$("#popUp_personal_data .wrap img").click(function() {
+  $("#popUp_personal_data").hide();
+});

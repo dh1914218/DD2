@@ -1,3 +1,10 @@
+/* span */
+.estimate_selector_wrap span {
+  color: red;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 /* 셀렉터 엑티브 */
 .box_active {
   border-color: #3f3fff !important;
@@ -41,6 +48,21 @@
   font-size: 25px;
   font-weight: 300;
   text-align: center;
+}
+
+/* --공간구분(장판 주거공간만 나오게 하기)-- */
+.estimate_selector_wrap.linoleum .wrap.place {
+  width: 38%;
+}
+
+.estimate_selector_wrap.linoleum .wrap.place ul li {
+  float: left;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
 }
 
 /* --공간구분-- */
@@ -175,6 +197,33 @@
   border-top: 0px;
 }
 
+/* --*-- */
+.area_list2 {
+  display: none;
+  position: absolute;
+  top: 39px;
+  width: 100%;
+  border: 1px solid #b6b6b6;
+  border-top: 0px;
+  background-color: #ffffff;
+  height: 200px;
+  overflow: scroll;
+}
+
+.area_list2 ul {
+}
+
+.area_list2 li {
+  padding-left: 20px;
+  text-align: left;
+  border-top: 1px solid #b6b6b6;
+  color: #b6b6b6;
+}
+
+.area_list2 li:nth-child(1) {
+  border-top: 0px;
+}
+
 /* --배란다확장여부-- */
 /* warp 크기조정 */
 .estimate_selector_wrap .wrap.bananda {
@@ -257,6 +306,102 @@
 .estimate_selector_wrap .add_floor .box2 {
   border-left: 0px !important;
   margin-left: -0.6%;
+}
+
+/* --시공범위 (마루, 데코타일 거실만시공)-- */
+/* warp 크기조정 */
+.estimate_selector_wrap .wrap.build_range {
+  width: 38%;
+}
+
+/* box 크기조정 */
+.estimate_selector_wrap .wrap.build_range ul li {
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.build_range {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .build_range .box2 {
+  border-left: 0px !important;
+  margin-left: -0.3%;
+}
+
+/* --가구시공플랜-- */
+.estimate_selector_wrap .wrap.furniture_plan {
+  width: 38%;
+}
+
+/* box 크기조정 */
+.estimate_selector_wrap .wrap.furniture_plan ul li {
+  float: left;
+  width: 49.5%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+/* warp margin */
+.estimate_selector_wrap .wrap.furniture_plan {
+  margin-right: 4.6%;
+}
+
+/* 셀렉터 border값 없애고 마진값조정 */
+.estimate_selector_wrap .furniture_plan .box2 {
+  border-left: 0px !important;
+  margin-left: -0.6%;
+}
+
+/* --가구시공면적구분-- */
+.estimate_selector_wrap .furniture_area .form2 {
+  margin-top: 5px;
+}
+
+/* --싱크대 면적구분-- */
+.estimate_selector_wrap.sink .wrap.sink_area {
+  width: 38%;
+}
+
+.estimate_selector_wrap.sink .wrap.sink_area .form {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+  position: relative;
+  border: 1px solid red;
+  color: red;
+  background-color: #ffffff;
+}
+
+.estimate_selector_wrap.sink .wrap.sink_area .form .area_list li {
+  text-align: center;
+}
+
+/* --믹스상품 공간구분-- */
+.estimate_selector .mixsaleE .wrap.place {
+  width: 38%;
+}
+
+.estimate_selector_wrap.mixsaleE .wrap.place ul li {
+  float: left;
+  width: 100%;
+  height: 40px;
+  text-align: center !important;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
 }
 
 /* --예상견적 확인하기-- */
