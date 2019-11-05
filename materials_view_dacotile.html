@@ -144,22 +144,22 @@
           <div class="tab_menu materials_view_menu">
             <div class="cate_icon">
               <div class="wrap item1">
-                <a href="materials_view_maru.html".html" class="none">
+                <a href="materials_view_maru.html">
                   <div class="icImg">
-                    <img src="img/icon_maru_on.png" alt="" />
+                    <img src="img/icon_maru_off.png" alt="" />
                   </div>
-                  <div class="icText" style="color: #3f3fff; font-weight: 500;">
+                  <div class="icText" >
                     마루
                   </div>
                 </a>
               </div>
               <!-- //마루아이콘 -->
               <div class="wrap item2">
-                <a href="#a.html">
+                <a href="materials_view_dacotile.html" class="none">
                   <div class="icImg">
-                    <img src="img/icon_dacotile_off.png" alt="" />
+                    <img src="img/icon_dacotile_on.png" alt="" />
                   </div>
-                  <div class="icText">
+                  <div class="icText" style="color: #3f3fff; font-weight: 500;">
                     데코타일
                   </div>
                 </a>
@@ -251,10 +251,8 @@
                   자재종류
                   <ul>
                     <li class="materials_active">전체종류</li>
-                    <li>원목마루</li>
-                    <li>온돌마루</li>
-                    <li>강마루</li>
-                    <li>강화마루</li>
+                    <li>우드타일</li>
+                    <li>사각타일</li>
                     <li>헤링본</li>
                   </ul>
                 </div>
@@ -267,12 +265,10 @@
                   <ul>
                     <li class="materials_active">전체보기</li>
                     <li>엘지</li>
-                    <li>이건</li>
-                    <li>동화</li>
-                    <li>구정</li>
-                    <li>한솔</li>
-                    <li>마에스트로</li>
-                    <li>하나</li>
+                    <li>현대L&C</li>
+                    <li>대진</li>
+                    <li>동신</li>
+                    <li>스완</li>
                   </ul>
                 </div>
               </div>
@@ -282,11 +278,13 @@
               <div class="wrap color">
                 <div class="tit">
                   색상
-                  <ul>
+                  <ul class="dacotile_color1">
                     <li>
                       <div><img src="img/materialsEx1.jpg"  alt=""></div>
                       <div class="text materials_text_active">전체색상</div>
                     </li>
+                  </ul>
+                  <ul class="dacotile_color1">
                     <li>
                       <div><img src="img/materialsEx1.jpg"  alt=""></div>
                       <div>빈티지</div>
@@ -320,9 +318,50 @@
                       <div>블랙</div>
                     </li>
                   </ul>
+                  <!-- //우드타일 헤링본색상 -->
+
+                  <ul class="dacotile_color2">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>카펫</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx2.jpg"  alt=""></div>
+                      <div>마블</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx3.jpg"  alt=""></div>
+                      <div>콘크리트</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx4.jpg"  alt=""></div>
+                      <div>솔리드</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx5.jpg"  alt=""></div>
+                      <div>그라나이트</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx6.jpg"  alt=""></div>
+                      <div>페브릭&패턴</div>
+                    </li>
+                  </ul>
+                  <!-- //사각타일 색상 -->
+                  <ul class="dacotile_color3">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>엘베전용</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>패턴</div>
+                    </li>
+                  </ul>
+                  <!-- //모자이크색상 -->
                 </div>
               </div>
               <!-- //자재색상 -->
+              
             </div>
             <!-- //자재구경 마루디테일 -->
           </div>
@@ -361,11 +400,10 @@
             자재종류
             <ul>
               <li class="materials_active">전체종류</li>
-              <li>원목마루</li>
-              <li>온돌마루</li>
-              <li>강마루</li>
-              <li>강화마루</li>
+              <li>우드타일</li>
+              <li>사각타일</li>
               <li>헤링본</li>
+              <li>모자이크</li>
             </ul>
           </div>
         </div>
@@ -381,61 +419,102 @@
             <ul>
               <li class="materials_active">전체보기</li>
               <li>엘지</li>
-              <li>이건</li>
-              <li>동화</li>
-              <li>구정</li>
-              <li>한솔</li>
-              <li>마에스트로</li>
-              <li>하나</li>
+              <li>현대L&C</li>
+              <li>대진</li>
+              <li>동신</li>
+              <li>스완</li>
             </ul>
           </div>
         </div>
         <!-- //자재브랜드 -->
         <div class="m_blank30"></div>
 
-        <div class="wrap color">
-            <div class="tit">
-              색상
-              <ul>
-                <li>
-                  <div><img src="img/materialsEx1.jpg"  alt=""></div>
-                  <div class="text materials_text_active">전체색상</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx1.jpg"  alt=""></div>
-                  <div>빈티지</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx2.jpg"  alt=""></div>
-                  <div>네츄럴</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx3.jpg"  alt=""></div>
-                  <div>엔틱(애쉬)</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx4.jpg"  alt=""></div>
-                  <div>화이트</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx5.jpg"  alt=""></div>
-                  <div>아이보리</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx6.jpg"  alt=""></div>
-                  <div>그레이</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx7.jpg"  alt=""></div>
-                  <div>브라운</div>
-                </li>
-                <li>
-                  <div><img src="img/materialsEx7.jpg"  alt=""></div>
-                  <div>블랙</div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="wrap color">
+                <div class="tit">
+                  색상
+                  <ul class="dacotile_color1">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div class="text materials_text_active">전체색상</div>
+                    </li>
+                  </ul>
+                  <ul class="dacotile_color1">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>빈티지</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx2.jpg"  alt=""></div>
+                      <div>네츄럴</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx3.jpg"  alt=""></div>
+                      <div>엔틱(애쉬)</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx4.jpg"  alt=""></div>
+                      <div>화이트</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx5.jpg"  alt=""></div>
+                      <div>아이보리</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx6.jpg"  alt=""></div>
+                      <div>그레이</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx7.jpg"  alt=""></div>
+                      <div>브라운</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx7.jpg"  alt=""></div>
+                      <div>블랙</div>
+                    </li>
+                  </ul>
+                  <!-- //우드타일 헤링본색상 -->
+
+                  <ul class="dacotile_color2">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>카펫</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx2.jpg"  alt=""></div>
+                      <div>마블</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx3.jpg"  alt=""></div>
+                      <div>콘크리트</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx4.jpg"  alt=""></div>
+                      <div>솔리드</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx5.jpg"  alt=""></div>
+                      <div>그라나이트</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx6.jpg"  alt=""></div>
+                      <div>페브릭&패턴</div>
+                    </li>
+                  </ul>
+                  <!-- //사각타일 색상 -->
+                  <ul class="dacotile_color3">
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>엘베전용</div>
+                    </li>
+                    <li>
+                      <div><img src="img/materialsEx1.jpg"  alt=""></div>
+                      <div>패턴</div>
+                    </li>
+                  </ul>
+                  <!-- //모자이크색상 -->
+                </div>
+              </div>
+              <!-- //자재색상 -->
           
 
         <div class="blank20"></div>

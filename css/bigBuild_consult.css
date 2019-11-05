@@ -1,0 +1,119 @@
+/* --대규모 수장공사 문의-- */
+.bigBuild_consult {
+  padding: 50px 300px;
+}
+
+.bigBuild_consult h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+
+.bigBuild_consult h1 em {
+  font-weight: 500;
+}
+
+.bigBuild_consult .input_box {
+  text-align: center;
+}
+
+.bigBuild_consult .input_box input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+/* _개인정보수집동의 */
+.bigBuild_consult input[id="personal_data2"] {
+  display: none;
+}
+
+.bigBuild_consult input[id="personal_data2"] + label {
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.bigBuild_consult input[id="personal_data2"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.bigBuild_consult input[id="personal_data2"]:checked + label::before {
+  background-color: #111111;
+  border: 1px solid #ffffff;
+}
+/* _더보기 */
+.bigBuild_consult span {
+  float: right;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* _버튼 */
+.bigBuild_consult .btn {
+}
+.bigBuild_consult .btn ul {
+  overflow: hidden;
+}
+
+.bigBuild_consult .btn ul li {
+  width: 48%;
+  height: 50px;
+  border: 1px solid #111111;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.bigBuild_consult .btn ul li {
+  transition: all 0.5s ease-in-out;
+}
+
+/* __문의하기 버튼 */
+.bigBuild_consult .btn ul li.confirm_btn {
+  margin-right: 4%;
+  border: 1px solid #ffffff;
+  background-color: #ebe6ff;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn:hover {
+  background-color: #111111;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn a {
+  color: #111111;
+  display: inline-block;
+  padding: 1px 105px;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn:hover a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 1px 105px;
+}
+/* __이력보기 버튼 */
+.bigBuild_consult .btn ul li.btn2 {
+  border: 1px solid #ffffff;
+}
+
+.bigBuild_consult .btn ul li.btn2 a {
+  color: #ffffff;
+}
+
+.bigBuild_consult .btn ul li.btn2:hover {
+  background-color: #f6f9ff;
+}
+
+.bigBuild_consult .btn ul li.btn2:hover a {
+  color: #111111;
+}

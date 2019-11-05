@@ -67,8 +67,8 @@ var swiper = new Swiper(".swiper-container3", {
   }
 });
 
-// --뉴 아이템 이미지 변경--
-$(".tab_menu > .wrap > a").mouseover(function() {
+// --탭메뉴 아이콘 ON&OFF--
+$(".tab_menu  .wrap > a").mouseover(function() {
   if ($(this).hasClass("none") != true) {
     $(this)
       .find("img")
@@ -82,7 +82,7 @@ $(".tab_menu > .wrap > a").mouseover(function() {
   }
 });
 
-$(".tab_menu > .wrap > a").mouseout(function() {
+$(".tab_menu  .wrap > a").mouseout(function() {
   if ($(this).hasClass("none") != true) {
     $(this)
       .find("img")
@@ -551,3 +551,59 @@ $(".personalData").click(function() {
 $("#popUp_personal_data .wrap img").click(function() {
   $("#popUp_personal_data").hide();
 });
+
+// --자재구경--
+//_자재종류 active
+$(".materials_view_menu .cate_detail .type ul li").click(function() {
+  $(".materials_view_menu .cate_detail .type ul li").removeClass(
+    "materials_active"
+  );
+  $(this).addClass("materials_active");
+});
+
+//_브랜드 active
+$(".materials_view_menu .cate_detail .brand ul li").click(function() {
+  $(".materials_view_menu .cate_detail .brand ul li").removeClass(
+    "materials_active"
+  );
+  $(this).addClass("materials_active");
+});
+
+//_색상 active
+$(".materials_view_menu .cate_detail .color ul li").click(function() {
+  $(".materials_view_menu .cate_detail .color ul li")
+    .find("div")
+    .removeClass("materials_text_active");
+  $(this)
+    .find("div")
+    .addClass("materials_text_active");
+});
+
+//_모바일 자재종류 active
+$(".m_cate_detail .type ul li").click(function() {
+  $(".m_cate_detail .type ul li").removeClass("materials_active");
+  $(this).addClass("materials_active");
+});
+
+//_모바일 브랜드 active
+$(".m_cate_detail .brand ul li").click(function() {
+  $(".m_cate_detail .brand ul li").removeClass("materials_active");
+  $(this).addClass("materials_active");
+});
+
+//_모바일 색상 active
+$(".m_cate_detail .color ul li").click(function() {
+  $(".m_cate_detail .color ul li")
+    .find("div")
+    .removeClass("materials_text_active");
+  $(this)
+    .find("div")
+    .addClass("materials_text_active");
+});
+
+// _화살표 up & down
+$(".m_cate_detail h1").click(function() {
+  $(".m_wrap").slideToggle();
+});
+
+// _화살표 클릭시 슬라이드

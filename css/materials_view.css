@@ -1,29 +1,260 @@
+/* --자재보기 탭메뉴-- */
+/* --active-- */
+.materials_active {
+  border: 1px solid #3f3fff !important;
+  color: #3f3fff !important;
+}
+.materials_text_active {
+  color: #3f3fff;
+}
+
+/* --공통-- */
+/* -- 메뉴크기-- */
 .materials_view_menu {
   width: 100%;
-  height: 260px;
+  height: 350px;
 }
 
-.cate_submenu .tit {
+.cate_detail .wrap {
+  float: left;
+}
+
+.cate_detail {
+  padding: 20px;
+}
+
+.cate_detail .tit {
   text-align: left;
+  font-size: 15px;
 }
 
-.cate_submenu .wrap {
-  width: 19.7%;
+.cate_detail .wrap ul li {
+  margin-right: 10px;
 }
 
-.cate_submenu .wrap ul {
-  overflow: hidden;
-  width: 100%;
+/* _종류 */
+.cate_detail .type {
+  width: 49%;
+  cursor: pointer;
 }
 
-.cate_submenu .wrap ul li {
+.cate_detail .type ul li {
   margin-top: 10px;
   float: left;
-  border: 1px solid #3f3fff;
-  color: #3f3fff;
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
   padding: 5px 10px;
 }
 
-.cate_submenu .wrap ul li:nth-child(1) {
+/* _브랜드*/
+.cate_detail .brand {
+  width: 49%;
+  cursor: pointer;
+}
+
+.cate_detail .brand ul li {
+  margin-top: 10px;
+  float: left;
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
+  padding: 5px 10px;
+}
+
+/* _색상 */
+.cate_detail .color {
+  width: 100%;
+  cursor: pointer;
+}
+
+.cate_detail .color ul li {
+  margin-top: 10px;
+  float: left;
+  color: #b6b6b6;
+  padding: 5px 10px;
+}
+
+.cate_detail .color img {
+  width: 30px;
+  height: 30px;
+}
+
+.cate_detail.maru .color ul li {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  float: left;
+  /* border: 1px solid #666666; */
+  color: #b6b6b6;
+  /* padding: 5px 10px; */
+}
+
+/* -----------------모바일 자재구경 탭메뉴-------------------- */
+/* --active-- */
+.m_cate_detail {
+  display: none;
+}
+
+.materials_active {
+  border: 1px solid #3f3fff !important;
+  color: #3f3fff !important;
+}
+.materials_text_active {
+  color: #3f3fff;
+}
+
+/* --공통-- */
+.m_cate_detail .wrap {
+  float: left;
+}
+
+.m_cate_detail {
+  padding: 20px;
+}
+
+.m_cate_detail .tit {
+  text-align: left;
+}
+
+.m_cate_detail .wrap ul li {
   margin-right: 10px;
+}
+
+/* _종류 */
+.m_cate_detail .type {
+  width: 49%;
+  cursor: pointer;
+}
+
+.m_cate_detail .type ul li {
+  margin-top: 10px;
+  float: left;
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
+  padding: 5px 10px;
+  background-color: #ffffff !important;
+  font-size: 15px;
+}
+
+/* _브랜드*/
+.m_cate_detail .brand {
+  width: 49%;
+  cursor: pointer;
+}
+
+.m_cate_detail .brand ul li {
+  margin-top: 10px;
+  float: left;
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
+  padding: 5px 10px;
+  background-color: #ffffff !important;
+  font-size: 15px;
+}
+
+/* _색상 */
+.m_cate_detail .color {
+  width: 70%;
+  cursor: pointer;
+}
+
+.m_cate_detail .color ul li {
+  margin-top: 10px;
+  float: left;
+  color: #b6b6b6;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 13px;
+  float: left;
+  /* border: 1px solid #666666; */
+  color: #b6b6b6;
+  /* padding: 5px 10px; */
+}
+
+.m_cate_detail .color img {
+  width: 30px;
+  height: 30px;
+}
+
+/* --자재-- */
+#index_materials_veiw {
+}
+
+#index_materials_veiw h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#index_materials_veiw h1 em {
+  font-weight: 500;
+}
+
+.materials_veiw ul li {
+  width: 19%;
+  margin-right: 1.2%;
+  float: left;
+  margin-top: 10px;
+}
+
+.materials_veiw ul li:nth-child(5n + 0) {
+  margin-right: 0;
+}
+
+.materials_veiw .img {
+  position: relative;
+}
+
+/* 18 13 20 */
+
+.materials_veiw .desc hr {
+}
+
+.materials_veiw .desc .brand {
+  font-size: 13px;
+  color: #b6b6b6;
+}
+
+.materials_veiw .desc .brand > span {
+  font-size: 20px;
+  color: #111111;
+}
+
+.materials_veiw .desc .tit {
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+/* --자재 아이콘-- */
+.materials_veiw .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.materials_veiw .icon span {
+  margin-right: 3px;
+  letter-spacing: 0;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.materials_veiw .icon img {
+  width: 8px;
+  height: 8px;
+}
+
+/* _md추천 */
+.materials_veiw .icon .icon_md {
+  padding: 1px 5px;
+  background-color: #ff3f65;
+  color: #ffffff;
+}
+
+/* _가성비갑 */
+.materials_veiw .icon .icon_cheap {
+  padding: 1px 5px;
+  background-color: #009933;
+  color: #ffffff;
 }

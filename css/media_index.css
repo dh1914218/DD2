@@ -316,7 +316,6 @@
 
   /* --자주하는 질문-- */
   #index_question {
-    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -421,82 +420,10 @@
     text-align: left;
   }
 
-  /* --index 대규모 수장공사 의뢰--*/
-
-  #big_bulid_consult {
-    margin-top: 20px;
-    height: 350px;
-  }
-  .big_bulid_consult {
-    width: 100%;
-    padding: 20px;
-    display: block;
-  }
-
-  .big_bulid_consult .textbox {
-    font-size: 20px;
-    letter-spacing: -1.2px;
-    text-align: center;
-  }
-  .big_bulid_consult .textbox > div:nth-child(2n) {
-    margin-top: -5px;
-  }
-  .big_bulid_consult > input.mt50 {
-    margin-top: 15px !important;
-  }
-
-  .big_bulid_consult > input {
-    width: calc(100% - 20px);
-    height: 40px;
-  }
-
-  .personal_data {
-    width: calc(100% - 20px) !important;
-    font-size: 13px;
-  }
-
-  .personal_data .agree span {
-    font-size: 13px;
-  }
-  .big_bulid_consult .personal_data .agree {
-    float: left;
-    width: 150px;
-    font-size: 13px;
-  }
-
-  .big_bulid_consult
-    .personal_data
-    .agree
-    > input[id="personal_data"]
-    + label
-    span {
-    font-size: 13px;
-    top: 1px;
-  }
-
-  .personal_data .plus {
-    float: right;
-  }
-
-  .btn_box {
-    width: calc(100% - 50px) !important;
-    margin-top: 40px;
-  }
-
-  .btn_box .btn {
-    width: 47%;
-    margin-right: 1%;
-    height: 40px;
-    line-height: 40px;
-    font-size: 13px;
-  }
-
-  .btn_box .item1 {
-    margin-right: 0;
-  }
-
   /* --푸터-- */
-  .footer {
+  /* 
+  
+  /* .footer {
     padding: 20px 0;
   }
 
@@ -519,7 +446,7 @@
     width: 100%;
     margin-top: 15px;
     text-align: left;
-  }
+  } */
 
   /* --견적드로어 탭-- */
   #m_tab_menu_draw ::-webkit-scrollbar {
@@ -798,5 +725,286 @@
   /* --마진 , 블랭크 취소-- */
   .mt30 {
     margin-top: 15px !important;
+  }
+
+  /* 반장님 모집 */
+  .builder_recruit {
+  }
+
+  #index_builder_recruit h1 {
+    font-size: 20px;
+  }
+
+  #index_builder_recruit h1 em {
+    font-size: 25px;
+  }
+
+  #index_builder_recruit br {
+    display: block !important;
+  }
+  #index_builder_recruit .btn_plus {
+    width: calc(100% - 80px);
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  #index_builder_recruit .btn_plus em {
+    display: none;
+  }
+
+  .builder_recruit .warp {
+    width: calc(100% - 20px) !important;
+    font-size: 13px;
+  }
+
+  .builder_recruit ul li {
+    width: 47%;
+    margin: 1.5%;
+    /* margin-right: 3% !important; */
+    box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  }
+
+  .builder_recruit ul li:nth-child(odd) {
+    margin-right: 0 !important;
+  }
+
+  .builder_recruit ul li:nth-child(n + 9) {
+    display: none;
+  }
+
+  .builder_recruit ul li .desc {
+    position: static;
+    display: block;
+    padding: 10px;
+  }
+
+  .builder_recruit ul li .desc .name {
+    font-size: 18px;
+  }
+
+  .builder_recruit ul li .desc .motto {
+    display: none;
+  }
+  .builder_recruit ul li img {
+    border-radius: 0px;
+    display: block;
+  }
+
+  /* --대규모수장공사문의-- */
+  .bigBuild_consult {
+    padding: 0;
+    width: 100%;
+  }
+
+  .bigBuild_consult h1 {
+    font-size: 20px;
+  }
+
+  .bigBuild_consult h1 em {
+    font-weight: 400;
+  }
+
+  .bigBuild_consult .input_box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bigBuild_consult .input_box {
+    border: 0px;
+  }
+
+  .bigBuild_consult .input_box:focus {
+    border: 0px;
+    outline: none;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  .bigBuild_consult .btn ul li.confirm_btn a {
+    color: #111111;
+    display: inline-block;
+    padding: 0px;
+  }
+
+  /* --개인정보수집동의 팝업-- */
+  /* _전체 */
+  .popUp_personal_data {
+    width: calc(100% - 20px);
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  /* _이미지 ( cancelImg) */
+  .popUp_personal_data img {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+
+  /* --상담먼저 팝업 -- */
+  /* _전체 */
+  .popUp_consultFirst {
+    width: calc(100% - 20px);
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  .popUp_consultFirst .wrap {
+    position: relative;
+  }
+
+  /* _텍스트 */
+  .popUp_consultFirst .wrap h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .popUp_consultFirst .wrap h1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .popUp_consultFirst .wrap h1 em {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .popUp_consultFirst .wrap > input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* _이미지 (cancelImg */
+  .popUp_consultFirst img {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+
+  /* --자재구경 자재메뉴-- */
+  /* _index */
+  #index_cmaterials_veiw h1 {
+    font-size: 20px;
+  }
+
+  .m_cate_detail {
+    display: block;
+  }
+
+  .m_cate_detail .wrap {
+    float: none;
+  }
+
+  .materials_view_menu .cate_icon {
+    display: none;
+  }
+
+  .m_cate_detail .wrap {
+    width: 100%;
+  }
+
+  .m_cate_detail .type {
+    width: 100% !important;
+    cursor: pointer !important;
+  }
+
+  .m_cate_detail .brand {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .m_cate_detail .color {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .m_cate_detail .color ul li {
+    padding: 0;
+    width: 20%;
+  }
+
+  .m_cate_detail {
+    padding: 30px 20px 0px 30px;
+  }
+
+  .m_cate_detail h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+  }
+
+  .m_cate_detail h1 em {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .m_cate_detail h1 img {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+
+  .materials_view_menu {
+    box-shadow: none;
+  }
+
+  #materials_view_menu {
+    display: none;
+  }
+
+  #m_cate_detail {
+    background-color: #f6f9ff;
+  }
+
+  /* _자재보기 */
+
+  /* _dsec */
+
+  #index_materials_veiw h1 {
+    font-size: 20px !important;
+  }
+  .materials_veiw .desc .tit {
+    font-size: 18px;
+  }
+  .materials_veiw .desc .brand {
+    font-size: 13px;
+  }
+
+  .materials_veiw .brand span {
+    font-size: 18px !important;
+  }
+
+  .materials_veiw .icon > span {
+    font-size: 11px;
+  }
+
+  .materials_veiw ul li {
+    width: 49%;
+    margin-right: 2%;
+    margin-top: 0px !important;
+  }
+  .materials_veiw ul li:nth-child(5n + 0) {
+    margin-right: 2%;
+  }
+
+  .materials_veiw ul li:nth-child(2n + 0) {
+    margin-right: 0px !important;
   }
 }
