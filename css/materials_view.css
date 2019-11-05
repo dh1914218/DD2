@@ -71,6 +71,7 @@
   float: left;
   color: #b6b6b6;
   padding: 5px 10px;
+  text-align: center;
 }
 
 .cate_detail .color img {
@@ -175,7 +176,7 @@
   height: 30px;
 }
 
-/* --자재-- */
+/* ----------자재--------------- */
 #index_materials_veiw {
 }
 
@@ -191,22 +192,33 @@
 
 .materials_veiw ul li {
   width: 19%;
+  height: auto;
   margin-right: 1.2%;
   float: left;
   margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.materials_veiw ul li .img {
+  overflow: hidden;
+  position: relative;
+}
+
+.materials_veiw ul li img {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.materials_veiw ul li .img:hover img {
+  transform: scale(1.2);
 }
 
 .materials_veiw ul li:nth-child(5n + 0) {
   margin-right: 0;
 }
 
-.materials_veiw .img {
-  position: relative;
-}
-
-/* 18 13 20 */
-
-.materials_veiw .desc hr {
+.materials_veiw .desc {
+  padding: 15px;
 }
 
 .materials_veiw .desc .brand {

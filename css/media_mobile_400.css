@@ -317,6 +317,10 @@
     margin-top: 30px;
   }
 
+  .materials_view ul li .desc {
+    padding: 0px !important;
+  }
+
   /* --자주하는 질문-- */
   #index_question {
     margin-top: 20px;

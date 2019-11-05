@@ -552,7 +552,7 @@ $("#popUp_personal_data .wrap img").click(function() {
   $("#popUp_personal_data").hide();
 });
 
-// --자재구경--
+// --재구경--
 //_자재종류 active
 $(".materials_view_menu .cate_detail .type ul li").click(function() {
   $(".materials_view_menu .cate_detail .type ul li").removeClass(
@@ -601,9 +601,41 @@ $(".m_cate_detail .color ul li").click(function() {
     .addClass("materials_text_active");
 });
 
-// _화살표 up & down
+// _모바일 화살표 up&down
+
+// _화살표 클릭시 슬라이드
 $(".m_cate_detail h1").click(function() {
   $(".m_wrap").slideToggle();
 });
 
-// _화살표 클릭시 슬라이드
+// _데코타일 종류별 색상 on_Off\
+var dacotileTypeIndex = 0;
+$(".dacotile .type ul li").click(function() {
+  dacotileTypeIndex = $(this).index();
+  console.log(dacotileTypeIndex);
+
+  if (dacotileTypeIndex == 1) {
+    $(".dacotile .color .dacotile_color1").show();
+    $(".dacotile .color .dacotile_color2").hide();
+    $(".dacotile .color .dacotile_color3").hide();
+  } else if (dacotileTypeIndex == 2) {
+    $(".dacotile .color .dacotile_color1").hide();
+    $(".dacotile .color .dacotile_color2").show();
+    $(".dacotile .color .dacotile_color3").hide();
+  } else if (dacotileTypeIndex == 3) {
+    $(".dacotile .color .dacotile_color1").show();
+    $(".dacotile .color .dacotile_color2").hide();
+    $(".dacotile .color .dacotile_color3").hide();
+  } else if (dacotileTypeIndex == 4) {
+    $(".dacotile .color .dacotile_color1").hide();
+    $(".dacotile .color .dacotile_color2").hide();
+    $(".dacotile .color .dacotile_color3").show();
+  } else {
+    $(".dacotile .color .dacotile_color1").show();
+    $(".dacotile .color .dacotile_color2").show();
+    $(".dacotile .color .dacotile_color3").show();
+  }
+});
+if ($(".dacotile .type ul li").hasClass("materials_active")) {
+}
+h;
