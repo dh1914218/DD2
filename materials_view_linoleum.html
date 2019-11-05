@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -130,10 +130,23 @@
     </section>
     <!-- //#모바일 네비게이션 드로어 -->
 
-    <aside id="estimate_aside">
+    <section id="m_tab_menu_draw">
+      <div>
+        <div>
+          <a href="materials_view_maru.html" >마루</a>
+        </div>
+        <div><a href="materials_view_dacotile.html">데코타일</a></div>
+        <div><a href="materials_view_linoleum.html" style="color: #3f3fff; font-weight: 500;" >장판</a></div>
+        <div><a href="materials_view_paper.html">도배</a></div>
+        <div><a href="materials_view_film.html">필름</a></div>
+      </div>
+    </section>
+    <!-- //모바일 탭메뉴 드로어 -->
+
+    <aside id="materials_aside">
       <div class="container">
         <div class="row">
-          <div class="estimate_aside"></div>
+          <div class="materials_aside"></div>
         </div>
       </div>
     </aside>
@@ -141,36 +154,36 @@
 
     <div id="materials_view_menu">
       <div class="container">
-          <div class="tab_menu materials_view_menu">
+          <div class="tab_menu materials_view_menu ">
             <div class="cate_icon">
               <div class="wrap item1">
-                <a href="materials_view_maru.html".html" class="none">
+                <a href="materials_view_maru.html">
                   <div class="icImg">
-                    <img src="img/icon_maru_on.png" alt="" />
+                    <img src="img/icon_maru_off.png" alt="" />
                   </div>
-                  <div class="icText" style="color: #3f3fff; font-weight: 500;">
+                  <div class="icText" >
                     마루
                   </div>
                 </a>
               </div>
               <!-- //마루아이콘 -->
               <div class="wrap item2">
-                <a href="materials_view_dacotile.html">
+                <a href="materials_view_dacotile.html" >
                   <div class="icImg">
                     <img src="img/icon_dacotile_off.png" alt="" />
                   </div>
-                  <div class="icText">
+                  <div class="icText" >
                     데코타일
                   </div>
                 </a>
               </div>
               <!-- //데코타일 아이콘 -->
               <div class="wrap item3">
-                <a href="materials_view_linoleum.html">
+                <a href="materials_view_linoleum.html" class="none">
                   <div class="icImg">
-                    <img src="img/icon_linoleum_off.png" alt="" />
+                    <img src="img/icon_linoleum_on.png" alt="" />
                   </div>
-                  <div class="icText">
+                  <div class="icText" style="color: #3f3fff; font-weight: 500;">
                     장판
                   </div>
                 </a>
@@ -200,18 +213,20 @@
               <!-- 아이템5 -->
             </div>
             <!-- //자재구경 카테고리 아이콘 -->
-            <div class="cate_detail maru">
+            <div class="cate_detail">
               <div class="m_blank30"></div>
               <div class="wrap type">
                 <div class="tit">
                   자재종류
                   <ul>
                     <li class="materials_active">전체종류</li>
-                    <li>원목마루</li>
-                    <li>온돌마루</li>
-                    <li>강마루</li>
-                    <li>강화마루</li>
-                    <li>헤링본</li>
+                    <li>1.8T</li>
+                    <li>2.0T</li>
+                    <li>2.2T</li>
+                    <li>2.7T</li>
+                    <li>3.2T</li>
+                    <li>4.5T</li>
+                    <li>5.0T</li>
                   </ul>
                 </div>
               </div>
@@ -223,16 +238,14 @@
                   <ul>
                     <li class="materials_active">전체보기</li>
                     <li>엘지</li>
-                    <li>이건</li>
-                    <li>동화</li>
-                    <li>구정</li>
-                    <li>한솔</li>
-                    <li>마에스트로</li>
-                    <li>하나</li>
+                    <li>현대L&C</li>
+                    <li>KCC</li>
+                    <li>재영</li>
                   </ul>
                 </div>
               </div>
               <!-- //자재브랜드 -->
+
               <div class="m_blank30"></div>
               <div class="blank20"></div>
               <div class="wrap color">
@@ -279,30 +292,18 @@
                 </div>
               </div>
               <!-- //자재색상 -->
+              
             </div>
-            <!-- //자재구경 마루디테일 -->
+            <!-- //자재구경 장판디테일 -->
           </div>
           <!-- //자재탭메뉴 -->
         </div>
       </div>
     </div>
-    <!-- //#자재탭메뉴 -->
+    <!-- //#자재 탭메뉴 -->
     
-    <section id="m_tab_menu_draw">
-        <div>
-          <div>
-            <a href="materials_view_maru.html" style="color: #3f3fff; font-weight: 500;">마루</a>
-          </div>
-          <div><a href="materials_view_dacotile.html">데코타일</a></div>
-          <div><a href="materials_view_linoleum.html" >장판</a></div>
-          <div><a href="materials_view_paper.html">도배</a></div>
-          <div><a href="materials_view_film.html">필름</a></div>
-        </div>
-      </section>
-      <!-- //모바일 탭메뉴 드로어 -->
-
     <section id="m_cate_detail">
-    <div class="m_cate_detail maru">
+    <div class="m_cate_detail ">
 
       <h1>시공전 <em> &nbsp;자재구경</em>
         <img class="m_arrow" src="/img/arrow_down_black.png" alt="" />
@@ -314,19 +315,19 @@
             자재종류
             <ul>
               <li class="materials_active">전체종류</li>
-              <li>원목마루</li>
-              <li>온돌마루</li>
-              <li>강마루</li>
-              <li>강화마루</li>
-              <li>헤링본</li>
+              <li>1.8T</li>
+              <li>2.0T</li>
+              <li>2.2T</li>
+              <li>2.7T</li>
+              <li>3.2T</li>
+              <li>4.5T</li>
+              <li>5.0T</li>
             </ul>
           </div>
         </div>
         <!-- //자재종류 -->
 
         <div class="m_blank30"></div>
-
-         
        
         <div class="wrap brand">
           <div class="tit">
@@ -334,12 +335,10 @@
             <ul>
               <li class="materials_active">전체보기</li>
               <li>엘지</li>
-              <li>이건</li>
-              <li>동화</li>
-              <li>구정</li>
-              <li>한솔</li>
-              <li>마에스트로</li>
-              <li>하나</li>
+              <li>현대L&C</li>
+              <li>대진</li>
+              <li>동신</li>
+              <li>스완</li>
             </ul>
           </div>
         </div>
@@ -399,9 +398,9 @@
           <div class="m_blank30"></div>
         
       </div>
-      <!-- //자재구경 마루 디테일 -->
+      <!-- //모바일 자재 장판 탭메뉴 -->
     </section>
-    <!-- //#자재구경 마루 디테일 -->
+    <!-- //#모바일 자재구경 장판 탭메뉴 -->
 
     <section id="materials_veiw">
         <div class="container">

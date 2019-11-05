@@ -638,4 +638,3 @@ $(".dacotile .type ul li").click(function() {
 });
 if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
-h;

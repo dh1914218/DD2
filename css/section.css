@@ -659,3 +659,11 @@ body {
   text-align: center;
   font-size: 25px;
 }
+
+/* _자재구경  */
+.customer_center h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}

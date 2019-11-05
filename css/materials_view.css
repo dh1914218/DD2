@@ -1,11 +1,19 @@
-/* --자재보기 탭메뉴-- */
+/* --자재보기-- */
 /* --active-- */
 .materials_active {
   border: 1px solid #3f3fff !important;
   color: #3f3fff !important;
 }
+
+.materials_view_menu .cate_icon {
+  text-align: center;
+}
+
 .materials_text_active {
   color: #3f3fff;
+}
+
+#materials_veiw {
 }
 
 /* --공통-- */
@@ -30,6 +38,10 @@
 
 .cate_detail .wrap ul li {
   margin-right: 10px;
+}
+
+.cate_detail .color ul li {
+  margin-right: 0px !important;
 }
 
 /* _종류 */
@@ -60,7 +72,7 @@
   padding: 5px 10px;
 }
 
-/* _색상 */
+/* _상 */
 .cate_detail .color {
   width: 100%;
   cursor: pointer;
@@ -90,6 +102,7 @@
 }
 
 /* -----------------모바일 자재구경 탭메뉴-------------------- */
+
 /* --active-- */
 .m_cate_detail {
   display: none;
@@ -120,6 +133,10 @@
   margin-right: 10px;
 }
 
+.m_cate_detail .color ul li {
+  margin-right: 5%;
+  /* margin-right: 0 !important; */
+}
 /* _종류 */
 .m_cate_detail .type {
   width: 49%;
@@ -206,7 +223,7 @@
 
 .materials_veiw ul li img {
   display: block;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .materials_veiw ul li .img:hover img {
