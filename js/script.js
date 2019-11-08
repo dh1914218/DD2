@@ -293,6 +293,18 @@ $(".bananda ul li").click(function() {
   }
 });
 
+//배란다확장여부 on_off (index값은 전역변수 사용)
+$(".place  ul li").click(function() {
+  selctorPlace = $(this).index();
+  if (selctorPlace == 0) {
+    $(".estimate_selector_wrap.maru .bananda").show();
+    $(".estimate_selector_wrap.dacotile .bananda").show();
+  } else {
+    $(".estimate_selector_wrap.maru .bananda").hide();
+    $(".estimate_selector_wrap.dacotile .bananda").hide();
+  }
+});
+
 // 빈집 , 공실여부
 var selctorEmptyHouse = 0;
 $(".empty_house ul li").click(function() {
@@ -436,62 +448,48 @@ $(".toilet_area .form >ul >li").click(function() {
 
 // m_estimate_selector_result;
 // 모바일 견적내기
-$(".m_estimate_result").click(function() {
-  console.log(1111);
-  $(".m_estimate_selector_result").show();
-  $(".m_estimate_selector_box").slideUp();
-  $(".estimate_selector_wrap .m_arrow").show();
-});
+// $(".m_estimate_result").click(function() {
+//   console.log(1111);
+//   $(".m_estimate_selector_result").show();
+//   $(".m_estimate_selector_box").slideUp();
+//   $(".estimate_selector_wrap .m_arrow").show();
+// });
 
-$(".estimate_selector h1").click(function() {
-  $(".m_estimate_selector_box").slideDown();
-  $(".estimate_selector_wrap .m_arrow").hide();
-  $(".m_estimate_selector_result").hide();
-});
+// $(".estimate_selector h1").click(function() {
+//   $(".m_estimate_selector_box").slideDown();
+//   $(".estimate_selector_wrap .m_arrow").hide();
+//   $(".m_estimate_selector_result").hide();
+// });
 
-$(".m_estimate_selector_result .warp .desc .btn").click(function() {
-  $("#m_estimate_consult_request").animate({
-    marginBottom: "0%"
-  });
-  $(".m_backgorund_black").show();
+// $(".m_estimate_selector_result .warp .desc .btn").click(function() {
+//   $("#m_estimate_consult_request").animate({
+//     marginBottom: "0%"
+//   });
+//   $(".m_backgorund_black").show();
 
-  console.log(1);
-});
+//   console.log(1);
+// });
 
 // 모바일 검은화면 클릭시
-$(".m_backgorund_black").click(function() {
-  $(".m_backgorund_black").hide();
-  $("#m_estimate_consult_request").animate({
-    marginBottom: "-10000%"
-  });
-});
+// $(".m_backgorund_black").click(function() {
+//   $(".m_backgorund_black").hide();
+//   $("#m_estimate_consult_request").animate({
+//     marginBottom: "-10000%"
+//   });
+// });
 
 // 레이어팝업에서 견적상담신청완료 후
-$("#m_estimate_consult_request .btn").click(function() {
-  $("#m_estimate_apply_sucess").show();
+// $("#m_estimate_consult_request .btn").click(function() {
+//   $("#m_estimate_apply_sucess").show();
 
-  $("#m_estimate_consult_request").animate({
-    marginBottom: "-10000%"
-  });
-});
-//
-$("#m_estimate_apply_sucess").click(function() {
-  $(location).attr("href", "index.html");
-});
-
-// 실제핸드폰으로 확인해보기
-function windowSize() {
-  var windowWidth = $(window).width();
-  if (windowWidth > 600) {
-    //창 가로 크기가 500 미만일 경우
-    $(".m_estimate_selector_result").hide();
-    // $(".m_estimate_selector_result").hide();
-  } else {
-    $(".m_estimate_selector_result").show();
-  }
-}
-
-windowSize();
+//   $("#m_estimate_consult_request").animate({
+//     marginBottom: "-10000%"
+//   });
+// });
+// //
+// $("#m_estimate_apply_sucess").click(function() {
+//   $(location).attr("href", "index.html");
+// });
 
 //시공후기 셀렉터 리스트 on&off
 $(".build_review_selector >.wrap > .item").click(function() {
@@ -536,10 +534,9 @@ $("#popUp_consultFirst .confirm_btn").click(function() {
   $("#popUp_consultFirst").hide();
 });
 
-// _개인정보수집동의 더보기 클릭시
+// _개인정보보수집동의 더보기 클릭시
 $("#popUp_consultFirst .wrap span").click(function() {
   $("#popUp_personal_data").show();
-  console.log(111);
 });
 
 // _클래스추가 개인정보처리방침
@@ -547,7 +544,7 @@ $(".personalData").click(function() {
   $("#popUp_personal_data").show();
 });
 
-// 취소버튼
+// __취소버튼
 $("#popUp_personal_data .wrap img").click(function() {
   $("#popUp_personal_data").hide();
 });
@@ -638,3 +635,18 @@ $(".dacotile .type ul li").click(function() {
 });
 if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
+
+// 모바일 견적 결과 btn 클릭시
+$(".m_estimate_btn").click(function() {
+  $(".estimate_result").show();
+  $(".m_estimate_selector_box").slideUp();
+  $(".estimate.mixsale").show();
+  $(".m_arrow").show();
+});
+
+$(".estimate_selector h1").click(function() {
+  $(".estimate_result").hide();
+  $(".m_estimate_selector_box").slideDown();
+  $(".m_arrow").hide();
+  $(".estimate.mixsale").hide();
+});

@@ -13,6 +13,10 @@ body {
   z-index: 80;
 }
 
+.estimate_result {
+  min-height: 100%;
+}
+
 /* --추천시공사례-- */
 .recommend_review {
   overflow: hidden;
@@ -73,12 +77,21 @@ body {
 }
 
 /* --함께하면 할인이 가득가득-- */
-.mixsale {
+#estimate_selector {
+  z-index: 100;
+}
+
+.m_estimate_selector_box .area_list {
+  color: red !important;
+  /* z-index: ; */
+}
+
+#index_mixsale {
+  z-index: -1 !important;
 }
 
 .mixsale .wrap {
   display: inline-block;
-  /* margin-right: 15px; */
   margin-right: 1.4%;
   width: 23.72%;
 }
@@ -263,40 +276,10 @@ body {
   width: 380px;
   height: 250px;
 }
-/* : item을 감싸고 있는 애들한테 %으로 준다. 그 후 이미지를 감싸고 있는
-애들한테는 절대값을 준뒤 overflow : hidden을 주어, scale시 넘치지 
-않게 하면서도 반응형시 100%로 채울 수 있게 한다. */
 
 .build_review .wrap .img:hover img {
   transform: scale(1.2);
 }
-
-/* --시공전 자재구경-- */
-/* .index_materials_view h1 {
-  text-align: center;
-  font-weight: 300;
-  font-size: 25px;
-}
-
-.index_materials_view h1 > em {
-  font-weight: 500;
-}
-
-.index_materials_view .wrap {
-  display: inline-block;
-  width: 19%;
-  margin-right: 1%;
-}
-.materials_view .item5 {
-  margin-right: 0;
-}
-.materials_view .wrap.item10 {
-  margin-right: 0;
-}
-
-.materials_view img {
-  display: block;
-} */
 
 /* --자주묻는질문-- */
 .question {
@@ -483,7 +466,7 @@ body {
   font-size: 20px;
 }
 
-/* --상담먼저 팝업-- */
+/* --담먼저 팝업-- */
 .popUp_consultFirst h1 br {
   display: none;
 }
@@ -584,7 +567,7 @@ body {
   cursor: pointer;
 }
 
-/* --개인정보수징동의-- */
+/* --개인정보수집동의-- */
 #popUp_personal_data {
   display: none;
 }
@@ -667,3 +650,5 @@ body {
   font-weight: 300;
   margin-bottom: 40px;
 }
+
+/* --예상견적확인-- */

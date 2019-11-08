@@ -652,7 +652,7 @@
     display: none;
   } */
 
-  /* 모바일 견적결과 페이지 */
+  /* 모바일 결과 페이지 */
   .m_estimate_selector_result .warp > div {
     display: inline-block;
   }
@@ -673,9 +673,16 @@
   }
 
   .m_estimate_selector_result .warp .desc .tit {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
   }
+  .m_estimate_selector_result .warp .desc .sub_tit {
+    font-size: 13px;
+    color: #9b9b9b;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
   .m_estimate_selector_result .warp .desc .price {
     font-size: 20px;
     font-weight: 500;
