@@ -18,61 +18,59 @@ body {
 }
 
 /* --추천시공사례-- */
-.recommend_review {
+.index_recommend_review {
   overflow: hidden;
 }
 
-.recommend_review h1 {
+.index_recommend_review h1 {
   text-align: center;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.recommend_review h1 em {
+.index_recommend_review h1 em {
   font-weight: 500;
 }
 
-.recommend_review .wrap {
-}
-
-.recommend_review .wrap .img img {
+.index_recommend_review .wrap .img img {
   width: 380px;
   height: 253px;
   transition: all 0.3s ease-in-out;
 }
 
-.recommend_review .wrap .desc {
+.index_recommend_review .wrap .desc {
   padding: 15px;
 }
 
-.recommend_review .wrap .desc .tag {
-  font-size: 13px;
+.index_recommend_review .wrap .desc .tag {
+  font-size: 14px;
   font-weight: 500;
+  color: #9b9b9b;
 }
 
-.recommend_review .wrap .desc .tit {
+.index_recommend_review .wrap .desc .tit {
   font-size: 18px;
 }
 
-.recommend_review .wrap .desc .price {
+.index_recommend_review .wrap .desc .price {
   font-size: 20px;
   font-weight: 500;
 }
 
-.recommend_review .wrap .desc .price span {
+.index_recommend_review .wrap .desc .price span {
   font-weight: 300;
 }
-.recommend_review .img {
+.index_recommend_review .img {
   overflow: hidden;
   width: 380px;
   height: 253px;
 }
 
-.recommend_review .wrap .img {
+.index_recommend_review .wrap .img {
   overflow: hidden;
 }
 
-.recommend_review .wrap .img:hover img {
+.index_recommend_review .wrap .img:hover img {
   transform: scale(1.2);
 }
 
@@ -107,7 +105,7 @@ body {
 .index_mixsale h1 {
   text-align: center !important;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .index_mixsale h1 em {
@@ -221,7 +219,7 @@ body {
 .index_build_review h1 {
   text-align: center;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .index_build_review h1 > em {
@@ -282,8 +280,20 @@ body {
 }
 
 /* --자주묻는질문-- */
+#index_question h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#index_question h1 em {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .question {
-  padding: 50px;
+  /* padding: 50px; */
   margin: 0 auto;
 }
 
@@ -379,7 +389,7 @@ body {
 .user_review h1 {
   text-align: center;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .user_review h1 em {
@@ -418,7 +428,7 @@ body {
 .index_interior_tip h1 {
   text-align: center;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .index_interior_tip h1 em {
@@ -466,7 +476,7 @@ body {
   font-size: 20px;
 }
 
-/* --담먼저 팝업-- */
+/* --상담먼저 팝업-- */
 .popUp_consultFirst h1 br {
   display: none;
 }

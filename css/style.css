@@ -5,7 +5,7 @@
 }
 
 #header {
-  height: 60px;
+  height: 80px;
   background-color: #ffffff;
 }
 
@@ -30,7 +30,7 @@
   background-color: #f6f9ff;
 }
 #bigBuild_consult {
-  background-color: #3f3fff;
+  background: url(/img/bigbuild_consult.png) center center;
 }
 #estimate_aside {
   height: 350px;
@@ -43,15 +43,13 @@
 }
 
 #builder_recruit {
-  background-color: #3f3fff;
+  /* background-color: #3f3fff; */
+  background: url(/img/bigbuild_consult.png) center center;
+  height: 350px;
 }
 
 #estimate_selector {
   margin-top: -35px;
-}
-
-#footer {
-  background-color: #f6f9ff;
 }
 
 /* --컨테이너-- */

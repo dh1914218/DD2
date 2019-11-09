@@ -1,6 +1,15 @@
 .build_review_selector {
 }
 
+#index_build_review h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+#index_build_review h1 em {
+  font-weight: 500;
+}
+
 .build_review_selector .wrap {
   width: 560px;
   height: 50px;
@@ -74,4 +83,50 @@
 
 .build_review h1 {
   text-align: center;
+}
+
+.build_review ul li {
+  width: 32%;
+  margin-right: 1%;
+  float: left;
+}
+
+.build_review ul li:nth-child(3n + 0) {
+  margin-right: 0;
+}
+
+.build_review ul li .img {
+  overflow: hidden;
+}
+.build_review ul li .img:hover img {
+  transform: scale(1.2);
+}
+
+.build_review ul li .img img {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.build_review ul li .desc {
+  padding: 15px;
+}
+
+.build_review ul li .desc .tag {
+  font-size: 14px;
+  color: #9b9b9b;
+  margin-bottom: -5px;
+}
+
+.build_review ul li .desc .tit {
+  font-size: 18px;
+}
+
+.build_review ul li .desc .price {
+  font-size: 20px;
+  font-weight: 500;
+}
+.build_review ul li .desc .price span {
+  font-weight: 300;
 }

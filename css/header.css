@@ -26,11 +26,15 @@
   float: left;
 }
 .header > .header_log > a {
-  margin-right: 30px;
   color: #3f3fff;
   display: inline-block;
-  padding: 17px 16px 16px 16px;
-  font-size: 15px;
+  padding: 27px 30px 20px 0px;
+  /* font-size: 15px; */
+}
+
+/* _로고이미지 */
+.header > .header_log > a img {
+  width: 100px;
 }
 
 /* 헤더 왼쪽 네비 */
@@ -48,13 +52,15 @@
 
 .header_nav_left > ul > li > a {
   display: inline-block;
-  padding: 18px 16px 16px 16px;
+  padding: 27px 16px 20px 16px;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header_nav_left > ul > li > a:hover {
-  color: #bdbdbd;
+  color: #111111;
+  font-weight: 700;
 }
 
 /* --헤더 오른쪽 네비 */
@@ -64,10 +70,10 @@
 
 .header_nav_right > div > a {
   display: inline-block;
-  padding: 18px 16px 16px 16px;
+  padding: 27px 0px 20px 16px;
   text-align: center;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* --배너-- */

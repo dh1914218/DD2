@@ -1,34 +1,43 @@
+#footer {
+  background-color: #f6f9ff;
+  /* background-color: red; */
+  /* height: 100px; */
+}
+
 .footer {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
-.footer .col1 {
-  width: 30%;
-}
-.footer .col2 {
-  width: 30%;
-}
-.footer .col4 {
-  width: 39%;
+.footer > ul {
+  overflow: hidden;
 }
 
-.footer > .col {
-  text-align: left;
-  display: inline-block;
+.footer > ul > li {
+  float: left;
+  padding-right: 10%;
 }
 
-.footer .col .tit {
+.footer > ul > li .tit {
   font-size: 20px;
-  font-weight: 500;
 }
 
-.footer .col4 {
-  color: #9b9b9b;
-  font-size: 13px;
-  text-align: right;
-}
-
-.footer .col1 .num {
+.footer > ul > li .number {
   font-size: 30px;
   font-weight: 700;
+}
+
+.footer > ul > li.col2 a {
+  display: inline-block;
+  padding: 8px 8px 8px 0;
+}
+
+.footer > ul > li.col3 {
+  float: right;
+  font-size: 13px;
+  color: #9b9b9b;
+  padding-right: 0;
+}
+
+.footer > ul > li.col3 > ul li {
+  float: left;
 }

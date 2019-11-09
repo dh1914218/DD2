@@ -3,6 +3,22 @@
   display: none;
 }
 
+/* --aside-- */
+#estimate_aside {
+}
+
+#estimate_aside .wrap {
+  /* text-align: center; */
+  color: #ffffff;
+  /* font-weight: 40px; */
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#estimate_aside .wrap > div {
+}
+
 /* span */
 .estimate_selector_wrap span {
   color: red;
@@ -499,9 +515,9 @@
 }
 
 .estimate_result h1 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
 }
 
 .estimate_result h1 em {
@@ -607,4 +623,9 @@
   font-weight: 400;
   font-size: 18px;
   transition: all 0.5s ease-in-out;
+}
+
+/* --함께하면 할인이 가득가득 텍스트 */
+.estimate.mixsale h1 {
+  text-align-last: left;
 }

@@ -274,24 +274,15 @@
   }
 
   /* --index 따끈따끈 시공사례 --*/
-  .index_build_review h1 {
+  #index_build_review h1 {
     font-size: 20px;
     margin-top: 20px;
   }
-  .build_review .wrap {
+  .build_review ul li {
     width: 100%;
   }
-  .build_review .wrap .desc {
-    padding: 8px;
-  }
 
-  .build_review .wrap.mt20 {
-    margin-top: 0 !important;
-  }
-
-  .build_review > .wrap.item4,
-  .build_review > .wrap.item5,
-  .build_review > .wrap.item6 {
+  .build_review ul li:nth-child(odd) {
     display: none;
   }
 
@@ -419,32 +410,19 @@
   }
 
   /* --푸터-- */
-  /* 
-  
-  /* .footer {
-    padding: 20px 0;
+  .footer > ul > li {
+    width: 50%;
+    /* text-align: center; */
   }
 
-  .footer > .col {
-    display: block;
-  }
-  .footer > .col .desc.mt30 {
-    margin-top: 15px;
+  .footer > ul > li .number {
+    font-size: 28px;
   }
 
-  .footer > .col1 {
+  .footer > ul > li.col3 {
+    float: none;
     width: 100%;
   }
-  .footer > .col2 {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .footer .col4 {
-    width: 100%;
-    margin-top: 15px;
-    text-align: left;
-  } */
 
   /* --견적드로어 탭-- */
   #m_tab_menu_draw ::-webkit-scrollbar {
@@ -799,9 +777,6 @@
     display: none;
   }
 
-  .footer {
-    display: none;
-  }
   /* --마진 , 블랭크 취소-- */
   .mt30 {
     margin-top: 15px !important;

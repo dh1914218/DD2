@@ -75,6 +75,7 @@
   text-align: center;
   cursor: pointer;
 }
+
 .bigBuild_consult .btn ul li {
   transition: all 0.5s ease-in-out;
 }
@@ -116,4 +117,18 @@
 
 .bigBuild_consult .btn ul li.btn2:hover a {
   color: #111111;
+}
+
+.test {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn2 {
+  width: 100%;
+  background: #3f3fff;
+}
+
+.bigBuild_consult .btn ul li.confirm_btn2 a {
+  color: #ffffff;
 }

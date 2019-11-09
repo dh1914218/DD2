@@ -577,17 +577,17 @@ button {
 }
 
 .clearfix {
-  /* *zoom: 1; */
+  *zoom: 1;
 }
 
 /* 드레그방지 */
-div {
+/* div {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-}
+} */
 
 /* 박스사이징 */
 html {
