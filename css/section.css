@@ -87,6 +87,21 @@ body {
 #index_mixsale {
   z-index: -1 !important;
 }
+.index_mixsale h1 {
+  text-align: center !important;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.index_mixsale h1 em {
+  font-weight: 500;
+}
+
+.index_mixsale h1 > span {
+  float: right;
+  font-size: 16px;
+  padding-top: 13px;
+}
 
 .mixsale .wrap {
   display: inline-block;
@@ -102,15 +117,6 @@ body {
   margin-right: 0;
 }
 
-.index_mixsale h1 {
-  text-align: center !important;
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.index_mixsale h1 em {
-  font-weight: 500;
-}
 .mixsale .img {
   /* width: 23.72%; */
 }
@@ -126,6 +132,11 @@ body {
 .mixsale .desc {
   padding: 15px;
 }
+.mixsale .desc .area {
+  font-size: 13px;
+  font-weight: 500;
+}
+
 .mixsale .desc .tit {
   font-size: 18px;
 }

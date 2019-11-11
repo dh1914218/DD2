@@ -11,9 +11,15 @@
   /* text-align: center; */
   color: #ffffff;
   /* font-weight: 40px; */
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center;
-  font-size: 40px;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+#estimate_aside .wrap > div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #estimate_aside .wrap > div {

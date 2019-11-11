@@ -207,6 +207,12 @@
   font-weight: 500;
 }
 
+#index_materials_veiw h1 > span {
+  float: right;
+  font-size: 16px;
+  padding-top: 13px;
+}
+
 .materials_veiw ul li {
   width: 19%;
   height: auto;
