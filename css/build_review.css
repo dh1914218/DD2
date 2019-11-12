@@ -1,21 +1,19 @@
-.build_review_selector {
-}
-
-#index_build_review h1 {
+/* --index-- */
+.build_review.index h1 {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
 }
-#index_build_review h1 em {
+.build_review.index h1 em {
   font-weight: 500;
 }
-
-#index_build_review h1 > span {
+.build_review.index h1 > span {
   float: right;
   font-size: 16px;
   padding-top: 13px;
 }
 
+/* --셀렉터-- */
 .build_review_selector .wrap {
   width: 560px;
   height: 50px;
@@ -67,8 +65,28 @@
   background-color: #3f3ff3;
 }
 
-/* _태그 */
-.build_review_selector_tag .wrap .item {
+/* _셀렉터태그 */
+.build_review_selector_tag .wrap .item_place {
+  background-color: #ebd6ff;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.build_review_selector_tag .wrap .item_working {
+  background-color: #ebd6ff;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.build_review_selector_tag .wrap .item_area {
   background-color: #ebd6ff;
   display: inline-block;
   padding: 5px 15px;
@@ -87,10 +105,7 @@
   height: 20px;
 }
 
-.build_review h1 {
-  text-align: center;
-}
-
+/* --시공후기 form-- */
 .build_review ul li {
   width: 32%;
   margin-right: 2%;
@@ -133,6 +148,6 @@
   font-size: 20px;
   font-weight: 500;
 }
-.build_review ul li .desc .price span {
+.build_review ul li .desc .price .won {
   font-weight: 300;
 }

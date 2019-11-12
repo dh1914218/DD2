@@ -28,13 +28,13 @@
 .header > .header_log > a {
   color: #3f3fff;
   display: inline-block;
-  padding: 27px 30px 20px 0px;
+  padding: 30px 30px 20px 0px;
   /* font-size: 15px; */
 }
 
 /* _로고이미지 */
 .header > .header_log > a img {
-  width: 100px;
+  width: 80px;
 }
 
 /* 헤더 왼쪽 네비 */

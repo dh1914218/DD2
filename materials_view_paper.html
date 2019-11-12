@@ -26,14 +26,81 @@
     <script src="js/wow.min.js"></script>
   </head>
   <body>
+    
+    <div id="popUp_consultFirst">
+          <div class="backgorund_black"></div>
+          <!-- 배경화면 -->
+          <div class="popUp_consultFirst">
+            <div class="wrap">
+              <h2>결정이 어려우신가요??</h2>
+              <h1><em>바로견적</em>에서 최대한 <br> 빨리 연락드리겠습니다 : )</h1>
+              <img src="img/close.svg" alt="">
+              <div class="m_blank30"></div>
+              <div class="blank50"></div>
+              <input type="text" placeholder="연락처" class="phone">
+              <div class="m_blank20"></div>
+              <div class="blank20"></div>
+              <div class="agree">
+                <input type="checkBox" id="personal_data">
+                <label for="personal_data">
+                  개인정보수집동의
+                </label>
+                <span>더보기</span>
+              </div>
+              <!-- //개인정보동의 -->
+              <div class="m_blank20"></div>
+              <div class="blank20"></div>
+              <div class="confirm_btn">
+                신청완료
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- //상담먼저 -->
+
+    <div id="popUp_personal_data">
+            <div class="backgorund_black"></div>
+            <!-- 배경화면 -->
+            <div class="popUp_personal_data">
+              <div class="wrap">
+                <h1>개인정보 처리방침</h1>
+                <img src="img/close.svg" alt="">
+                <div class="m_blank40"></div>
+                <div class="blank50"></div>
+                <div class="desc">
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                    개인정보처림방침개인정보처림방침 개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침개인정보처림방침
+                </div>
+    
+              </div>
+            </div>
+    </div>
+     <!-- //개인정보처리방침 -->
+
     <div id="header_sub">
       <div class="container">
         <div class="row">
           <div class="header_sub">
             <ul class="clearfix">
-              <li><a href="#">반장님모집</a></li>
-              <li><a href="#">시공안내문 다운로드</a></li>
-              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="builder_recruit.html">반장님모집</a></li>
+              <li><a href="#a">시공안내문 다운로드</a></li>
+              <li class="personalData"><a href="#a">개인정보 처리방침</a></li>
             </ul>
           </div>
           <!-- //헤더 서브 -->
@@ -54,24 +121,26 @@
             <!-- //모바일 햄버거메뉴 -->
 
             <h1 class="header_log">
-              <a href="index.html">
-                로고부분
-              </a>
+                <a href="index.html">
+                  <img src="/img/logo.png" alt="">
+                </a>
             </h1>
             <!-- //헤더로고 -->
+
+
             <div class="header_nav_left">
               <ul class="clearfix">
-                <li><a href="#">바로견적</a></li>
-                <li><a href="#">시공사례</a></li>
-                <li><a href="#">자재구경</a></li>
-                <li><a href="#">상담먼저</a></li>
-                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="estimate_dacotile.html">바로견적</a></li>
+                <li><a href="build_review.html">시공사례</a></li>
+                <li><a href="materials_view_maru.html">자재구경</a></li>
+                <li class="consultFirst"><a href="#a">상담먼저</a></li>
+                <li><a href="faq.html">자주묻는질문</a></li>
               </ul>
             </div>
             <!-- //헤더 왼쪽 네비 -->
             <div class="header_nav_right">
               <div>
-                <a href="#">대규모 시공문의</a>
+                <a href="big_build_consult.html">대규모 시공문의</a>
               </div>
             </div>
             <!-- //헤더 오른쪽 네비 -->
@@ -144,11 +213,16 @@
     <!-- //모바일 탭메뉴 드로어 -->
 
     <aside id="materials_aside">
-      <div class="container">
-        <div class="row">
-          <div class="materials_aside"></div>
+        <div class="container">
+          <div class="row">
+            <div class="materials_aside">
+              <div class="wrap">
+                <div>시공전 자재구경 하고 가세요</div>
+                <div>바로견적에서는 약 12개의 브랜드와 27개의 색상 21개의 종류의 자재를 볼 수 있습니다</div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </aside>
     <!-- //#배경 aside -->
 
@@ -213,7 +287,7 @@
               <!-- 아이템5 -->
             </div>
             <!-- //자재구경 카테고리 아이콘 -->
-            <div class="cate_detail">
+            <div class="cate_detail paper">
               <div class="m_blank30"></div>
               <div class="wrap type">
                 <div class="tit">
@@ -223,7 +297,7 @@
                     <li>광폭합지</li>
                     <li>일반실크</li>
                     <li>고급실크</li>
-                    <li>방염벽지</li>
+                    <li class=" resist">방염벽지</li>
                   </ul>
                 </div>
               </div>
@@ -236,9 +310,6 @@
                     <li class="materials_active">전체보기</li>
                     <li>엘지</li>
                     <li>신한</li>
-                    <li>디아이디</li>
-                    <li>서울</li>
-                    <li>개나리</li>
                     <li>에프티</li>
                   </ul>
                 </div>
@@ -297,7 +368,6 @@
           </div>
           <!-- //자재탭메뉴 -->
         </div>
-      </div>
     </div>
     <!-- //#자재 탭메뉴 -->
     
@@ -392,7 +462,7 @@
         <!-- //자재색상 -->
       </div>
       <!-- //모바일 wrap  -->
-          <div class="m_blank30"></div>
+      <div class="m_blank30"></div>
         
       </div>
       <!-- //모바일 자재 장판 탭메뉴 -->
@@ -407,7 +477,7 @@
               <div class="blank30"></div>
               <ul class="clearfix">
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx7.jpg" alt="">
                       <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -422,7 +492,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx6.jpg" alt="">
                       <!-- <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -438,7 +508,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx2.jpg" alt="">
                       <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -454,7 +524,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx1.jpg" alt="">
                       <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -470,7 +540,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx3.jpg" alt="">
                       <!-- <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -486,7 +556,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx5.jpg" alt="">
                       <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -502,7 +572,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx3.jpg" alt="">
                       <!-- <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -518,7 +588,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx2.jpg" alt="">
                       <!-- <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -534,7 +604,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx5.jpg" alt="">
                       <!-- <div class="icon">
                           <span class="icon_md">MD추천</span>
@@ -550,7 +620,7 @@
                  </li>
                 <!-- 아이템 -->
                <li>
-                  <a href="#">
+                  <a href="#a">
                     <div class="img"><img src="img/materialsEx1.jpg" alt="">
                       <div class="icon">
                           <!-- <span class="icon_md">MD추천</span> -->
@@ -566,7 +636,7 @@
                  </li>
                 <!-- 아이템 -->
                 <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx7.jpg" alt="">
                         <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -581,7 +651,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx6.jpg" alt="">
                         <!-- <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -597,7 +667,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx2.jpg" alt="">
                         <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -613,7 +683,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx1.jpg" alt="">
                         <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -629,7 +699,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx3.jpg" alt="">
                         <!-- <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -645,7 +715,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx5.jpg" alt="">
                         <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -661,7 +731,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx3.jpg" alt="">
                         <!-- <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -677,7 +747,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx2.jpg" alt="">
                         <!-- <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -693,7 +763,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx5.jpg" alt="">
                         <!-- <div class="icon">
                             <span class="icon_md">MD추천</span>
@@ -709,7 +779,7 @@
                    </li>
                   <!-- 아이템 -->
                  <li>
-                    <a href="#">
+                    <a href="#a">
                       <div class="img"><img src="img/materialsEx1.jpg" alt="">
                         <div class="icon">
                             <!-- <span class="icon_md">MD추천</span> -->
@@ -725,7 +795,7 @@
                    </li>
                   <!-- 아이템 -->
                   <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx7.jpg" alt="">
                           <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -740,7 +810,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx6.jpg" alt="">
                           <!-- <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -756,7 +826,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx2.jpg" alt="">
                           <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -772,7 +842,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx1.jpg" alt="">
                           <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -788,7 +858,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx3.jpg" alt="">
                           <!-- <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -804,7 +874,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx5.jpg" alt="">
                           <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -820,7 +890,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx3.jpg" alt="">
                           <!-- <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -836,7 +906,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx2.jpg" alt="">
                           <!-- <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -852,7 +922,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx5.jpg" alt="">
                           <!-- <div class="icon">
                               <span class="icon_md">MD추천</span>
@@ -868,7 +938,7 @@
                      </li>
                     <!-- 아이템 -->
                    <li>
-                      <a href="#">
+                      <a href="#a">
                         <div class="img"><img src="img/materialsEx1.jpg" alt="">
                           <div class="icon">
                               <!-- <span class="icon_md">MD추천</span> -->
@@ -887,8 +957,66 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- //#시공전 자재구경 -->
+    </section>
+    <!-- //#시공전 자재구경 -->
+
+  <section id="resist_div">
+      <div class="container">
+        <div class="row">
+          <div class="resist_div">
+            <h1>해당상품은 전화상담을 통해 진행됩니다 ^o^</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="blank50"></div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer">
+            <ul class="clearfix">
+              <li class="col1">
+                <div class="tit">고객센터</div>
+                <div class="blank10"></div>
+                <div class="number">1588-1588</div>
+                <div class="desc">
+                  <div>평일 10:00 ~ 18:00</div> 
+                  <div>점심시간 12:00 ~ 13:00</div> 
+                  <div>토요일 공휴일 휴무</div>
+                </div>
+              </li>
+              <!-- col1 -->
+              <li class="col2">
+                <div class="tit">이용안내</div>
+                <div class="blank10"></div>
+                <ul>
+                  <li><a href="faq.html">자주묻는질문</a></li>
+                  <li class="personalData"><a href="#a">개인정보취급방침</a></li>
+                  <li><a href="#a">시공안내문다운로드</a></li>
+                </ul>
+              </li>
+              <!-- col2 -->
+              <div class="m_blank30"></div>
+              <li class="col3">
+                <!-- <ul class="clearfix">
+                  <li><a href="#"><img src="" alt="블로그"></a></li>
+                  <li><a href="#"><img src="" alt="페이스북"></a></li>
+                  <li><a href="#"><img src="" alt="인스타그램"></a></li>
+                </ul> -->
+                <div class="blank100"></div>
+                <div class="blank20"></div>
+                <div>서울시 은평구 구산동 19-2 1층 좌서울시 은평구 구산동 19-2 1층 좌</div>
+                <div>사업자 등록번호 123-121248-1210 대표명 홍길동사업자 등록번호 123-121248-1210 대표명 홍길동</div>
+              </li>
+              <!-- col3 -->
+            </ul>
+          </div>
+          <!-- //푸터 -->
+        </div>
+      </div>
+    </div>
+    <!-- //푸터 -->
 
 
 

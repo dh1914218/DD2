@@ -1,4 +1,21 @@
 /* --자재보기-- */
+
+/* --aside-- */
+#materials_aside .wrap {
+  /* text-align: center; */
+  color: #ffffff;
+  /* font-weight: 40px; */
+  padding-top: 50px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+#materials_aside .wrap > div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 /* --active-- */
 .materials_active {
   border: 1px solid #3f3fff !important;
@@ -292,4 +309,13 @@
   padding: 1px 5px;
   background-color: #009933;
   color: #ffffff;
+}
+
+/* --방염벽지-- */
+.resist_div h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 300;
+  color: #9b9b9b;
 }

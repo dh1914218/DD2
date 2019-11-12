@@ -414,6 +414,8 @@ var selctorSinkInnerText = 0;
 $(".sink_area .form >ul >li").click(function() {
   selctorSinkInnerText = $(this).text();
   $(".sink_area .form .cover").text(selctorSinkInnerText);
+  $(".sink_area .form").css("border", "1px solid #111111");
+  $(".sink_area .form").css("color", "#111111");
 });
 
 // 화장실 시공면적구분
@@ -429,6 +431,8 @@ var selctorToiletInnerText = 0;
 $(".toilet_area .form >ul >li").click(function() {
   selctorToiletInnerText = $(this).text();
   $(".toilet_area .form .cover").text(selctorToiletInnerText);
+  $(".toilet_area .form").css("border", "1px solid #111111");
+  $(".toilet_area .form").css("color", "#111111");
 });
 
 // 믹스상품 면적구분 clcik 후 list on/off
@@ -491,7 +495,7 @@ $(".toilet_area .form >ul >li").click(function() {
 //   $(location).attr("href", "index.html");
 // });
 
-//시공후기 셀렉터 리스트 on&off
+//시공사례 셀렉터 리스트 on&off
 $(".build_review_selector >.wrap > .item").click(function() {
   $(this)
     .find(".list")
@@ -504,18 +508,58 @@ $(".build_review_selector >.wrap > .item").click(function() {
 });
 
 // 시공후기 셀렉터 리스트 클릭시 태그 발생
-$(".build_review_selector_list > div").click(function() {
-  let innerText = $(this).text();
-  let innerHtml = `<div class="item">${innerText}</div>`;
-  let innerImg = `<img src="img/error.png"/>`;
+// $(".build_review_selector_list > div").click(function() {
+//   let innerText = $(this).text();
+//   let innerHtml = `<div class="item">${innerText}</div>`;
+//   let innerImg = `<img src="img/error.png"/>`;
 
-  $(".build_review_selector_tag >.wrap ").append(innerHtml);
-  $(".build_review_selector_tag >.wrap >.item").append(innerImg);
+//   $(".build_review_selector_tag >.wrap ").append(innerHtml);
+//   $(".build_review_selector_tag >.wrap >.item").append(innerImg);
 
-  // 태그클릭시 삭제
-  $(".build_review_selector_tag .wrap div").click(function() {
-    $(this).hide();
-  });
+//   $(".build_review_selector_tag .wrap div").click(function() {
+//     $(this).hide();
+//   });
+// });
+
+// --test--
+
+let tagPlaceText = 0;
+$(".build_review_selector_list.place > div").click(function() {
+  tagPlaceText = $(this).text();
+
+  let tagInnerText = $(this).text();
+  let tagInnerHtml = `<div class="item_place">${tagInnerText}</div>`;
+
+  $(".build_review_selector_tag > .wrap > div.item_place").remove();
+  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+
+  $(".build_review_selector .place .cover").text(tagPlaceText);
+});
+
+let tagWorkingText = 0;
+$(".build_review_selector_list.working > div").click(function() {
+  tagWorkingText = $(this).text();
+
+  let tagInnerText = $(this).text();
+  let tagInnerHtml = `<div class="item_working">${tagInnerText}</div>`;
+
+  $(".build_review_selector_tag > .wrap > div.item_working").remove();
+  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+
+  $(".build_review_selector .working .cover").text(tagWorkingText);
+});
+
+let tagAreaText = 0;
+$(".build_review_selector_list.area > div").click(function() {
+  tagAreaText = $(this).text();
+
+  let tagInnerText = $(this).text();
+  let tagInnerHtml = `<div class="item_area">${tagInnerText}</div>`;
+
+  $(".build_review_selector_tag > .wrap > div.item_area").remove();
+  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+
+  $(".build_review_selector .area .cover").text(tagAreaText);
 });
 
 // --상담먼저--//
@@ -635,6 +679,19 @@ $(".dacotile .type ul li").click(function() {
 });
 if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
+
+// _방염벽지 클릭시
+let paperTypeIndex = 0;
+$(".cate_detail.paper .type ul li").click(function() {
+  paperTypeIndex = $(this).index();
+  if (paperTypeIndex == 4) {
+    $("#materials_veiw").hide();
+    $("#resist_div").show();
+  } else {
+    $("#materials_veiw").show();
+    $("#resist_div").hide();
+  }
+});
 
 // 모바일 견적 결과 btn 클릭시
 $(".m_estimate_btn").click(function() {
