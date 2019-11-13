@@ -29,7 +29,7 @@
 #index_question {
   background-color: #f6f9ff;
 }
-#bigBuild_consult {
+#index_bigBuild_consult {
   background: url(/img/bigbuild_consult.png) center center;
 }
 #estimate_aside {
@@ -39,6 +39,14 @@
 
 #materials_aside {
   height: 250px;
+  background-color: #3f3fff;
+}
+
+#big_build_consult_aside {
+  background-color: #3f3fff;
+}
+
+#faq_aside {
   background-color: #3f3fff;
 }
 

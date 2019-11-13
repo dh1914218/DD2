@@ -285,7 +285,7 @@ html {
   transform: scale(1.2);
 }
 
-/* --자주묻는질문-- */
+/* --주묻는질문-- */
 #index_question h1 {
   text-align: center;
   font-size: 30px;
@@ -376,6 +376,31 @@ html {
 }
 .topic_list_section2 {
   display: none;
+}
+
+/* --faq aside-- */
+
+/* --aside 어사이드 -- */
+.faq_aside {
+  padding: 30px;
+}
+
+.faq_aside .wrap {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.faq_aside .wrap div:nth-child(1) {
+  font-size: 34px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.faq_aside .wrap div:nth-child(2) {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 /* --고객님들의 감동시공후기-- */
@@ -638,13 +663,13 @@ html {
 /* --고객센터-- */
 .customer_center h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 .customer_center h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   margin-top: -10px;
   letter-spacing: -3px;
@@ -652,11 +677,13 @@ html {
 .customer_center .img {
   width: 140px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .customer_center .desc {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* _자재구경  */

@@ -3,18 +3,32 @@
   padding: 50px 300px;
 }
 
-.bigBuild_consult h1 {
+/* --h1-- */
+/* _인덱스 */
+#index_bigBuild_consult h1 {
   font-size: 40px;
   font-weight: 300;
   text-align: center;
   color: #ffffff;
 }
 
-.bigBuild_consult h1 em {
+#index_bigBuild_consult h1 em {
   font-weight: 500;
 }
 
-.bigBuild_consult .input_box {
+/* _서브페이지 */
+#bigBuild_consult h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+/* --서브페이지 hr-- */
+#bigBuild_consult .bigBuild_consult {
+  border-bottom: 1px solid #e8e8ed;
+}
+
+.bigBuild_consult.index .input_box {
   text-align: center;
 }
 
@@ -25,18 +39,19 @@
 }
 
 /* _개인정보수집동의 */
-.bigBuild_consult input[id="personal_data2"] {
+/* __인덱스 */
+.bigBuild_consult.index input[id="personal_data2"] {
   display: none;
 }
 
-.bigBuild_consult input[id="personal_data2"] + label {
-  color: #ffffff;
+.bigBuild_consult.index input[id="personal_data2"] + label {
+  color: #ffffff !important;
   position: relative;
   padding-left: 20px;
   cursor: pointer;
 }
 
-.bigBuild_consult input[id="personal_data2"] + label::before {
+.bigBuild_consult.index input[id="personal_data2"] + label::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -47,14 +62,53 @@
   left: 0;
 }
 
-.bigBuild_consult input[id="personal_data2"]:checked + label::before {
-  background-color: #111111;
+.bigBuild_consult.index input[id="personal_data2"]:checked + label::before {
+  background-color: #111111 !important;
   border: 1px solid #ffffff;
 }
+
+/* __서브페이지 */
+.bigBuild_consult input[id="personal_data2"] {
+  display: none;
+}
+
+.bigBuild_consult input[id="personal_data2"] + label {
+  color: #111111;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.bigBuild_consult input[id="personal_data2"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  /* background-color: #111111; */
+  border: 1px solid #9b9b9b;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.bigBuild_consult input[id="personal_data2"]:checked + label::before {
+  background-color: #3f3fff;
+  border: 1px solid #ffffff;
+}
+
 /* _더보기 */
+/* __인덱스 */
+.bigBuild_consult.index span {
+  float: right;
+  color: #ffffff !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* __서브페이지 */
 .bigBuild_consult span {
   float: right;
-  color: #ffffff;
+  color: #111111;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -69,7 +123,7 @@
 .bigBuild_consult .btn ul li {
   width: 48%;
   height: 50px;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
   float: left;
   line-height: 50px;
   text-align: center;
@@ -105,6 +159,32 @@
 /* __이력보기 버튼 */
 .bigBuild_consult .btn ul li.btn2 {
   border: 1px solid #ffffff;
+  .bigBuild_consult.index input[id="personal_data2"] {
+    display: none;
+  }
+
+  .bigBuild_consult.index input[id="personal_data2"] + label {
+    color: #ffffff;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+  .bigBuild_consult.index input[id="personal_data2"] + label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+
+  .bigBuild_consult.index input[id="personal_data2"]:checked + label::before {
+    background-color: #111111;
+    border: 1px solid #ffffff;
+  }
 }
 
 .bigBuild_consult .btn ul li.btn2 a {
@@ -120,6 +200,7 @@
 }
 
 .test {
+  /* width: 100%; */
   width: 720px;
   margin: 0 auto;
 }
@@ -131,4 +212,27 @@
 
 .bigBuild_consult .btn ul li.confirm_btn2 a {
   color: #ffffff;
+}
+
+/* --aside 어사이드 -- */
+.big_build_consult_aside {
+  padding: 30px;
+}
+
+.big_build_consult_aside .wrap {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.big_build_consult_aside .wrap div:nth-child(1) {
+  font-size: 34px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.big_build_consult_aside .wrap div:nth-child(2) {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
