@@ -1,3 +1,8 @@
+/* --뭐지이거...-- */
+.estimate_result {
+  min-height: 100%;
+}
+
 /* --백그라운드-- */
 html {
   position: relative;
@@ -12,68 +17,6 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 80;
-}
-
-.estimate_result {
-  min-height: 100%;
-}
-
-/* --추천시공사례-- */
-.index_recommend_review {
-  overflow: hidden;
-}
-
-.index_recommend_review h1 {
-  text-align: center;
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.index_recommend_review h1 em {
-  font-weight: 500;
-}
-
-.index_recommend_review .wrap .img img {
-  width: 380px;
-  height: 253px;
-  transition: all 0.3s ease-in-out;
-}
-
-.index_recommend_review .wrap .desc {
-  padding: 15px;
-}
-
-.index_recommend_review .wrap .desc .tag {
-  font-size: 14px;
-  font-weight: 500;
-  color: #9b9b9b;
-}
-
-.index_recommend_review .wrap .desc .tit {
-  font-size: 18px;
-}
-
-.index_recommend_review .wrap .desc .price .num {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.index_recommend_review .wrap .desc .price .won {
-  font-size: 20px;
-  font-weight: 300;
-}
-.index_recommend_review .img {
-  overflow: hidden;
-  width: 380px;
-  height: 253px;
-}
-
-.index_recommend_review .wrap .img {
-  overflow: hidden;
-}
-
-.index_recommend_review .wrap .img:hover img {
-  transform: scale(1.2);
 }
 
 /* --수치-- */
@@ -134,70 +77,6 @@ html {
     transform: translateY(0px);
     opacity: 1;
   }
-}
-
-/* --따끈따끈 시공사례-- */
-.index_build_review h1 {
-  text-align: center;
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.index_build_review h1 > em {
-  font-weight: 500;
-}
-.build_review > .wrap {
-  display: inline-block;
-  width: 32%;
-  margin-right: 1.4%;
-  overflow: hidden;
-}
-/* : item을 감싸고 있는 애들한테 %으로 준다. 그 후 이미지를 감싸고 있는
-애들한테는 절대값을 준뒤 overflow : hidden을 주어, scale시 넘치지 
-않게 하면서도 반응형시 100%로 채울 수 있게 한다. */
-
-.build_review > .item3 {
-  margin-right: 0;
-}
-.build_review > .item6 {
-  margin-right: 0;
-}
-
-.build_review .wrap .img img {
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-}
-
-.build_review .wrap .desc {
-  padding: 15px;
-}
-
-.build_review .wrap .desc .tag {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.build_review .wrap .desc .tit {
-  font-size: 18px;
-}
-
-.build_review .wrap .desc .price {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.build_review .wrap .desc .price span {
-  font-weight: 400;
-}
-
-.build_review .wrap .img {
-  overflow: hidden;
-  width: 380px;
-  height: 250px;
-}
-
-.build_review .wrap .img:hover img {
-  transform: scale(1.2);
 }
 
 /* --주묻는질문-- */
@@ -326,10 +205,6 @@ html {
 .swiper-container3 {
 }
 .user_review .wrap {
-  /* border: 1px solid #f7f7f7;
-  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
-  height: 320px; */
-  /* margin-bottom: 5px; */
 }
 
 .user_review h1 {
@@ -601,12 +476,61 @@ html {
   font-weight: 300;
 }
 
-/* _자재구경  */
-.customer_center h3 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 40px;
+/* --예상견적확인-- */
+
+/* --추천시공사례-- */
+.container.recommand_build_review {
+  overflow: hidden;
 }
 
-/* --예상견적확인-- */
+#recommand_build_review h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #111111;
+}
+
+#recommand_build_review h1 em {
+  font-weight: 500;
+}
+
+#recommand_build_review .container {
+  /* overflow: hidden; */
+}
+
+#recommand_build_review .swiper-slide .img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#recommand_build_review .swiper-slide .img img {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  max-width: 380px;
+}
+
+#recommand_build_review .swiper-slide .img:hover img {
+  transform: scale(1.2);
+}
+
+#recommand_build_review .swiper-slide .desc {
+  padding: 15px;
+}
+
+#recommand_build_review .swiper-slide .desc .tag {
+  color: #9b9b9b;
+  font-size: 14px;
+  margin-bottom: -3px;
+}
+#recommand_build_review .swiper-slide .desc .tit {
+  color: #111111;
+  font-size: 18px;
+}
+#recommand_build_review .swiper-slide .desc .price .num {
+  font-size: 20px;
+  font-weight: 500;
+}
+#recommand_build_review .swiper-slide .desc .price .won {
+  font-size: 20px;
+  font-weight: 300;
+}

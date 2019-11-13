@@ -9,18 +9,26 @@ $(window).scroll(function() {
 });
 
 // --메인슬라이드--
-var swiper = new Swiper(".swiper-container", {
-  autoplay: {
-    delay: 3000
-  }
-});
+// var swiper = new Swiper(".swiper-container", {
+//   autoplay: {
+//     delay: 3000
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev1"
+//   }
+// });
 
 // --추천시공사례--
 var swiper = new Swiper(".swiper-container2", {
-  slidesPerView: 3,
-  spaceBetween: 20,
+  // slidesPerView: 3,
+  // spaceBetween: 20,
   autoplay: {
     delay: 2500
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   },
   breakpoints: {
     // when window width is >= 320px
