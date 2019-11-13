@@ -15,17 +15,17 @@
 
 #estimate_aside .wrap {
   /* text-align: center; */
-  color: #ffffff;
+  color: #111111;
   /* font-weight: 40px; */
-  padding-top: 50px;
+  padding-top: 150px;
   text-align: center;
-  font-size: 34px;
-  font-weight: 300;
+  font-size: 50px;
+  font-weight: 100;
 }
 
 #estimate_aside .wrap > div:nth-child(2) {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #estimate_aside .wrap > div {
@@ -602,12 +602,18 @@
   color: #9b9b9b;
   font-weight: 400;
 }
+
 .estimate_result .desc .price {
   font-size: 20px;
+  font-weight: 500;
+}
+.estimate_result .desc .price .per {
+  font-weight: 500;
+  color: #ff4c42;
 }
 
-.estimate_result .desc .price em {
-  font-weight: 500;
+.estimate_result .desc .price .won {
+  font-weight: 300;
 }
 
 /* --상담카드-- */

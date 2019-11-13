@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/estimate.css" />
+        <link rel="stylesheet" href="css/mix_sale.css">
+        <link rel="stylesheet" href="css/materials_view.css">
     
         <!-- 미디어쿼리 -->
         <link rel="stylesheet" href="css/media_mobile_400.css" />
@@ -448,70 +450,252 @@
         </section>
         <!-- //#견적셀렉터 -->
   
-        <div class="blank50"></div>
+        <div class="blank70"></div>
         <section id="mixsale">
-            <div class="container">
-              <div class="row">
-                <div class="mixsale estimate">
-                  <h1>함께하면&nbsp;<em>할인이 가득가득</em>
-                  </h1>
-                  <div class="blank30"></div>
-                  <ul class="clearfix">
-                      <li>  
-                        <a href="#a">
-                        <div class="img"><img src="img/bgImg_estimate1.png" alt=""></div>
-                        <div class="desc">
-                          <div class="area">공급면적 32평</div>
-                          <div class="tit">실크도배 + 강마루 </div>
-                          <div class="sub_tit">개나리벽지 , KCC장판 1234-2</div>
-                          <div class="price">
-                            <span class="per">32%&nbsp;</span>
-                            <span class="num">234,424</span>
-                            <span class="won">원</span>
-                          </div>
-                        </div>
-                        </a>
-                      </li>
-                      <!-- //실크도배 + 강마루 -->
-                      <li>  
-                        <a href="#a">
-                        <div class="img"><img src="img/bgImg_estimate2.png" alt=""></div>
-                        <div class="desc">
-                          <div class="area">공급면적 32평</div>
-                          <div class="tit">실크도배 + 장판(2.2T)</div>
-                          <div class="sub_tit">개나리벽지 , KCC장판 1234-2</div>
-                          <div class="price">
-                            <span class="per">32%&nbsp;</span>
-                            <span class="num">234,424</span>
-                            <span class="won">원</span>
-                          </div>
-                        </div>
-                        </a>
-                      </li>
-                      <!-- //실크도배 + 장판(2.2T) -->
-                      <li>  
-                        <a href="#a">
-                        <div class="img"><img src="img/bgImg_estimate3.png" alt=""></div>
-                        <div class="desc">
-                          <div class="area">공급면적 32평</div>
-                          <div class="tit">합지도배 + 장판(1.8T)</div>
-                          <div class="sub_tit">개나리벽지 , KCC장판 1234-2</div>
-                          <div class="price">
-                            <span class="per">32%&nbsp;</span>
-                            <span class="num">234,424</span>
-                            <span class="won">원</span>
-                          </div>
-                        </div>
-                        </a>
-                      </li>
-                      <!-- //합지도배 + 장판(1.8T) -->
-                  </ul>  
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="mixsale estimate">
+              <h1>믹스하면&nbsp;<em>할인이 가득가득</em>
+              </h1>
+              <div class="blank30"></div>
+              <ul class="clearfix">
+                  <li>  
+                    <a href="#a" class="consultFirst">
+                    <div class="img"><img src="img/bgImg_estimate1.png" alt=""></div>
+                    <div class="desc">
+                      <div class="area">공급면적 32평</div>
+                      <div class="tit">실크도배 + 강마루 </div>
+                      <div class="sub_tit"></div>
+                      <div class="price">
+                        <span class="per">32%&nbsp;</span>
+                        <span class="num">234,424</span>
+                        <span class="won">원</span>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                  <!-- //실크도배 + 강마루 -->
+                  <li>  
+                    <a href="#a" class="consultFirst">
+                    <div class="img"><img src="img/bgImg_estimate2.png" alt=""></div>
+                    <div class="desc">
+                      <div class="area">공급면적 32평</div>
+                      <div class="tit">실크도배 + 장판(2.2T)</div>
+                      <div class="sub_tit"></div>
+                      <div class="price">
+                        <span class="per">32%&nbsp;</span>
+                        <span class="num">234,424</span>
+                        <span class="won">원</span>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                  <!-- //실크도배 + 장판(2.2T) -->
+                  <li>  
+                    <a href="#a" class="consultFirst">
+                    <div class="img"><img src="img/bgImg_estimate3.png" alt=""></div>
+                    <div class="desc">
+                      <div class="area">공급면적 32평</div>
+                      <div class="tit">합지도배 + 장판(1.8T)</div>
+                      <div class="sub_tit"></div>
+                      <div class="price">
+                        <span class="per">32%&nbsp;</span>
+                        <span class="num">234,424</span>
+                        <span class="won">원</span>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                  <!-- //합지도배 + 장판(1.8T) -->
+              </ul>  
             </div>
+          </div>
+        </div>
         </section>
-        <!-- 함께하면 할인이 가득가득 -->
+        <!-- 믹스하면 할인이 가득가득 -->
      
+        <div class="blank70"></div>
+        <section id="mixsale_materials">
+      <div class="container">
+        <div class="row">
+          <div class="mixsale_materials">
+            <h1>믹스상품 <em>자재보기</em><span>해당상품에 한하여 할인 가능합니다</span></h1>
+            <div class="blank20"></div>
+            <div class="tab">
+              <ul class="clearfix">
+                <li class="active_mix_sale">전체보기</li>
+                <li>마루</li>
+                <li>데코타일</li>
+                <li>장판 </li>
+                <li>벽지</li>
+              </ul>
+            </div>
+            <div class="blank10"></div>
+            <div class="materials_veiw">
+              <ul class="clearfix maru">
+                <li>
+                  <a href="#a">
+                    <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                      <div class="icon">
+                          <span class="icon_md">MD추천</span>
+                          <span class="icon_cheap">가성비갑</span>
+                          <span class="icon_mix">믹스상품</span>
+                        </div>
+                      </div>
+                      <div class="desc">
+                       <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                       <div class="tit">kdd-1023</div>
+                      </div>
+                    </a>
+                 </li>
+                <!-- 아이템 -->
+                <li>
+                  <a href="#a">
+                    <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                      <div class="icon">
+                          <span class="icon_md">MD추천</span>
+                          <span class="icon_cheap">가성비갑</span>
+                          <span class="icon_mix">믹스상품</span>
+                        </div>
+                      </div>
+                      <div class="desc">
+                       <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                       <div class="tit">kdd-1023</div>
+                      </div>
+                    </a>
+                 </li>
+                <!-- 아이템 -->
+                <li>
+                  <a href="#a">
+                    <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                      <div class="icon">
+                          <span class="icon_md">MD추천</span>
+                          <span class="icon_cheap">가성비갑</span>
+                          <span class="icon_mix">믹스상품</span>
+                        </div>
+                      </div>
+                      <div class="desc">
+                       <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                       <div class="tit">kdd-1023</div>
+                      </div>
+                    </a>
+                 </li>
+                <!-- 아이템 -->
+              </ul>
+              <!-- //마루 -->
+              <ul class="clearfix linoleum">
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+              </ul>
+              <!-- //장판 -->
+              <ul class="clearfix dacotile">
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+              </ul>
+              <!-- //데코타일 -->
+              <ul class="clearfix paper">
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+                  <li>
+                    <a href="#a">
+                      <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                        <div class="icon">
+                            <span class="icon_md">MD추천</span>
+                            <span class="icon_cheap">가성비갑</span>
+                            <span class="icon_mix">믹스상품</span>
+                          </div>
+                        </div>
+                        <div class="desc">
+                         <div class="brand"><span>강화마루</span>&nbsp;&nbsp;&nbsp;&nbsp;LG하우시스</div>
+                         <div class="tit">kdd-1023</div>
+                        </div>
+                      </a>
+                   </li>
+                  <!-- 아이템 -->
+              </ul>
+              <!-- //도배 -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+        </section>
+        <!-- //믹스자재 -->
+
         <div class="blank50"></div>
         <div id="footer">
         <div class="container">

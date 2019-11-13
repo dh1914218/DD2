@@ -44,3 +44,21 @@
 .tab_menu .wrap a:hover .icText {
   color: #3f3fff;
 }
+
+/* --아이콘-- */
+
+.wrap {
+  position: relative;
+}
+
+.icon_sale {
+  bottom: 15px;
+  left: 50px;
+  position: absolute;
+  padding: 1px 5px;
+  background-color: #ff1493;
+  color: #ffffff;
+  letter-spacing: 0;
+  border-radius: 10px;
+  font-size: 8px;
+}

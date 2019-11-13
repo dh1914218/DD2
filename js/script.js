@@ -593,7 +593,7 @@ $("#popUp_personal_data .wrap img").click(function() {
   $("#popUp_personal_data").hide();
 });
 
-// --재구경--
+// --자재구경--
 //_자재종류 active
 $(".materials_view_menu .cate_detail .type ul li").click(function() {
   $(".materials_view_menu .cate_detail .type ul li").removeClass(
@@ -728,4 +728,44 @@ $(".phone").keydown(function(event) {
     (key >= 48 && key <= 57) ||
     (key >= 96 && key <= 105)
   );
+});
+
+// --믹스상품자재--
+let mixsaleMaterialsIndex = 0;
+
+// _탭 active
+// _탭클릭시 해당 자재 나오게하기
+
+$(".mixsale_materials .tab > ul > li").click(function() {
+  mixsaleMaterialsIndex = $(this).index();
+
+  $(".mixsale_materials .tab > ul > li").removeClass("active_mix_sale");
+  $(this).addClass("active_mix_sale");
+
+  if (mixsaleMaterialsIndex == 0) {
+    $(".mixsale_materials .materials_veiw ul.maru").show();
+    $(".mixsale_materials .materials_veiw ul.linoleum").show();
+    $(".mixsale_materials .materials_veiw ul.dacotile").show();
+    $(".mixsale_materials .materials_veiw ul.paper").show();
+  } else if (mixsaleMaterialsIndex == 1) {
+    $(".mixsale_materials .materials_veiw ul.maru").show();
+    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
+    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
+    $(".mixsale_materials .materials_veiw ul.paper").hide();
+  } else if (mixsaleMaterialsIndex == 2) {
+    $(".mixsale_materials .materials_veiw ul.maru").hide();
+    $(".mixsale_materials .materials_veiw ul.linoleum").show();
+    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
+    $(".mixsale_materials .materials_veiw ul.paper").hide();
+  } else if (mixsaleMaterialsIndex == 3) {
+    $(".mixsale_materials .materials_veiw ul.maru").hide();
+    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
+    $(".mixsale_materials .materials_veiw ul.dacotile").show();
+    $(".mixsale_materials .materials_veiw ul.paper").hide();
+  } else {
+    $(".mixsale_materials .materials_veiw ul.maru").hide();
+    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
+    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
+    $(".mixsale_materials .materials_veiw ul.paper").show();
+  }
 });
