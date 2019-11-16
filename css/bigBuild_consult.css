@@ -156,35 +156,37 @@
   display: inline-block;
   padding: 1px 105px;
 }
+
 /* __이력보기 버튼 */
 .bigBuild_consult .btn ul li.btn2 {
   border: 1px solid #ffffff;
-  .bigBuild_consult.index input[id="personal_data2"] {
-    display: none;
-  }
+}
 
-  .bigBuild_consult.index input[id="personal_data2"] + label {
-    color: #ffffff;
-    position: relative;
-    padding-left: 20px;
-    cursor: pointer;
-  }
+.bigBuild_consult.index input[id="personal_data2"] {
+  display: none;
+}
 
-  .bigBuild_consult.index input[id="personal_data2"] + label::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    display: inline-block;
-    position: absolute;
-    top: 4px;
-    left: 0;
-  }
+.bigBuild_consult.index input[id="personal_data2"] + label {
+  color: #ffffff;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
 
-  .bigBuild_consult.index input[id="personal_data2"]:checked + label::before {
-    background-color: #111111;
-    border: 1px solid #ffffff;
-  }
+.bigBuild_consult.index input[id="personal_data2"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.bigBuild_consult.index input[id="personal_data2"]:checked + label::before {
+  background-color: #111111;
+  border: 1px solid #ffffff;
 }
 
 .bigBuild_consult .btn ul li.btn2 a {

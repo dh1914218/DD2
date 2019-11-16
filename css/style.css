@@ -53,10 +53,8 @@
   background-color: #3f3fff;
 }
 
-#builder_recruit {
-  /* background-color: #3f3fff; */
-  background: url(/img/bigbuild_consult.png) center center;
-  height: 350px;
+#builder_recruit_aside {
+  background-color: #3f3fff;
 }
 
 #estimate_selector {

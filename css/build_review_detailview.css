@@ -1,0 +1,62 @@
+.build_review_detailview .wrap {
+}
+
+/* wrap 정렬 */
+.build_review_detailview .wrap > ul > li {
+  float: left;
+}
+
+/* 이미지크기 */
+.build_review_detailview .wrap > ul > li.img {
+  width: 53%;
+  margin-right: 2.5%;
+}
+
+.build_review_detailview .wrap > ul > li.img img {
+  display: block;
+}
+
+/* col크기 */
+.build_review_detailview .wrap > ul > li.col_list {
+  width: 44.5%;
+}
+
+/* 각 col 패딩 */
+.build_review_detailview .wrap > ul > li.col_list .col {
+  padding: 25px 0px 30px 25px;
+  border-top: 1px solid #111111;
+}
+
+/* --col1-- */
+/* __col1 tit */
+.build_review_detailview .wrap > ul > li.col_list .col1 .tit {
+  font-size: 25px;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .col1 .price .num {
+  font-size: 25px;
+  font-weight: 500;
+}
+.build_review_detailview .wrap > ul > li.col_list .col1 .price .won {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/* col2 p태그 */
+.build_review_detailview .wrap > ul > li.col_list .col2 p {
+  width: 15%;
+  float: left;
+}
+
+/* col2 span */
+.build_review_detailview .wrap > ul > li.col_list .col2 span {
+  margin-right: 10px;
+}
+
+/* col2 area초기화 */
+.build_review_detailview .wrap > ul > li.col_list .col2 .area span {
+  position: static;
+  color: #111111 !important;
+  font-size: 16px;
+  font-weight: 400;
+}

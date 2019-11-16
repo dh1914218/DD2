@@ -111,3 +111,96 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* --aside 어사이드 -- */
+.builder_recruit_aside {
+  padding: 30px;
+}
+
+.builder_recruit_aside .wrap {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.builder_recruit_aside .wrap div:nth-child(1) {
+  font-size: 34px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.builder_recruit_aside .wrap div:nth-child(2) {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* --서브페이지 인풋박스-- */
+.builder_recruit_input {
+  padding: 50px 300px;
+  border-bottom: 1px solid #e8e8ed;
+}
+
+.builder_recruit_input h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.builder_recruit_input .wrap {
+}
+
+.builder_recruit_input .wrap .input_box input {
+  width: 100%;
+  padding: 15px;
+}
+
+/* __개인정보수집동의 */
+.builder_recruit_input .agree input[id="personal_data3"] {
+  display: none;
+}
+
+.builder_recruit_input .agree input[id="personal_data3"] + label {
+  color: #111111;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.builder_recruit_input .agree input[id="personal_data3"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  /* background-color: #111111; */
+  border: 1px solid #9b9b9b;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.builder_recruit_input
+  .agree
+  input[id="personal_data3"]:checked
+  + label::before {
+  background-color: #3f3fff;
+  border: 1px solid #ffffff;
+}
+
+.builder_recruit_input .agree span {
+  float: right;
+  text-decoration: underline;
+}
+
+.builder_recruit_input .btn {
+  width: 100%;
+  background: #3f3fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.builder_recruit_input .btn a {
+  color: #ffffff;
+}

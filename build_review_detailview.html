@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/estimate.css" />
     <link rel="stylesheet" href="css/builder_recruit.css" />
+    <link rel="stylesheet" href="css/bigBuild_consult.css" />
+    <link rel="stylesheet" href="css/materials_view.css" />
+    <link rel="stylesheet" href="css/build_review.css" />
+    <link rel="stylesheet" href="css/mix_sale.css" />
+    <link rel="stylesheet" href="css/build_review_detailview.css" />
 
     <!-- 미디어쿼리 -->
     <link rel="stylesheet" href="css/media_blank.css" />
@@ -34,10 +39,15 @@
       <div class="popUp_consultFirst">
         <div class="wrap">
           <h2>결정이 어려우신가요??</h2>
-          <h1><em>바로견적</em>에서 최대한 빨리 연락드리겠습니다 : )</h1>
+          <h1>
+            <em>바로견적</em>에서 최대한 <br />
+            빨리 연락드리겠습니다 : )
+          </h1>
           <img src="img/close.svg" alt="" />
+          <div class="m_blank30"></div>
           <div class="blank50"></div>
-          <input type="text" placeholder="연락처" />
+          <input type="text" placeholder="연락처" class="phone" />
+          <div class="m_blank20"></div>
           <div class="blank20"></div>
           <div class="agree">
             <input type="checkBox" id="personal_data" />
@@ -47,6 +57,7 @@
             <span>더보기</span>
           </div>
           <!-- //개인정보동의 -->
+          <div class="m_blank20"></div>
           <div class="blank20"></div>
           <div class="confirm_btn">
             신청완료
@@ -54,7 +65,7 @@
         </div>
       </div>
     </div>
-    <!-- //상담먼저 팝업 -->
+    <!-- //상담먼저 -->
 
     <div id="popUp_personal_data">
       <div class="backgorund_black"></div>
@@ -63,6 +74,7 @@
         <div class="wrap">
           <h1>개인정보 처리방침</h1>
           <img src="img/close.svg" alt="" />
+          <div class="m_blank40"></div>
           <div class="blank50"></div>
           <div class="desc">
             개인정보처림방침개인정보처림방침
@@ -105,15 +117,15 @@
         </div>
       </div>
     </div>
-    <!-- //개인정보처리방침 팝업-->
+    <!-- //개인정보처리방침 -->
 
     <div id="header_sub">
       <div class="container">
         <div class="row">
           <div class="header_sub">
             <ul class="clearfix">
-              <li><a href="#">반장님모집</a></li>
-              <li><a href="#">시공안내문 다운로드</a></li>
+              <li><a href="builder_recruit.html">반장님모집</a></li>
+              <li><a href="#a">시공안내문 다운로드</a></li>
               <li class="personalData"><a href="#">개인정보 처리방침</a></li>
             </ul>
           </div>
@@ -128,7 +140,7 @@
         <div class="row">
           <div class="header">
             <div class="m_menu_icon">
-              <a href="#a">
+              <a href="#">
                 <img src="img/m_menuHam_black.png" alt="" />
               </a>
             </div>
@@ -146,7 +158,7 @@
                 <li><a href="estimate_dacotile.html">바로견적</a></li>
                 <li><a href="build_review.html">시공사례</a></li>
                 <li><a href="materials_view_maru.html">자재구경</a></li>
-                <li class="consultFirst"><a href="#">상담먼저</a></li>
+                <li><a href="#">상담먼저</a></li>
                 <li><a href="faq.html">자주묻는질문</a></li>
               </ul>
             </div>
@@ -163,20 +175,6 @@
       </div>
     </div>
     <!-- //#헤더 -->
-
-    <div id="builder_recruit_aside">
-      <div class="container">
-        <div class="row">
-          <div class="builder_recruit_aside">
-            <div class="wrap">
-              <div>반장님을 모집합니다!</div>
-              <div>다양한 분야의 휼륭하신 시공반장님을 모집합니다</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //aside -->
 
     <div class="m_backgorund_black"></div>
     <section id="m_nav">
@@ -226,70 +224,77 @@
     </section>
     <!-- //#모바일 네비게이션 드로어 -->
 
-    <section id="builder_recruit_input">
+    <section id="build_review_detailview">
       <div class="container">
         <div class="row">
-          <div class="builder_recruit_input">
+          <div class="build_review_detailview">
             <div class="wrap">
-              <h1>반장님모집 신청하기</h1>
-              <div class="m_blank20"></div>
-              <div class="blank30"></div>
-              <div class="input_box">
-                <input type="text" placeholder="이름" />
-                <div class="blank10"></div>
-                <input type="text" placeholder="시공분야" />
-                <div class="blank10"></div>
-                <input type="text" placeholder="시공가능지역" />
-                <div class="blank10"></div>
-                <input type="text" placeholder="연락처" />
-              </div>
-              <!-- //인풋박스 -->
-              <div class="m_blank20"></div>
-              <div class="blank15"></div>
-              <div class="agree">
-                <input type="checkbox" id="personal_data3" />
-                <label for="personal_data3">
-                  개인정보수집동의
-                </label>
-                <span class="personalData">더보기</span>
-              </div>
-              <!-- //더보기 -->
-              <div class="blank20"></div>
-              <div class="btn">
-                <ul>
-                  <li><a href="#a">신청완료</a></li>
-                </ul>
-              </div>
-              <!-- //버튼 -->
+              <ul class="clearfix">
+                <li class="img">
+                  <img src="img/recommend_review_img1.jpg" alt="" />
+                </li>
+                <!-- //이미지 -->
+
+                <li class="col_list">
+                  <div class="col1 col">
+                    <div class="tit">한시간이면 뚝딱 뚝딱 시공완료!!</div>
+                    <div class="blank20"></div>
+                    <div class="price">
+                      <span class="num">111,304</span>
+                      <span class="won">원</span>
+                    </div>
+                  </div>
+                  <!-- //col1 -->
+
+                  <div class="col2 col">
+                    <div class="place">
+                      <p>시공공간</p>
+                      <span>빌라</span>
+                    </div>
+                    <!-- //시공공간 -->
+                    <div class="blank20"></div>
+                    <div class="area">
+                      <p>시공평수</p>
+                      <span>32평</span>
+                    </div>
+                    <!-- //시공평수 -->
+
+                    <div class="blank20"></div>
+                    <div class="working">
+                      <p>시공방법</p>
+                      <span>장판</span>
+                      <span>데코타일</span>
+                      <span>도배</span>
+                    </div>
+                    <!-- //시공자재 -->
+                  </div>
+                  <!-- //col2 -->
+                  <div class="col3 col">
+                    <p>시공자재</p>
+                    <span>단종된 자재는 등록되지 않습니다</span>
+                    <ul>
+                      <li>
+                        <div class="img">
+                          <img src="img/materialsEx1.jpg" alt="" />
+                        </div>
+                      </li>
+                      <!-- //리스트1 -->
+                    </ul>
+                  </div>
+                  <!-- //col3 -->
+                  <div class="btn"></div>
+                  <!-- //btn -->
+                </li>
+              </ul>
             </div>
+            <!-- //wrap -->
           </div>
         </div>
       </div>
     </section>
+    <!-- // 디테일뷰 -->
 
     <div class="blank70"></div>
-    <div id="customer_center">
-      <div class="container">
-        <div class="row">
-          <div class="customer_center">
-            <h1>고객센터</h1>
-            <h2>1588 - 1588</h2>
-            <div class="img">
-              <img src="img/customer-service.svg"" alt=""">
-            </div>
-            <div class="blank30"></div>
-            <div class="desc">
-              <div>평일 10:00 ~ 18:00 (점심시간 : 12:00 ~ 14:00)</div>
-              <div>토/일 , 공휴일 휴무</div>
-            </div>
-          </div>
-          <!-- //고객센터 -->
-        </div>
-      </div>
-    </div>
-    <!-- //#고객센터 -->
-
-    <div class="blank50"></div>
 
     <div id="footer">
       <div class="container">
@@ -346,6 +351,7 @@
     </div>
     <!-- //푸터 -->
   </body>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
