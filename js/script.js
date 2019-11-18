@@ -9,15 +9,15 @@ $(window).scroll(function() {
 });
 
 // --메인슬라이드--
-// var swiper = new Swiper(".swiper-container", {
-//   autoplay: {
-//     delay: 3000
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev1"
-//   }
-// });
+var swiper = new Swiper(".swiper-container", {
+  autoplay: {
+    delay: 3000
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev1"
+  }
+});
 
 // --추천시공사례--
 var swiper = new Swiper(".swiper-container2", {
@@ -443,66 +443,6 @@ $(".toilet_area .form >ul >li").click(function() {
   $(".toilet_area .form").css("color", "#111111");
 });
 
-// 믹스상품 면적구분 clcik 후 list on/off
-// var selctorMixsaleIndex = 0;
-// $(".mixsaleE .wrap > ul > li").click(function() {
-//   selctorMixsaleIndex = $(this).index();
-//   $(".mixsaleE .wrap")
-//     .stop()
-//     .hide();
-//   console.log(selctorMixsaleIndex);
-//   if (selctorMixsaleIndex == 0) {
-//     $(".mixsaleE .wrap")
-//       .find(".area_list")
-//       .show();
-//   }
-// });
-
-// m_estimate_selector_result;
-// 모바일 견적내기
-// $(".m_estimate_result").click(function() {
-//   console.log(1111);
-//   $(".m_estimate_selector_result").show();
-//   $(".m_estimate_selector_box").slideUp();
-//   $(".estimate_selector_wrap .m_arrow").show();
-// });
-
-// $(".estimate_selector h1").click(function() {
-//   $(".m_estimate_selector_box").slideDown();
-//   $(".estimate_selector_wrap .m_arrow").hide();
-//   $(".m_estimate_selector_result").hide();
-// });
-
-// $(".m_estimate_selector_result .warp .desc .btn").click(function() {
-//   $("#m_estimate_consult_request").animate({
-//     marginBottom: "0%"
-//   });
-//   $(".m_backgorund_black").show();
-
-//   console.log(1);
-// });
-
-// 모바일 검은화면 클릭시
-// $(".m_backgorund_black").click(function() {
-//   $(".m_backgorund_black").hide();
-//   $("#m_estimate_consult_request").animate({
-//     marginBottom: "-10000%"
-//   });
-// });
-
-// 레이어팝업에서 견적상담신청완료 후
-// $("#m_estimate_consult_request .btn").click(function() {
-//   $("#m_estimate_apply_sucess").show();
-
-//   $("#m_estimate_consult_request").animate({
-//     marginBottom: "-10000%"
-//   });
-// });
-// //
-// $("#m_estimate_apply_sucess").click(function() {
-//   $(location).attr("href", "index.html");
-// });
-
 //시공사례 셀렉터 리스트 on&off
 $(".build_review_selector >.wrap > .item").click(function() {
   $(this)
@@ -515,31 +455,15 @@ $(".build_review_selector >.wrap > .item").click(function() {
     .hide();
 });
 
-// 시공후기 셀렉터 리스트 클릭시 태그 발생
-// $(".build_review_selector_list > div").click(function() {
-//   let innerText = $(this).text();
-//   let innerHtml = `<div class="item">${innerText}</div>`;
-//   let innerImg = `<img src="img/error.png"/>`;
-
-//   $(".build_review_selector_tag >.wrap ").append(innerHtml);
-//   $(".build_review_selector_tag >.wrap >.item").append(innerImg);
-
-//   $(".build_review_selector_tag .wrap div").click(function() {
-//     $(this).hide();
-//   });
-// });
-
-// --test--
-
+// --시공사례 드롭다운--
 let tagPlaceText = 0;
 $(".build_review_selector_list.place > div").click(function() {
   tagPlaceText = $(this).text();
 
-  let tagInnerText = $(this).text();
-  let tagInnerHtml = `<div class="item_place">${tagInnerText}</div>`;
-
-  $(".build_review_selector_tag > .wrap > div.item_place").remove();
-  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+  // let tagInnerText = $(this).text();
+  // let tagInnerHtml = `<div class="item_place">${tagInnerText}</div>`;
+  // $(".build_review_selector_tag > .wrap > div.item_place").remove();
+  // $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
 
   $(".build_review_selector .place .cover").text(tagPlaceText);
 });
@@ -548,11 +472,11 @@ let tagWorkingText = 0;
 $(".build_review_selector_list.working > div").click(function() {
   tagWorkingText = $(this).text();
 
-  let tagInnerText = $(this).text();
-  let tagInnerHtml = `<div class="item_working">${tagInnerText}</div>`;
+  // let tagInnerText = $(this).text();
+  // let tagInnerHtml = `<div class="item_working">${tagInnerText}</div>`;
 
-  $(".build_review_selector_tag > .wrap > div.item_working").remove();
-  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+  // $(".build_review_selector_tag > .wrap > div.item_working").remove();
+  // $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
 
   $(".build_review_selector .working .cover").text(tagWorkingText);
 });
@@ -561,11 +485,11 @@ let tagAreaText = 0;
 $(".build_review_selector_list.area > div").click(function() {
   tagAreaText = $(this).text();
 
-  let tagInnerText = $(this).text();
-  let tagInnerHtml = `<div class="item_area">${tagInnerText}</div>`;
+  // let tagInnerText = $(this).text();
+  // let tagInnerHtml = `<div class="item_area">${tagInnerText}</div>`;
 
-  $(".build_review_selector_tag > .wrap > div.item_area").remove();
-  $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
+  // $(".build_review_selector_tag > .wrap > div.item_area").remove();
+  // $(".build_review_selector_tag > .wrap").append(tagInnerHtml);
 
   $(".build_review_selector .area .cover").text(tagAreaText);
 });
@@ -688,19 +612,6 @@ $(".dacotile .type ul li").click(function() {
 if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
 
-// _방염벽지 클릭시
-let paperTypeIndex = 0;
-$(".cate_detail.paper .type ul li").click(function() {
-  paperTypeIndex = $(this).index();
-  if (paperTypeIndex == 4) {
-    $("#materials_veiw").hide();
-    $("#resist_div").show();
-  } else {
-    $("#materials_veiw").show();
-    $("#resist_div").hide();
-  }
-});
-
 // 모바일 견적 결과 btn 클릭시
 $(".m_estimate_btn").click(function() {
   $(".estimate_result").show();
@@ -777,3 +688,31 @@ $(".mixsale_materials .tab > ul > li").click(function() {
     $(".mixsale_materials .materials_veiw ul.paper").show();
   }
 });
+
+// --기타--
+// _방염벽지 클릭시
+// let paperTypeIndex = 0;
+// $(".cate_detail.paper .type ul li").click(function() {
+//   paperTypeIndex = $(this).index();
+//   if (paperTypeIndex == 4) {
+//     $("#materials_veiw").hide();
+//     $("#resist_div").show();
+//   } else {
+//     $("#materials_veiw").show();
+//     $("#resist_div").hide();
+//   }
+// });
+
+// 시공후기 셀렉터 리스트 클릭시 태그 발생
+// $(".build_review_selector_list > div").click(function() {
+//   let innerText = $(this).text();
+//   let innerHtml = `<div class="item">${innerText}</div>`;
+//   let innerImg = `<img src="img/error.png"/>`;
+
+//   $(".build_review_selector_tag >.wrap ").append(innerHtml);
+//   $(".build_review_selector_tag >.wrap >.item").append(innerImg);
+
+//   $(".build_review_selector_tag .wrap div").click(function() {
+//     $(this).hide();
+//   });
+// });

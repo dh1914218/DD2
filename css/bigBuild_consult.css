@@ -9,7 +9,8 @@
   font-size: 40px;
   font-weight: 300;
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #111111;
 }
 
 #index_bigBuild_consult h1 em {
@@ -45,7 +46,7 @@
 }
 
 .bigBuild_consult.index input[id="personal_data2"] + label {
-  color: #ffffff !important;
+  color: #111111 !important;
   position: relative;
   padding-left: 20px;
   cursor: pointer;
@@ -100,7 +101,7 @@
 /* __인덱스 */
 .bigBuild_consult.index span {
   float: right;
-  color: #ffffff !important;
+  color: #111111 !important;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -138,21 +139,21 @@
 .bigBuild_consult .btn ul li.confirm_btn {
   margin-right: 4%;
   border: 1px solid #ffffff;
-  background-color: #ebe6ff;
+  background-color: #3f3fff;
 }
 
 .bigBuild_consult .btn ul li.confirm_btn:hover {
-  background-color: #111111;
+  background-color: #ebe6ff;
 }
 
 .bigBuild_consult .btn ul li.confirm_btn a {
-  color: #111111;
+  color: #ffffff;
   display: inline-block;
   padding: 1px 105px;
 }
 
 .bigBuild_consult .btn ul li.confirm_btn:hover a {
-  color: #ffffff;
+  color: #111111;
   display: inline-block;
   padding: 1px 105px;
 }
@@ -160,6 +161,7 @@
 /* __이력보기 버튼 */
 .bigBuild_consult .btn ul li.btn2 {
   border: 1px solid #ffffff;
+  background-color: #ebe6ff;
 }
 
 .bigBuild_consult.index input[id="personal_data2"] {
@@ -190,7 +192,7 @@
 }
 
 .bigBuild_consult .btn ul li.btn2 a {
-  color: #ffffff;
+  color: #111111;
 }
 
 .bigBuild_consult .btn ul li.btn2:hover {

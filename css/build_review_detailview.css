@@ -1,7 +1,9 @@
-.build_review_detailview .wrap {
+.build_review_detailview {
+  border-bottom: 1px solid #e8e8ed;
 }
 
 /* wrap 정렬 */
+
 .build_review_detailview .wrap > ul > li {
   float: left;
 }
@@ -59,4 +61,111 @@
   color: #111111 !important;
   font-size: 16px;
   font-weight: 400;
+}
+
+/* --col3-- */
+/* col3 p태그 */
+.build_review_detailview .wrap > ul > li.col_list .col3 p {
+  width: 13%;
+  float: left;
+}
+
+/* col3 span태그 */
+.build_review_detailview .wrap > ul > li.col_list .col3 p + span {
+  color: red;
+  font-size: 13px;
+}
+
+/* col3 자재 wrap */
+
+.build_review_detailview .wrap > ul > li.col_list .col3 ul {
+  /* overflow: hidden; */
+}
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li {
+  width: 18%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+.build_review_detailview
+  .wrap
+  > ul
+  > li.col_list
+  .col3
+  ul
+  li:nth-of-type(5n + 0) {
+  margin-right: 0;
+}
+
+/* col3 자재 img */
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .img {
+  position: relative;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .img img {
+  display: block;
+}
+/* col3 desc */
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .desc {
+  padding: 5px;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .desc .brand {
+  font-size: 13px;
+  color: #9b9b9b;
+}
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .desc .type {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 500;
+}
+.build_review_detailview .wrap > ul > li.col_list .col3 ul li .desc .tit {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 300;
+}
+
+/* btn */
+.build_review_detailview .wrap > ul > li.col_list .btn {
+  border: 0;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .btn ul li {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.build_review_detailview .wrap > ul > li.col_list .btn ul li.btn1 {
+  color: #ffffff;
+  background-color: #3f3fff;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .btn ul li.btn2 {
+  background-color: #ebe6ff;
+}
+
+.build_review_detailview .wrap > ul > li.col_list .btn ul li:nth-of-type(2) {
+  margin-right: 0;
+}
+
+/* --이미지 사이즈-- */
+.horizontal_img {
+  width: 760px;
+  height: 570px;
+  margin: 0 auto;
+}
+
+.vertical_img {
+  width: 570px;
+  height: 760px;
+  margin: 0 auto;
+}
+
+.build_review_detailview_img img {
+  display: block;
+  margin-bottom: 30px;
 }

@@ -1,0 +1,839 @@
+/* 헤더 햄버거메뉴 */
+.m_menu_icon {
+  display: none;
+}
+
+/* 모바일 탭 메뉴 */
+#m_tab_menu {
+  display: none;
+}
+
+#estimate_selector .m_estimate_result {
+  display: none;
+}
+
+/* 모바일 네비게이션 드로어 서브메뉴 */
+.m_backgorund_black {
+  display: none;
+}
+
+.m_nav {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: none;
+}
+
+.m_nav_sub {
+  display: none;
+}
+
+/* 견적결과 */
+.m_estimate_selector_result {
+  display: none;
+}
+/* 상담신청 */
+#m_estimate_consult_request {
+  overflow: hidden;
+  margin-bottom: -10000%;
+  display: none;
+}
+/* --견적신청확인완료 팝업-- */
+#m_estimate_apply_sucess {
+  display: none;
+}
+
+/* ------미디어쿼리 400px-------- */
+@media (max-width: 500px) {
+  /* 견적결과 */
+
+  .container {
+    width: 100%;
+  }
+
+  .index_mixsale {
+    display: none;
+  }
+  .row {
+    padding: 0 20px;
+  }
+
+  /* --헤더-- */
+  .header {
+    height: 55px;
+  }
+
+  #header_sub {
+    display: none;
+  }
+
+  .header_nav_left {
+    display: none;
+  }
+  .header_nav_right {
+    display: none;
+  }
+
+  #tab_menu {
+    display: none;
+  }
+
+  .slider {
+    width: 100%;
+    height: 200px;
+  }
+
+  .m_menu_icon {
+    display: block;
+  }
+
+  /* 헤더로고 조정 */
+  .header > .header_log {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* 헤더 햄버거 메뉴 */
+  .m_menu_icon {
+    float: left;
+  }
+
+  .m_menu_icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .m_menu_icon a {
+    display: inline-block;
+    padding: 15px 15px 13px 0;
+  }
+
+  .header > .header_log > a {
+    margin-right: 0;
+  }
+
+  /* --네비게이션드로어-- */
+  .m_backgorund_black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 80;
+  }
+
+  .m_nav {
+    width: 60%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 100;
+    display: block;
+  }
+
+  .m_nav .wrap {
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+  }
+
+  .m_nav .wrap img {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .m_nav .wrap a {
+    font-size: 13px;
+    display: inline-block;
+    padding: 15px;
+    font-weight: 500;
+  }
+
+  .m_nav .m_nav_sub > div {
+    border-top: 1px solid #f2f2f2;
+  }
+  .m_nav .m_nav_sub > div > a {
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  /* --슬라이드 스와이퍼-- */
+  .slider {
+    width: 100% !important;
+  }
+
+  .swiper-container {
+    z-index: 10 !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+  }
+
+  /* 모바일 탭메뉴 */
+  #m_tab_menu {
+    background-color: #f6f9ff;
+    padding: 20px;
+    display: block;
+  }
+
+  .m_tab_menu {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .m_tab_menu .wrap {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-right: 5.8%;
+  }
+
+  .m_tab_menu .item4 {
+    margin-right: 0;
+  }
+  .m_tab_menu .item8 {
+    margin-right: 0;
+  }
+  .m_tab_menu .wrap a {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .m_tab_menu .wrap img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .m_tab_menu .tit {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  /* --index_추천 시공후기-- */
+  .recommend_review h1 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .recommend_review .wrap .desc {
+    padding: 8px;
+  }
+
+  /* --index 함께하면 할인이 가득가득-- */
+  .mixsale .wrap {
+    width: 48% !important;
+    margin-right: 3% !important;
+  }
+  .mixsale div.wrap.item2 {
+    margin-right: 0 !important;
+  }
+  .mixsale div.wrap.item4 {
+    margin-right: 0 !important;
+    margin-top: 10px;
+  }
+  .mixsale div.wrap.item6 {
+    margin-right: 0 !important;
+    margin-top: 10px;
+  }
+  .mixsale div.wrap.item8 {
+    margin-right: 0 !important;
+    margin-top: 10px;
+  }
+
+  .index_mixsale h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .mixsale .wrap .desc {
+    padding: 8px;
+  }
+
+  .mixsale .wrap .tit {
+    font-size: 16px;
+  }
+
+  .mixsale .wrap .sub_tit {
+    font-size: 13px;
+  }
+
+  .mixsale .wrap .price {
+    font-size: 18px;
+  }
+
+  /* --index 수치-- */
+  #numerical {
+    margin-top: 20px;
+  }
+
+  .numerical {
+    padding: 20px !important;
+  }
+  .numerical div {
+    font-size: 25px;
+  }
+
+  /* --index 따끈따끈 시공사례 --*/
+  .index_build_review h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .build_review .wrap {
+    width: 100%;
+  }
+  .build_review .wrap .desc {
+    padding: 8px;
+  }
+
+  .build_review .wrap.mt20 {
+    margin-top: 0 !important;
+  }
+
+  .build_review > .wrap.item4,
+  .build_review > .wrap.item5,
+  .build_review > .wrap.item6 {
+    display: none;
+  }
+
+  /* --시공전 자재구경-- */
+
+  .materials_view .wrap {
+    width: 48%;
+    margin-right: 2%;
+  }
+  .materials_view .wrap.item6.mt10 {
+    margin-top: 0 !important;
+  }
+  .materials_view .wrap:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .materials_view h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .materials_view ul li .desc {
+    padding: 0px !important;
+  }
+
+  /* --자주하는 질문-- */
+  #index_question {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .question {
+    padding: 0;
+  }
+
+  .question .topic {
+    width: calc(100% - 5px);
+  }
+  .question .topic .topic_list {
+    width: 100%;
+  }
+
+  .question .topic_form {
+  }
+
+  .question .topic .topic_list_section {
+    width: calc(100% - 200px);
+    color: red;
+    background-color: red;
+  }
+
+  .question .tit {
+    width: calc(100% - 20px) !important;
+  }
+
+  /* --유저리뷰-- */
+  .user_review {
+  }
+
+  .user_review h1 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .user_review .wrap {
+    /* padding: 20px; */
+  }
+
+  .user_review .wrap .tit {
+    font-size: 16px;
+  }
+
+  .user_review .wrap .desc {
+    font-size: 13px;
+  }
+
+  .user_review .wrap .wrap2 {
+    width: auto;
+    height: auto;
+  }
+  .user_review .wrap .star {
+    text-align: center;
+  }
+  .user_review .wrap .star img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  /* --index 인테리어 꿀팁-- */
+
+  .index_interior_tip {
+  }
+
+  .index_interior_tip h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .index_interior_tip > .tip {
+    width: 48%;
+    height: auto;
+    margin-right: 2%;
+  }
+  .index_interior_tip > .tip:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .index_interior_tip > .tip7,
+  .index_interior_tip > .tip8,
+  .index_interior_tip > .tip9,
+  .index_interior_tip > .tip10 {
+    display: none;
+  }
+
+  .index_interior_tip > .tip img {
+    height: auto;
+  }
+
+  .index_interior_tip > .tip .black_cover {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+  }
+  .index_interior_tip > .tip .black_cover > .desc {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  /* --index 대규모 수장공사 의뢰--*/
+
+  #big_bulid_consult {
+    margin-top: 20px;
+    height: 350px;
+  }
+  .big_bulid_consult {
+    width: 100%;
+    padding: 20px;
+    display: block;
+  }
+
+  .big_bulid_consult .textbox {
+    font-size: 20px;
+    letter-spacing: -1.2px;
+    text-align: center;
+  }
+  .big_bulid_consult .textbox > div:nth-child(2n) {
+    margin-top: -5px;
+  }
+  .big_bulid_consult > input.mt50 {
+    margin-top: 15px !important;
+  }
+
+  .big_bulid_consult > input {
+    width: calc(100% - 20px);
+    height: 40px;
+  }
+
+  .personal_data {
+    width: calc(100% - 20px) !important;
+    font-size: 13px;
+  }
+
+  .personal_data .agree span {
+    font-size: 13px;
+  }
+  .big_bulid_consult .personal_data .agree {
+    float: left;
+    width: 150px;
+    font-size: 13px;
+  }
+
+  .big_bulid_consult
+    .personal_data
+    .agree
+    > input[id="personal_data"]
+    + label
+    span {
+    font-size: 13px;
+    top: 1px;
+  }
+
+  .personal_data .plus {
+    float: right;
+  }
+
+  .btn_box {
+    width: calc(100% - 50px) !important;
+    margin-top: 40px;
+  }
+
+  .btn_box .btn {
+    width: 47%;
+    margin-right: 1%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+  .btn_box .item1 {
+    margin-right: 0;
+  }
+
+  /* --푸터-- */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer > .col {
+    display: block;
+  }
+  .footer > .col .desc.mt30 {
+    margin-top: 15px;
+  }
+
+  .footer > .col1 {
+    width: 100%;
+  }
+  .footer > .col2 {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .footer .col4 {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  /* --견적드로어 탭-- */
+  #m_tab_menu_draw ::-webkit-scrollbar {
+    display: none;
+  }
+  #m_tab_menu_draw {
+    width: 100%;
+    display: block;
+  }
+
+  #m_tab_menu_draw > div {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #m_tab_menu_draw > div > div {
+    display: inline-block;
+  }
+
+  #m_tab_menu_draw > div > div > a {
+    display: inline-block;
+    padding: 5px 15px;
+  }
+
+  /* --견적내기-- */
+  #estimate_aside {
+    display: none;
+  }
+  #estimate_selector {
+    background-color: #f6f9ff;
+    margin-top: 0;
+  }
+  .estimate_selector {
+    padding: 30px 0;
+  }
+
+  #estimate_selector h1 {
+    font-size: 20px;
+    position: relative;
+  }
+
+  #estimate_selector h2 {
+    display: none;
+  }
+  .estimate_selector_wrap .m_arrow {
+    position: absolute;
+    display: none;
+  }
+
+  .estimate_selector_wrap {
+    border: 0 !important;
+    padding: 0;
+    box-shadow: none;
+    background-color: #f6f9ff;
+  }
+  .estimate_selector_wrap .wrap {
+    float: none;
+  }
+
+  /* 공간구분*/
+  .estimate_selector_wrap .wrap.place {
+    width: 100%;
+  }
+
+  /* 공간구분 (장판) */
+  .estimate_selector_wrap.linoleum .wrap.place {
+    width: 100%;
+  }
+
+  /* 면적구분 */
+  .estimate_selector_wrap .wrap.area {
+    width: 100%;
+  }
+
+  /* 면적구분 */
+  .estimate_selector_wrap .wrap.area .form li {
+    width: 49% !important;
+  }
+  .estimate_selector_wrap .wrap.area .form2 {
+    width: 48%;
+  }
+  .estimate_selector_wrap .wrap.area .form3 {
+    width: 48%;
+  }
+
+  /* 배다란다확장여부 */
+  .estimate_selector_wrap .wrap.bananda {
+    width: 100%;
+  }
+
+  /* 빈집공실여부 */
+  .estimate_selector_wrap .wrap.empty_house {
+    width: 100%;
+  }
+
+  .estimate_selector_wrap .wrap.empty_house em {
+    display: none;
+  }
+  /* 덧방여부 */
+  .estimate_selector_wrap .wrap.add_floor {
+    width: 100%;
+  }
+  /* 시공범위 */
+  .estimate_selector_wrap .wrap.build_range {
+    width: 100%;
+  }
+
+  /* 견적확인버튼 btn */
+  #estimate_selector .m_estimate_result {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #3f3fff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+    display: block;
+  }
+  /*   
+    div.m_estimate_result.btn.mt30 {
+      display: none;
+    } */
+
+  /* 모바일 결과 페이지 */
+  .m_estimate_selector_result .warp > div {
+    display: inline-block;
+  }
+
+  .m_estimate_selector_result .img {
+    width: 40%;
+    float: left;
+  }
+  .m_estimate_selector_result img {
+    width: 100%;
+  }
+
+  .m_estimate_selector_result .warp .desc {
+    height: 100%;
+    padding-left: 20px;
+    width: 60%;
+    float: left;
+  }
+
+  .m_estimate_selector_result .warp .desc .tit {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .m_estimate_selector_result .warp .desc .sub_tit {
+    font-size: 13px;
+    color: #9b9b9b;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .m_estimate_selector_result .warp .desc .price {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .m_estimate_selector_result .warp .desc .btn {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    background-color: #ebebff;
+    color: #111111;
+    line-height: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  }
+
+  #m_estimate_consult_request {
+    padding: 30px;
+    width: 100%;
+    /* background-color: red; */
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+  }
+  #m_estimate_consult_request h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #m_estimate_consult_request input {
+    width: 100%;
+    border: 0px;
+    padding: 7px 15px;
+    background-color: #f2f2f2;
+  }
+
+  #m_estimate_consult_request .agree {
+    float: left;
+    text-align-last: left;
+    width: 300px;
+  }
+
+  #m_estimate_consult_request .personal_data .agree a {
+    color: #ffffff;
+  }
+
+  #m_estimate_consult_request
+    .personal_data
+    .agree
+    > input[id="personal_data"] {
+    display: none;
+  }
+
+  #m_estimate_consult_request
+    .personal_data
+    .agree
+    > input[id="personal_data"]
+    + label {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #111111;
+    background-color: #ffffff;
+  }
+  #m_estimate_consult_request
+    .personal_data
+    .agree
+    > input[id="personal_data"]
+    + label
+    span {
+    position: absolute;
+    bottom: 125px;
+    left: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  #m_estimate_consult_request
+    .personal_data
+    .agree
+    > input[id="personal_data"]:checked
+    + label {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #111111;
+    background-color: #3f3fff;
+  }
+
+  #m_estimate_consult_request .plus {
+    float: right;
+    color: #111111;
+  }
+
+  #m_estimate_consult_request .personal_data .agree a {
+    color: #111111;
+    padding: 15px;
+  }
+  #m_estimate_consult_request .btn {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    background-color: #3f3fff;
+    box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+    line-height: 40px;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .m_estimate_result.btn {
+    display: block;
+  }
+
+  /* --견적신청확인팝업-- */
+  #m_estimate_apply_sucess {
+    padding: 50px 30px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 35%;
+    /* transform: translateY(-50%); */
+    /* transform: translateY(-80%); */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    text-align: center;
+    z-index: 80;
+  }
+  #m_estimate_apply_sucess .okay {
+    color: #3f3fff;
+  }
+
+  /* 상담카드*/
+  .estimate .consult_card .card {
+    display: none;
+  }
+
+  /* --따끈따끈시공-- */
+  .build_review {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+  /* --마진 , 블랭크 취소-- */
+  .mt30 {
+    margin-top: 15px !important;
+  }
+}

@@ -245,56 +245,128 @@ html {
   margin-bottom: 5px;
 }
 
-/* --인테리어 꿀팁-- */
+/* --인테리어꿀팁-- */
+.index_interior_tip {
+}
+
 .index_interior_tip h1 {
   text-align: center;
-  font-weight: 300;
   font-size: 30px;
+  font-weight: 300;
 }
 
-.index_interior_tip h1 em {
+.index_interior_tip h1 > em {
   font-weight: 500;
 }
-
-.index_interior_tip > .tip {
-  display: inline-block;
-  /* margin-right: 7px; */
-  width: 19%;
-  margin-right: 1%;
+.index_interior_tip h1 > a span {
+  font-size: 16px;
+  color: #111111;
+  float: right;
+  padding-top: 13px;
 }
 
-.index_interior_tip > .tip5 {
-  margin-right: 0;
-}
-
-.index_interior_tip > .tip10 {
-  margin-right: 0;
-  margin-top: 3px;
-}
-.index_interior_tip .img {
-  /* width: 228px;
-  height: 228px; */
-  overflow: hidden;
-  position: relative;
-  display: block;
-}
-
-.index_interior_tip .img img {
-  width: 228px;
-  height: 228px;
-}
-
-.black_cover {
-  width: 228px;
-  height: 228px;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  padding-top: 70px;
-  text-align: center;
+.index_interior_tip ul li {
+  background-color: #f6f9ff;
+  width: 18.8%;
+  height: auto;
+  margin-right: 1.2%;
+  float: left;
+  margin-top: 10px;
+  padding: 20px;
   font-size: 20px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+/* _첫번째색상 */
+.index_interior_tip ul li.ex_1 {
+  border-top: 3px solid #3f3fff;
+}
+
+.index_interior_tip ul li.ex_1 p {
+  color: #3f3fff;
+}
+
+.index_interior_tip ul li.ex_1 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #3f3fff;
+}
+/* _두번째색상 */
+.index_interior_tip ul li.ex_2 {
+  border-top: 3px solid red;
+}
+
+.index_interior_tip ul li.ex_2 p {
+  color: red;
+}
+
+.index_interior_tip ul li.ex_2 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: red;
+}
+/* _세번째색상 */
+.index_interior_tip ul li.ex_3 {
+  border-top: 3px solid hotpink;
+}
+
+.index_interior_tip ul li.ex_3 p {
+  color: hotpink;
+}
+
+.index_interior_tip ul li.ex_3 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: hotpink;
+}
+/* _네번째색상 */
+.index_interior_tip ul li.ex_4 {
+  border-top: 3px solid green;
+}
+
+.index_interior_tip ul li.ex_4 p {
+  color: green;
+}
+
+.index_interior_tip ul li.ex_4 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: green;
+}
+/* _다섯번째색상 */
+.index_interior_tip ul li.ex_5 {
+  border-top: 3px solid #7431e9;
+}
+
+.index_interior_tip ul li.ex_5 p {
+  color: #7431e9;
+}
+
+.index_interior_tip ul li.ex_5 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #7431e9;
+}
+/* _여섯번째색상 */
+.index_interior_tip ul li.ex_6 {
+  border-top: 3px solid orange;
+}
+
+.index_interior_tip ul li.ex_6 p {
+  color: orange;
+}
+
+.index_interior_tip ul li.ex_6 a div {
+  margin-top: 100px;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: orange;
 }
 
 /* --상담먼저 팝업-- */
@@ -435,12 +507,12 @@ html {
   height: 20px;
   position: absolute;
   top: -60px;
-  right: -120px;
+  right: -50px;
   cursor: pointer;
 }
 
 .popUp_personal_data {
-  padding: 100px 150px;
+  padding: 100px 100px;
   z-index: 100;
   position: fixed;
   top: 50%;

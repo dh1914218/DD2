@@ -223,10 +223,12 @@
   background-color: #ffffff;
   height: 150px;
   overflow: auto;
+  z-index: 100;
 }
 
 .area_list ul {
   z-index: 100;
+  background-color: #ffffff;
 }
 
 .area_list li {
