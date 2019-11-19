@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .row {
+    padding: 0 20px;
+  }
+
+  /* ----------헤더----------*/
+
+  #header_sub,
+  .header_nav_left,
+  .header_nav_right {
+    display: none;
+  }
+
+  .header {
+    height: 55px;
+  }
+
+  .m_menu_icon a {
+    display: inline-block;
+    padding: 10px;
+  }
+  .m_menu_icon a img {
+    width: 24px;
+  }
+
+  .header_log a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .header_log img {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

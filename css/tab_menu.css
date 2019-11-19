@@ -53,7 +53,8 @@
 
 .icon_sale {
   bottom: 15px;
-  left: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   padding: 1px 5px;
   background-color: #ff1493;
