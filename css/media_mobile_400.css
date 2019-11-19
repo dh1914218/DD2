@@ -110,14 +110,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 80;
   }
 
   .m_nav {
+    position: fixed;
     width: 60%;
     height: 100%;
     background: #ffffff;
-    z-index: 30;
+    z-index: 90;
     display: block;
   }
 
@@ -339,6 +340,32 @@
     display: none;
   }
 
+  /* --서브페이지-- */
+  .build_review_selector {
+    margin-top: 20px;
+  }
+  .build_review_selector .wrap {
+    width: 100%;
+  }
+
+  .row .build_review.estimate {
+    padding: 20px 0;
+  }
+
+  .build_review_selector .wrap .item {
+    padding-left: 10px;
+    font-size: 13px;
+    width: 32%;
+    margin-right: 1%;
+  }
+  .build_review_selector .wrap .item:nth-of-type(3) {
+    margin-right: 0;
+  }
+
+  .build_review_selector .wrap .item img {
+    right: 10px;
+  }
+
   /* --공통-- */
   .build_review ul li {
     width: 100%;
@@ -366,8 +393,38 @@
     font-weight: 300;
   }
 
-  /* ----------자재구경---------- */
+  /* ----------- 시공사례 디테일뷰 ----------- */
+  /*  */
 
+  .build_review_detailview .wrap {
+    width: 100%;
+  }
+
+  .build_review_detailview .wrap > ul > li {
+    float: none;
+  }
+
+  .build_review_detailview .wrap > ul > li.img {
+    width: 100%;
+  }
+
+  .build_review_detailview .wrap > ul > li.col_list {
+    width: 100%;
+  }
+  /* .build_review_detailview .wrap > ul > li.col_list {
+    width: 100%;
+  } */
+
+  /* --사진영역-- */
+  .horizontal_img {
+    width: 100%;
+  }
+
+  .vertical_img {
+    width: 100%;
+  }
+
+  /* ----------자재구경---------- */
   /* --인덱스-- */
   #index_materials_veiw {
     padding: 20px 0;
@@ -521,6 +578,82 @@
     font-size: 13px;
   }
 
+  /* ---------- 반장님모집 ----------- */
+  /* --어사이드-- */
+  .builder_recruit_aside {
+    padding: 20px;
+  }
+
+  .builder_recruit_aside .wrap div:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .builder_recruit_aside .wrap div:nth-child(2) {
+    font-size: 13px;
+  }
+
+  /* --input-- */
+  .builder_recruit_input h1 {
+    font-size: 20px;
+  }
+
+  .builder_recruit_input {
+    padding: 20px 0;
+  }
+  /* __inputbox 꾸미기 */
+  .builder_recruit_input .wrap .input_box input {
+    border: 1px solid #e8e8ed;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .builder_recruit_input .wrap .input_box input:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  /* __개인정보수집 및 더보기 */
+  .builder_recruit_input .agree input[id="personal_data3"] + label::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .builder_recruit_input
+    .agree
+    input[id="personal_data3"]:checked
+    + label::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .builder_recruit_input .agree input[id="personal_data3"] + label {
+    font-size: 13px;
+  }
+
+  .builder_recruit_input .agree span {
+    font-size: 13px;
+  }
+
+  /* __btn */
+  .builder_recruit_input .btn {
+    margin-top: 20px;
+  }
+
+  .builder_recruit_input .btn li {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #3f3fff;
+    border-radius: 5px;
+  }
+
+  .builder_recruit_input .btn a {
+    color: #3f3fff;
+    padding: 10px 50px;
+    display: inline-block;
+    font-size: 13px;
+  }
+
   /* ----------유저리뷰---------- */
   .user_review {
   }
@@ -624,7 +757,6 @@
   }
 
   /* ---------- 대규모 수장공사 의뢰 ----------*/
-
   /* --인덱스-- */
   #big_bulid_consult {
     margin-top: 20px;
@@ -643,7 +775,31 @@
     font-size: 20px;
   }
 
-  /* _btn */
+  /* --서브페이지-- */
+  #bigBuild_consult h1 {
+    font-size: 20px;
+  }
+
+  /* __어사이드 */
+  .big_build_consult_aside {
+    padding: 20px;
+  }
+
+  .big_build_consult_aside .wrap div:nth-child(1) {
+    font-size: 20px;
+  }
+  .big_build_consult_aside .wrap div:nth-child(2) {
+    font-size: 13px;
+  }
+
+  /* __대규모공사 상세이미지 */
+  .test {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  /* --공통-- */
+  /* __btn */
   .bigBuild_consult .btn ul li {
     height: 40px;
     line-height: 39px;
@@ -658,7 +814,7 @@
     font-size: 13px;
   }
 
-  /* --공통-- */
+  /* __input wrap */
   .bigBuild_consult {
     padding: 20px 0;
   }
@@ -667,6 +823,7 @@
   .bigBuild_consult .input_box input {
     padding: 10px;
     font-size: 13px;
+    border: 1px solid #e8e8ed;
   }
   .bigBuild_consult input[id="personal_data2"] + label {
     font-size: 13px;
@@ -676,12 +833,17 @@
     font-size: 13px;
   }
 
-  .bigBuild_consult.index input[id="personal_data2"] + label::before {
-    width: 13px;
-    height: 13px;
+  .bigBuild_consult input[id="personal_data2"] + label::before {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+  }
+  .bigBuild_consult.index input[id="personal_data2"]:checked + label::before {
+    width: 10px;
+    height: 10px;
   }
 
-  /* --푸터-- */
+  /* ----------푸터---------- */
   .footer {
     padding: 20px 0;
   }
@@ -716,7 +878,7 @@
 
   .popUp_consultFirst .wrap h1 {
     font-size: 15px;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
   }
   .popUp_consultFirst .wrap h1 em {
     font-size: 15px;
@@ -733,6 +895,8 @@
 
   .popUp_consultFirst .wrap > input {
     font-size: 13px;
+    margin-top: 20px;
+    border: 1px solid #e8e8ed;
   }
 
   .popUp_consultFirst .wrap input[id="personal_data"] + label {
@@ -748,6 +912,15 @@
   .popUp_consultFirst .wrap input[id="personal_data"]:checked + label::before {
     width: 13px;
     height: 13px;
+  }
+
+  .popUp_consultFirst .agree {
+    margin-top: 20px;
+  }
+
+  .popUp_consultFirst .wrap .confirm_btn {
+    margin-top: 20px;
+    font-size: 13px;
   }
 
   /* ---------- 개인정보처리방침 ---------- */
@@ -769,6 +942,10 @@
   }
 
   /* ---------- 고객센터 ---------- */
+  .customer_center {
+    padding: 20px 0;
+  }
+
   .customer_center h1 {
     font-size: 20px;
     font-weight: 300;
@@ -787,6 +964,7 @@
     height: 120px;
   }
   .customer_center .desc {
+    margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
   }

@@ -193,14 +193,18 @@
 }
 
 .builder_recruit_input .btn {
-  width: 100%;
-  background: #3f3fff;
-  height: 50px;
-  line-height: 50px;
+}
+
+.builder_recruit_input .btn li {
+  margin: 0 auto;
+  width: 40%;
   text-align: center;
-  cursor: pointer;
+  border: 1px solid #3f3fff;
+  border-radius: 5px;
 }
 
 .builder_recruit_input .btn a {
-  color: #ffffff;
+  color: #3f3fff;
+  padding: 15px 50px;
+  display: inline-block;
 }

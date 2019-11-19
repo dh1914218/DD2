@@ -104,10 +104,45 @@ $(".tab_menu  .wrap > a").mouseout(function() {
   }
 });
 
-// --WOW.js--
+// ----------WOW.js----------
 new WOW().init();
 
-// --자주묻는질문--
+// ----------모바일 네비게이션드로어----------
+// __드로어 on&off
+$(".m_menu_icon > a").click(function() {
+  $(".m_backgorund_black").show();
+  $(".m_nav").animate({
+    marginLeft: "100%"
+  });
+});
+
+// __백그라운드
+$(".m_backgorund_black").click(function() {
+  $(".m_backgorund_black").hide();
+  $(".m_nav").animate({
+    marginLeft: "-100%"
+  });
+});
+
+// __서브메뉴 on&off
+$(".m_nav > .wrap").click(function() {
+  $(this)
+    .find(".m_nav_sub")
+    .stop()
+    .slideToggle();
+
+  $(this)
+    .find("img")
+    .attr("src", function(index, attr) {
+      if (attr.match("up")) {
+        return attr.replace("up", "down");
+      } else {
+        return attr.replace("down", "up");
+      }
+    });
+});
+
+// ----------자주묻는질문----------
 // desc on&off , 섹션 화살표 변경
 $(".question .tit").click(function() {
   $(this)
@@ -177,40 +212,7 @@ $(".topic_list > div").click(function() {
   // .text를 할경우 아예 초기화 된상태에서 text를 입력하므로 화살표도 다시 입력해줘야한다.
 });
 
-// --모바일 햄버거메뉴 on&off--
-$(".m_menu_icon > a").click(function() {
-  $(".m_backgorund_black").show();
-  $(".m_nav").animate({
-    marginLeft: "100%"
-  });
-});
-
-$(".m_backgorund_black").click(function() {
-  $(".m_backgorund_black").hide();
-  $(".m_nav").animate({
-    marginLeft: "-100%"
-  });
-});
-
-// --모바일 네비게이션 드로어 서브메뉴 on&off--
-$(".m_nav > .wrap").click(function() {
-  $(this)
-    .find(".m_nav_sub")
-    .stop()
-    .slideToggle();
-
-  $(this)
-    .find("img")
-    .attr("src", function(index, attr) {
-      if (attr.match("up")) {
-        return attr.replace("up", "down");
-      } else {
-        return attr.replace("down", "up");
-      }
-    });
-});
-
-// --견적셀렉터--
+// ----------견적셀렉터----------
 // 공간구분
 var selctorPlace = 0;
 $(".place ul li").click(function() {
@@ -525,7 +527,7 @@ $("#popUp_personal_data .wrap img").click(function() {
   $("#popUp_personal_data").hide();
 });
 
-// --자재구경--
+// ----------자재구경----------
 //_자재종류 active
 $(".materials_view_menu .cate_detail .type ul li").click(function() {
   $(".materials_view_menu .cate_detail .type ul li").removeClass(
