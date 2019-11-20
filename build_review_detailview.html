@@ -30,6 +30,10 @@
 
     <!-- WOW.js -->
     <script src="js/wow.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <script src="https://use.fontawesome.com/40eaaaf18f.js"></script>
+
   </head>
 
   <body>
@@ -118,6 +122,11 @@
       </div>
     </div>
     <!-- //개인정보처리방침 -->
+
+
+    <button class="go_top" onclick="goTop()" style="display: none;">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <div id="header_sub">
       <div class="container">
@@ -276,11 +285,12 @@
                     <span>단종된 자재는 등록되지 않습니다</span>
 
                     <div class="blank10"></div>
+                    <div class="scroll_track">
                     <ul class="clearfix">
                       <li>
                         <a href="#a">
                           <div class="img">
-                            <img src="img/materialsEx7.jpg" alt="" />
+                            <img src="img/materialsEx2.jpg" alt="" />
                           </div>
                           <div class="desc">
                             <div class="brand">LG하우시스</div>
@@ -293,7 +303,7 @@
                       <li>
                         <a href="#a">
                           <div class="img">
-                            <img src="img/materialsEx7.jpg" alt="" />
+                            <img src="img/materialsEx3.jpg" alt="" />
                           </div>
                           <div class="desc">
                             <div class="brand">LG하우시스</div>
@@ -306,7 +316,7 @@
                       <li>
                         <a href="#a">
                           <div class="img">
-                            <img src="img/materialsEx7.jpg" alt="" />
+                            <img src="img/materialsEx4.jpg" alt="" />
                           </div>
                           <div class="desc">
                             <div class="brand">LG하우시스</div>
@@ -319,7 +329,7 @@
                       <li>
                         <a href="#a">
                           <div class="img">
-                            <img src="img/materialsEx7.jpg" alt="" />
+                            <img src="img/materialsEx5.jpg" alt="" />
                           </div>
                           <div class="desc">
                             <div class="brand">LG하우시스</div>
@@ -356,6 +366,7 @@
 
                 <div class="blank25"></div>
               </ul>
+             </div>
             </div>
             <!-- //wrap -->
           </div>
@@ -369,7 +380,8 @@
       <div class="container">
         <div class="row">
           <div class="build_review_detailview_img">
-            <img
+            <img src="img/build_review_detailview_sampleImg.jpg" alt="">
+            <!-- <img
               class="horizontal_img"
               src="img/detailview_img/KakaoTalk_20190915_212304188.jpg"
               alt=""
@@ -463,68 +475,62 @@
               class="vertical_img"
               src="img/detailview_img/KakaoTalk_20190915_212304188_18.jpg"
               alt=""
-            />
+            /> -->
           </div>
         </div>
       </div>
     </section>
     <!-- //시공후기 이미지 -->
 
-    <div class="blank40"></div>
+    
     <div id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer">
-            <ul class="clearfix">
-              <li class="col1">
-                <div class="tit">고객센터</div>
-                <div class="blank10"></div>
-                <div class="number">1588-1588</div>
-                <div class="desc">
-                  <div>평일 10:00 ~ 18:00</div>
-                  <div>점심시간 12:00 ~ 13:00</div>
-                  <div>토요일 공휴일 휴무</div>
-                </div>
-              </li>
-              <!-- col1 -->
-              <li class="col2">
-                <div class="tit">이용안내</div>
-                <div class="blank10"></div>
-                <ul>
-                  <li><a href="faq.html">자주묻는질문</a></li>
-                  <li class="personalData">
-                    <a href="#a">개인정보취급방침</a>
-                  </li>
-                  <li><a href="#a">시공안내문다운로드</a></li>
-                </ul>
-              </li>
-              <!-- col2 -->
-              <div class="m_blank30"></div>
-              <li class="col3">
-                <!-- <ul class="clearfix">
-                  <li><a href="#"><img src="" alt="블로그"></a></li>
-                  <li><a href="#"><img src="" alt="페이스북"></a></li>
-                  <li><a href="#"><img src="" alt="인스타그램"></a></li>
-                </ul> -->
-                <div class="blank100"></div>
-                <div class="blank20"></div>
-                <div>
-                  서울시 은평구 구산동 19-2 1층 좌서울시 은평구 구산동 19-2 1층
-                  좌
-                </div>
-                <div>
-                  사업자 등록번호 123-121248-1210 대표명 홍길동사업자 등록번호
-                  123-121248-1210 대표명 홍길동
-                </div>
-              </li>
-              <!-- col3 -->
-            </ul>
+        <div class="container">
+          <div class="row">
+            <div class="footer">
+              <ul class="clearfix">
+                <li class="col1">
+                  <div class="tit">고객센터</div>
+                  <div class="blank10"></div>
+                  <div class="number">1588-1588</div>
+                  <div class="desc">
+                    <div>평일 10:00 ~ 18:00</div> 
+                    <div>점심시간 12:00 ~ 13:00</div> 
+                    <div>토요일 공휴일 휴무</div>
+                  </div>
+                </li>
+                <!-- col1 -->
+              
+                <div class="m_blank20"></div>
+                <li class="col2">
+                  <div class="tit">이용안내</div>
+                  <div class="blank10"></div>
+                  <ul>
+                    <li><a href="faq.html">자주묻는질문</a></li>
+                    <li class="personalData"><a href="#a">개인정보취급방침</a></li>
+                    <li><a href="#a">시공안내문다운로드</a></li>
+                  </ul>
+                </li>
+                <!-- col2 -->
+                <div class="m_blank20"></div>
+                <li class="col3">
+                  <!-- <ul class="clearfix">
+                    <li><a href="#"><img src="" alt="블로그"></a></li>
+                    <li><a href="#"><img src="" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="" alt="인스타그램"></a></li>
+                  </ul> -->
+                  <div class="blank100"></div>
+                  <div class="blank20"></div>
+                  <div>서울시 은평구 구산동 19-2 1층 좌서울시 은평구 구산동 19-2 1층 좌</div>
+                  <div>사업자 등록번호 123-121248-1210 대표명 홍길동사업자 등록번호 123-121248-1210 대표명 홍길동</div>
+                </li>
+                <!-- col3 -->
+              </ul>
+            </div>
+            <!-- //푸터 -->
           </div>
-          <!-- //푸터 -->
         </div>
       </div>
-    </div>
-    <!-- //푸터 -->
+      <!-- //푸터 -->
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -496,7 +496,7 @@ $(".build_review_selector_list.area > div").click(function() {
   $(".build_review_selector .area .cover").text(tagAreaText);
 });
 
-// --상담먼저--//
+// -----------상담먼저----------//
 // _클래스추가
 $(".consultFirst").click(function() {
   $("#popUp_consultFirst").show();
@@ -690,6 +690,27 @@ $(".mixsale_materials .tab > ul > li").click(function() {
     $(".mixsale_materials .materials_veiw ul.paper").show();
   }
 });
+
+// ---------- 맨위로 올라가기 goTop----------
+
+function goTop() {
+  $("html").scrollTop(0);
+}
+
+$(window).scroll(function() {
+  var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
+  if (height > 0) {
+    $(".go_top").fadeIn();
+  } else {
+    $(".go_top").fadeOut();
+  }
+});
+
+// if (height > 0) {
+//   $("#header").addClass("fixed");
+// } else if (height == 0) {
+//   $("#header").removeClass("fixed");
+// }
 
 // --기타--
 // _방염벽지 클릭시
