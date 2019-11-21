@@ -613,8 +613,8 @@ html {
   height: 60px;
   /* background-color: red; */
   position: fixed;
-  bottom: 100px;
-  right: 200px;
+  bottom: 10%;
+  right: 10%;
   border-radius: 30px;
   font-size: 20px;
   cursor: pointer;

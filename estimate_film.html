@@ -25,7 +25,7 @@
     
         <!-- 미디어쿼리 -->
         <!-- <link rel="stylesheet" href="css/media_mobile_400.css" /> -->
-        <link rel="stylesheet" href="css/media_index.css">
+        <link rel="stylesheet" href="css/media_mobile_400.css">
         <link rel="stylesheet" href="css/media_blank.css" />
     
         <!-- 스와이퍼 -->
@@ -34,7 +34,8 @@
         <!-- WOW.js -->
         <script src="js/wow.min.js"></script>
       </head>
-      <body>
+      
+      <body style="height: 100vh;">
 
         <div id="popUp_consultFirst">
               <div class="backgorund_black"></div>
@@ -43,7 +44,6 @@
                 <div class="wrap">
                   <h1><em>바로견적</em>에서 최대한 <br> 빨리 연락드리겠습니다 : )</h1>
                   <img src="img/close.svg" alt="">
-                  <div class="m_blank30"></div>
                   <div class="blank50"></div>
                   <input type="text" placeholder="연락처">
                   <div class="m_blank20"></div>
@@ -160,49 +160,66 @@
     
         <div class="m_backgorund_black"></div>
         <section id="m_nav">
-          <div class="container">
-            <div class="row">
-              <div class="m_nav">
-                <div class="wrap item1">
-                  <a href="#">바로견적</a>
-                  <img src="img/arrow_down_black.png" alt="" />
-                  <div class="m_nav_sub">
-                    <div><a href="estimate_maru.html">마루</a></div>
-                    <div><a href="estimate_dacotile.html">데코타일</a></div>
-                    <div><a href="estimate_linoleum.html">장판</a></div>
-                    <div><a href="estimate_paper.html">도배</a></div>
-                    <div><a href="estimate_film.html">필름</a></div>
-                    <div><a href="estimate_furniture.html">가구</a></div>
-                    <div><a href="estimate_sink.html">싱크대</a></div>
-                    <div><a href="estimate_toilet.html">화장실</a></div>
-                    <div><a href="estimate_mixsale.html">믹스상품</a></div>
-                  </div>
-                </div>
-                <!-- //바로견적 -->
-                <div class="wrap item2 consultFirst">
-                  <a href="#">상담먼저</a>
-                  <!-- <img src="img/arrow_down_black.png" alt=""> -->
-                </div>
-                <!-- //상담먼저 -->
-                <div class="wrap item3">
-                  <a href="faq.html">자주묻는질문</a>
-                  <!-- <img src="img/arrow_down_black.png" alt=""> -->
-                </div>
-                <!-- //상담먼저 -->
-                <div class="wrap item4">
-                  <a href="big_build_consult.html">대규모 수장공사 문의</a>
-                  <!-- <img src="img/arrow_down_black.png" alt=""> -->
-                </div>
-                <!-- //대규모 수장공사 문의 -->
-                <div class="wrap item5">
-                  <a href="#">고객센터</a>
-                  <!-- <img src="img/arrow_down_black.png" alt=""> -->
-                </div>
-                <!-- //고객센터 -->
+      <div class="container">
+        <div class="row">
+          <div class="m_nav">
+            <div class="wrap item1">
+              <a href="#">바로견적</a>
+              <img src="img/arrow_down_black.png" alt="">
+              <div class="m_nav_sub">
+                <div><a href="estimate_maru.html">마루</a></div>
+                <div><a href="estimate_dacotile.html">데코타일</a></div>
+                <div><a href="estimate_linoleum.html">장판</a></div>
+                <div><a href="estimate_paper.html">도배</a></div>
+                <div><a href="estimate_film.html">필름</a></div>
+                <div><a href="estimate_film.html">가구</a></div>
+                <div><a href="estimate_sink.html">싱크대</a></div>
+                <div><a href="estimate_toilet.html">화장실</a></div>
+                <div><a href="estimate_mixsale.html">믹스상품</a></div>
               </div>
-              <!-- //모바일 네비게이션 드로어 -->
             </div>
+            <!-- //모바일 네비게이션 드로어_바로견적 -->
+
+            <div class="wrap item1">
+              <a href="#">자재구경</a>
+              <img src="img/arrow_down_black.png" alt="">
+              <div class="m_nav_sub">
+                <div><a href="materials_view_maru.html".html">마루</a></div>
+                <div><a href="materials_view_dacotile.html">데코타일</a></div>
+                <div><a href="materials_view_linoleum.html">장판</a></div>
+                <div><a href="materials_view_paper.html">도배</a></div>
+                <div><a href="materials_view_film.html">필름</a></div>
+              </div>
+            </div>
+            <!-- //모바일 네비게이션 드로어_바로견적 -->
+
+            <div class="wrap item2">
+              <a href="build_review.html">시공사례</a>
+            </div>
+            <!-- 아이템2 -->
+
+            <div class="wrap item2 consultFirst">
+              <a href="#a" class="consultFirst">상담먼저</a>
+            </div>
+            <!-- 아이템2 -->
+
+            <div class="wrap item3">
+              <a href="faq.html">자주묻는질문</a>
+
+            </div>
+            <!-- 아이템3 -->
+            <div class="wrap item4">
+              <a href="big_build_consult.html">대규모 공사문의</a>
+            </div>
+            <!-- 아이템4 -->
+            <div class="wrap item5">
+              <a href="builder_recruit.html">반장님모집</a>
+            </div>
+            <!-- 아이템5 -->
           </div>
+          <!-- //모바일 네비게이션 드로어 -->
+        </div>
+      </div>
         </section>
         <!-- //#모바일 네비게이션 드로어 -->
     
@@ -330,7 +347,7 @@
             </div>
           </div>
         </div>
-        <!-- //#자재보기 탭메뉴 -->
+        <!-- // 탭메뉴 -->
     
         <section id="m_tab_menu_draw">
           <div>
@@ -339,8 +356,8 @@
             </div>
             <div><a href="estimate_maru.html">데코타일</a></div>
             <div><a href="estimate_linoleum.html">장판</a></div>
-            <div><a href="estimate_paper.html" style="color: #3f3fff; font-weight: 500;">도배</a></div>
-            <div><a href="estimate_film.html">필름</a></div>
+            <div><a href="estimate_paper.html" ">도배</a></div>
+            <div><a href="estimate_film.html" style="color: #3f3fff; font-weight: 500;">필름</a></div>
             <div><a href="estimate_furniture.html">가구</a></div>
             <div><a href="estimate_sink.html">싱크대</a></div>
             <div><a href="estimate_toilet.html">화장실</a></div>
@@ -365,7 +382,7 @@
                     <div class="m_blank10"></div>
     
                     <div class="wrap area">
-                      <span>실측후 증감이 예상됩니다</span>
+                      <span class="add_text">실측후 증감이 예상됩니다</span>
                       <div class="tit">면적구분</div>
                       <ul class="form ">
                         <li class="box box_active">공급면적</li>
@@ -399,11 +416,9 @@
                     <div class="blank50"></div>
                     <h2>시공 예상견적이 아래에 나와 있습니다 : )</h2>
                   
-                    <div class="m_blank20"></div>
-                    <div class="m_estimate_btn">
-                        시공 예상견적 확인하기 : )
-                  </div>
-                  <!-- //모바일 견적버튼 -->
+                    <div class="m_btn">
+                        시공 예상견적 확인하기  : )
+                    </div>
                   </div>
                 </div>
               </div>
@@ -413,7 +428,6 @@
         </section>
         <!-- //#견적셀렉터 -->
 
-        <div class="m_blank40"></div>
         <div class="blank50"></div>
         <section id="estimate_result">
           <div class="container">
@@ -466,7 +480,7 @@
         <div id="footer">
             <div class="container">
               <div class="row">
-                <div class="footer">
+                <div class="footer estimate">
                   <ul class="clearfix">
                     <li class="col1">
                       <div class="tit">고객센터</div>

@@ -213,6 +213,36 @@ $(".topic_list > div").click(function() {
 });
 
 // ----------견적셀렉터----------
+// --예상견적확인버튼 btn 클릭시--
+$(".estimate_selector .m_btn").click(function() {
+  console.log(11);
+
+  $(".estimate_result").show();
+  $(".mixsale.estimate").slideDown();
+  $(".m_blank20.a").slideDown();
+  $(".mixsale_materials.estimate").slideDown();
+  // ㄴ 밑에부분 show
+
+  $(".m_estimate_selector_box").slideUp();
+  // ㄴ 셀렉터박스 hide
+
+  $(".m_arrow").show();
+});
+
+// --화삺표 클릭시--
+$(".estimate_selector h1").click(function() {
+  $(".estimate_result").slideUp();
+  $(".mixsale.estimate").slideUp();
+  $(".m_blank20.a").slideUp();
+  $(".mixsale_materials.estimate").slideUp();
+  // ㄴ 밑에부분 hide
+
+  $(".m_estimate_selector_box").slideDown();
+  // ㄴ 셀렉터박스 show
+
+  $(".m_arrow").hide();
+});
+
 // 공간구분
 var selctorPlace = 0;
 $(".place ul li").click(function() {
@@ -457,7 +487,8 @@ $(".build_review_selector >.wrap > .item").click(function() {
     .hide();
 });
 
-// --시공사례 드롭다운--
+// ----------시공사례-----------
+// __드롭다운
 let tagPlaceText = 0;
 $(".build_review_selector_list.place > div").click(function() {
   tagPlaceText = $(this).text();
@@ -614,21 +645,6 @@ $(".dacotile .type ul li").click(function() {
 if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
 
-// 모바일 견적 결과 btn 클릭시
-$(".m_estimate_btn").click(function() {
-  $(".estimate_result").show();
-  $(".m_estimate_selector_box").slideUp();
-  $(".estimate.mixsale").show();
-  $(".m_arrow").show();
-});
-
-$(".estimate_selector h1").click(function() {
-  $(".estimate_result").hide();
-  $(".m_estimate_selector_box").slideDown();
-  $(".m_arrow").hide();
-  $(".estimate.mixsale").hide();
-});
-
 // 핸드폰번호 자동하이픈
 $(".phone").keydown(function(event) {
   var key = event.charCode || event.keyCode || 0;
@@ -664,30 +680,30 @@ $(".mixsale_materials .tab > ul > li").click(function() {
   $(this).addClass("active_mix_sale");
 
   if (mixsaleMaterialsIndex == 0) {
-    $(".mixsale_materials .materials_veiw ul.maru").show();
-    $(".mixsale_materials .materials_veiw ul.linoleum").show();
-    $(".mixsale_materials .materials_veiw ul.dacotile").show();
-    $(".mixsale_materials .materials_veiw ul.paper").show();
+    $(".mixsale_materials .materials_veiw .materials_maru").show();
+    $(".mixsale_materials .materials_veiw .materials_linoleum").show();
+    $(".mixsale_materials .materials_veiw .materials_dacotile").show();
+    $(".mixsale_materials .materials_veiw .materials_paper").show();
   } else if (mixsaleMaterialsIndex == 1) {
-    $(".mixsale_materials .materials_veiw ul.maru").show();
-    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
-    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
-    $(".mixsale_materials .materials_veiw ul.paper").hide();
+    $(".mixsale_materials .materials_veiw .materials_maru").show();
+    $(".mixsale_materials .materials_veiw .materials_linoleum").hide();
+    $(".mixsale_materials .materials_veiw .materials_dacotile").hide();
+    $(".mixsale_materials .materials_veiw .materials_paper").hide();
   } else if (mixsaleMaterialsIndex == 2) {
-    $(".mixsale_materials .materials_veiw ul.maru").hide();
-    $(".mixsale_materials .materials_veiw ul.linoleum").show();
-    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
-    $(".mixsale_materials .materials_veiw ul.paper").hide();
+    $(".mixsale_materials .materials_veiw .materials_maru").hide();
+    $(".mixsale_materials .materials_veiw .materials_linoleum").show();
+    $(".mixsale_materials .materials_veiw .materials_dacotile").hide();
+    $(".mixsale_materials .materials_veiw .materials_paper").hide();
   } else if (mixsaleMaterialsIndex == 3) {
-    $(".mixsale_materials .materials_veiw ul.maru").hide();
-    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
-    $(".mixsale_materials .materials_veiw ul.dacotile").show();
-    $(".mixsale_materials .materials_veiw ul.paper").hide();
+    $(".mixsale_materials .materials_veiw .materials_maru").hide();
+    $(".mixsale_materials .materials_veiw .materials_linoleum").hide();
+    $(".mixsale_materials .materials_veiw .materials_dacotile").show();
+    $(".mixsale_materials .materials_veiw .materials_paper").hide();
   } else {
-    $(".mixsale_materials .materials_veiw ul.maru").hide();
-    $(".mixsale_materials .materials_veiw ul.linoleum").hide();
-    $(".mixsale_materials .materials_veiw ul.dacotile").hide();
-    $(".mixsale_materials .materials_veiw ul.paper").show();
+    $(".mixsale_materials .materials_veiw .materials_maru").hide();
+    $(".mixsale_materials .materials_veiw .materials_linoleum").hide();
+    $(".mixsale_materials .materials_veiw .materials_dacotile").hide();
+    $(".mixsale_materials .materials_veiw .materials_paper").show();
   }
 });
 

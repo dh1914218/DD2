@@ -556,6 +556,97 @@
     font-weight: 400;
   }
 
+  /* --서브메뉴-- */
+  #materials_aside {
+    display: none;
+  }
+
+  .materials_view_menu {
+    display: none;
+  }
+
+  #materials_aside {
+    display: none !important;
+  }
+
+  /* _index */
+  #index_cmaterials_veiw h1 {
+    font-size: 20px;
+  }
+
+  .m_cate_detail {
+    display: block;
+  }
+
+  .m_cate_detail .wrap {
+    float: none;
+  }
+
+  .materials_view_menu .cate_icon {
+    display: none;
+  }
+
+  .m_cate_detail .wrap {
+    width: 100%;
+  }
+
+  .m_cate_detail .type {
+    width: 100% !important;
+    cursor: pointer !important;
+  }
+
+  .m_cate_detail .brand {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .m_cate_detail .color {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .m_cate_detail .color ul li {
+    padding: 0;
+    width: 20%;
+  }
+
+  .m_cate_detail {
+    padding: 30px 20px 0px 30px;
+  }
+
+  .m_cate_detail h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+  }
+
+  .m_cate_detail h1 em {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .m_cate_detail h1 img {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+
+  .materials_view_menu {
+    box-shadow: none;
+  }
+
+  #materials_view_menu {
+    display: none;
+  }
+
+  #m_cate_detail {
+    background-color: #f6f9ff;
+  }
+
   /* --공통-- */
   .materials_veiw ul li {
     width: 48.36%;
@@ -980,6 +1071,10 @@
     margin-top: 15px;
     text-align: left;
   }
+  /* --푸터 견적부분시 none-- */
+  .footer.estimate {
+    display: none;
+  }
 
   /* ---------- 상담먼저 ---------- */
   .popUp_consultFirst {
@@ -1093,6 +1188,7 @@
   #m_tab_menu_draw > div {
     overflow-x: auto;
     white-space: nowrap;
+    background-color: #f2f2f2;
   }
 
   #m_tab_menu_draw > div > div {
@@ -1101,10 +1197,40 @@
 
   #m_tab_menu_draw > div > div > a {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 10px 15px;
   }
 
   /* ----------견적셀렉터----------- */
+  /* --기타-- */
+  /* __필름 addtext */
+  .estimate_selector .wrap .add_text {
+    position: absolute;
+    top: 0;
+    left: 60px;
+  }
+  /* __싱크대 addtext */
+  .estimate_selector .wrap .add_text {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 300px;
+  }
+
+  /* --blank 삭제-- */
+  .m_blank20.a {
+    display: none;
+  }
+
+  /* --견적결과버튼-- */
+  .estimate_selector .m_btn {
+    margin-top: 20px;
+    background-color: #3f3fff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+  }
+
   #estimate_aside {
     display: none;
   }
@@ -1126,12 +1252,15 @@
   }
 
   .m_estimate_selector_box .wrap {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
+  /* --화살표-- */
   .estimate_selector_wrap .m_arrow {
     position: absolute;
-    display: none;
+    /* display: none; */
+    top: 10px;
+    right: 20px;
   }
 
   .estimate_selector_wrap {
@@ -1143,28 +1272,27 @@
   .estimate_selector_wrap .wrap {
     float: none;
   }
-
-  /* --btn 버튼 */
-  .estimate_selector_wrap .m_estimate_result.btn {
-    display: block;
-  }
-
-  /* 공간구분*/
+  /* --셀렉터 div */
+  /* __공간구분*/
   .estimate_selector_wrap .wrap.place {
     width: 100%;
   }
 
-  /* 공간구분 (장판) */
+  /* __공간구분 (장판) */
   .estimate_selector_wrap.linoleum .wrap.place {
     width: 100%;
   }
+  /* __공간구분 (믹스상품) */
+  .estimate_selector_wrap.mixsaleE .wrap.place {
+    width: 100%;
+  }
 
-  /* 면적구분 */
+  /* __면적구분 */
   .estimate_selector_wrap .wrap.area {
     width: 100%;
   }
 
-  /* 면적구분 */
+  /* __면적구분 */
   .estimate_selector_wrap .wrap.area .form li {
     width: 49% !important;
   }
@@ -1175,12 +1303,12 @@
     width: 48%;
   }
 
-  /* 배다란다확장여부 */
+  /* __배다란다확장여부 */
   .estimate_selector_wrap .wrap.bananda {
     width: 100%;
   }
 
-  /* 빈집공실여부 */
+  /* __빈집공실여부 */
   .estimate_selector_wrap .wrap.empty_house {
     width: 100%;
   }
@@ -1188,12 +1316,17 @@
   .estimate_selector_wrap .wrap.empty_house em {
     display: none;
   }
-  /* 덧방여부 */
+  /* __덧방여부 */
   .estimate_selector_wrap .wrap.add_floor {
     width: 100%;
   }
-  /* 시공범위 */
+  /* __시공범위 */
   .estimate_selector_wrap .wrap.build_range {
+    width: 100%;
+  }
+
+  /* __플랜구분 (가구) */
+  .estimate_selector_wrap .wrap.furniture_plan {
     width: 100%;
   }
 
@@ -1206,27 +1339,34 @@
 
   .estimate_result .m_btn {
     display: block;
+    font-size: 13px;
   }
 
+  /* --견적결과 hide-- */
   .estimate_result {
+    display: none;
   }
 
   /* --예상견적결과산출-- */
+  /* __블랭크삭제  : (중간에 블랭크heghit값이 먹어져 있음)*/
+  .estimate_result .blank30 {
+    display: none;
+  }
 
   .estimate_result h1 {
     display: none;
   }
 
-  .estimate_result ul {
-  }
-
   .estimate_result ul li {
     width: 100%;
-    margin-top: 20px;
+    padding: 20px 0;
     overflow: hidden;
+    border-bottom: 1px solid #e8e8ed;
   }
 
-  .estimate_result ul li {
+  .estimate_result ul li:nth-last-of-type(-n + 2) {
+    /* border: 0; */
+    /* : 상담카드 li가 있으므로 +2 부터 지워야한다 */
   }
 
   .estimate_result ul li .img {
@@ -1240,18 +1380,70 @@
     padding: 0;
   }
 
-  /* __버튼 btn */
+  /* __상담신청버튼 btn */
   .estimate_result .m_btn {
-    background-color: #3f3fff;
+    background-color: #e8e6ff;
     width: 50%;
     padding: 5px;
     text-align: center;
-    color: #ffffff;
+    color: #111111;
+  }
+
+  /* ----------견적 믹스상품---------*/
+  /* --믹스상품 hide-- */
+  .mixsale.estimate {
+    display: none;
   }
 
   /* --믹스상품-- */
+  .mixsale.estimate {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8ed;
+  }
+
+  .mixsale.estimate h1 {
+    font-size: 20px;
+  }
+
+  .mixsale.estimate .blank30 {
+    display: none;
+  }
+  .mixsale.estimate ul {
+    margin-top: 10px;
+  }
 
   /* --믹스상품 자재보기-- */
+  /* _자재보기 hide */
+  .mixsale_materials.estimate {
+    display: none;
+  }
+
+  .mixsale_materials.estimate {
+    padding: 20px 0;
+  }
+
+  .mixsale_materials.estimate > h1 {
+    font-size: 20px;
+  }
+  .mixsale_materials.estimate > h1 span {
+    font-size: 13px;
+  }
+  .mixsale_materials > .tab {
+    width: 100%;
+  }
+
+  .mixsale_materials > .tab ul li {
+    font-size: 15px;
+  }
+
+  .mixsale_materials.estimate .materials_veiw ul {
+    width: 100%;
+  }
+
+  .mixsale_materials.estimate .materials_veiw > ul li {
+    width: 48% !important;
+    margin: 0 1% !important;
+  }
 
   /* ----------맨위로 올라가기(go_top)----------- */
   .go_top {
