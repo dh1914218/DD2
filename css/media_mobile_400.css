@@ -569,11 +569,7 @@
     display: none !important;
   }
 
-  /* _index */
-  #index_cmaterials_veiw h1 {
-    font-size: 20px;
-  }
-
+  /* __모바일 자재구경셀렉터 */
   .m_cate_detail {
     display: block;
   }
@@ -611,7 +607,7 @@
   }
 
   .m_cate_detail {
-    padding: 30px 20px 0px 30px;
+    padding: 20px 0;
   }
 
   .m_cate_detail h1 {
@@ -647,7 +643,22 @@
     background-color: #f6f9ff;
   }
 
-  /* --공통-- */
+  /* __mt */
+  .m_cate_detail .m_wrap .type {
+    margin-top: 20px;
+  }
+  .m_cate_detail .m_wrap .brand {
+    margin-top: 20px;
+  }
+  .m_cate_detail .m_wrap .color {
+    margin-top: 20px;
+  }
+
+  /* --공통 (자재)-- */
+  .materials_veiw {
+    padding: 20px 0;
+  }
+
   .materials_veiw ul li {
     width: 48.36%;
     float: left;
@@ -1073,6 +1084,10 @@
   }
   /* --푸터 견적부분시 none-- */
   .footer.estimate {
+    display: none;
+  }
+  /* --푸터 자재부분시 none-- */
+  .footer.materials {
     display: none;
   }
 
