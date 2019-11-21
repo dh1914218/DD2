@@ -596,22 +596,30 @@ $(".m_cate_detail .brand ul li").click(function() {
   $(".m_cate_detail .brand ul li").removeClass("materials_active");
   $(this).addClass("materials_active");
 });
-
 //_모바일 색상 active
 $(".m_cate_detail .color ul li").click(function() {
+  console.log(1);
+
   $(".m_cate_detail .color ul li")
-    .find("div")
+    .find(">div")
     .removeClass("materials_text_active");
   $(this)
-    .find("div")
+    .find(">div")
     .addClass("materials_text_active");
 });
 
-// _모바일 화살표 up&down
-
-// _화살표 클릭시 슬라이드
+// _모바일 화살표 클릭시 슬라이드
 $(".m_cate_detail h1").click(function() {
   $(".m_wrap").slideToggle();
+  $(this)
+    .find("img")
+    .attr("src", function(index, attr) {
+      if (attr.match("up")) {
+        return attr.replace("up", "down");
+      } else {
+        return attr.replace("down", "up");
+      }
+    });
 });
 
 // _데코타일 종류별 색상 on_Off\

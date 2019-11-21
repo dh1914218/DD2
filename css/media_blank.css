@@ -101,6 +101,12 @@
   }
 
   /* --모바일블랭크 블락-- */
+  .m_blank1 {
+    clear: both;
+    height: 5px;
+    display: block;
+  }
+
   .m_blank5 {
     clear: both;
     height: 5px;

@@ -537,6 +537,22 @@
   }
 
   /* ----------자재구경---------- */
+  /* --자재 드로어 탭 -- */
+  .m_tab_menu_draw.materials {
+    background-color: #f2f2f2;
+  }
+
+  .m_tab_menu_draw.materials ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .m_tab_menu_draw.materials ul li a {
+    color: #111111;
+    display: inline-block;
+    padding: 15px 10px;
+  }
+
   /* --인덱스-- */
   #index_materials_veiw {
     padding: 20px 0;
@@ -623,12 +639,13 @@
     font-weight: 500;
   }
 
+  /* __화살표 */
   .m_cate_detail h1 img {
     width: 8px;
     height: 8px;
     position: absolute;
-    top: 15px;
-    right: 10px;
+    top: 10px;
+    right: 20px;
   }
 
   .materials_view_menu {
@@ -1212,7 +1229,7 @@
 
   #m_tab_menu_draw > div > div > a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 10px;
   }
 
   /* ----------견적셀렉터----------- */
