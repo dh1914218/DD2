@@ -107,7 +107,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 80;
@@ -542,6 +542,10 @@
     background-color: #f2f2f2;
   }
 
+  .m_tab_menu_draw.materials ul::-webkit-scrollbar {
+    display: none;
+  }
+
   .m_tab_menu_draw.materials ul li {
     float: left;
     width: 20%;
@@ -677,9 +681,8 @@
   }
 
   .materials_veiw ul li {
-    width: 48.36%;
-    float: left;
-    margin-right: 3.2% !important;
+    width: 48% !important;
+    margin: 0 1% !important;
   }
 
   .materials_veiw ul li img {
@@ -1209,27 +1212,31 @@
   }
 
   /* ----------견적드로어 탭 (메뉴)---------- */
-  #m_tab_menu_draw ::-webkit-scrollbar {
-    display: none;
-  }
   #m_tab_menu_draw {
-    width: 100%;
     display: block;
   }
 
-  #m_tab_menu_draw > div {
-    overflow-x: auto;
-    white-space: nowrap;
+  .m_tab_menu_draw.estimate ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .m_tab_menu_draw.estimate {
     background-color: #f2f2f2;
   }
 
-  #m_tab_menu_draw > div > div {
-    display: inline-block;
+  .m_tab_menu_draw.estimate ul {
+    overflow: auto;
+    white-space: nowrap;
   }
 
-  #m_tab_menu_draw > div > div > a {
+  .m_tab_menu_draw.estimate ul li {
+    text-align: center;
     display: inline-block;
-    padding: 15px 10px;
+  }
+  .m_tab_menu_draw.estimate ul li a {
+    color: #111111;
+    display: inline-block;
+    padding: 15px 13px;
   }
 
   /* ----------견적셀렉터----------- */
@@ -1248,6 +1255,9 @@
     width: 300px;
   }
 
+  /
+
+
   /* --blank 삭제-- */
   .m_blank20.a {
     display: none;
@@ -1261,6 +1271,7 @@
     text-align: center;
     font-size: 13px;
     padding: 15px;
+    display: block !important;
   }
 
   #estimate_aside {
@@ -1334,6 +1345,15 @@
   .estimate_selector_wrap .wrap.area .form3 {
     width: 48%;
   }
+  .estimate_selector_wrap.sink .wrap.sink_area {
+    width: 100%;
+  }
+  .estimate_selector_wrap.furniture .wrap.furniture_area {
+    width: 100%;
+  }
+  .estimate_selector_wrap.toilet .wrap.toilet_area {
+    width: 100%;
+  }
 
   /* __배다란다확장여부 */
   .estimate_selector_wrap .wrap.bananda {
@@ -1370,7 +1390,7 @@
   }
 
   .estimate_result .m_btn {
-    display: block;
+    display: block !important;
     font-size: 13px;
   }
 
@@ -1444,14 +1464,19 @@
     margin-top: 10px;
   }
 
-  /* --믹스상품 자재보기-- */
+  /* --견적 믹스상품 자재보기-- */
   /* _자재보기 hide */
+
   .mixsale_materials.estimate {
     display: none;
   }
 
+  /* _패딩조절 */
   .mixsale_materials.estimate {
     padding: 20px 0;
+  }
+  .mixsale_materials.estimate .materials_veiw {
+    padding: 0;
   }
 
   .mixsale_materials.estimate > h1 {

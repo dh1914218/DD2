@@ -117,6 +117,10 @@
     </div>
      <!-- //개인정보처리방침 -->
 
+
+ 
+
+
     <div id="header_sub">
       <div class="container">
         <div class="row">
@@ -134,6 +138,14 @@
     <!-- //#헤더 서브 -->
 
     <div id="header">
+           
+
+      <div >
+        <video id="video" class="section-intro-video" autoplay="autoplay" loop="loop">
+          <source src="video/videotest.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="header">
@@ -239,7 +251,7 @@
     </section>
     <!-- //#모바일 네비게이션 드로어 -->
 
-    <div class="slider">
+    <!-- <div class="slider">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider_item1"></div>
@@ -247,7 +259,7 @@
           <div class="swiper-slide slider_item3"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- //슬라이드 -->
 
 
@@ -469,7 +481,7 @@
 
     <div class="m_blank20"></div>
     <div class="blank50"></div>
-    <section id="recommand_build_review">
+    <section id="recommand_build_review" style="z-index: 1; background-color: #fffff;">
       <div class="container recommand_build_review">
         <div class="row">
         <h1>바로견적에서 추천하는 <em>시공사례</em></h1>
@@ -479,7 +491,7 @@
        <div class="swiper-container2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#">
+            <a href="build_review_detailview.html">
             <div class="img"><img src="img/recommend_review_img1.jpg" alt=""></div>
             <div class="desc">
               <div class="tag">
@@ -719,7 +731,7 @@
         <div class="row">
           <div class="numerical">
             <div class="a wow">
-              오늘은 견적의뢰 <em class="counter">270</em>건
+              오늘의 견적의뢰 <em class="counter">270</em>건
             </div>
             <div class="b wow">
               전체 견적의뢰 <em class="counter">7,800,000</em>건
@@ -1657,6 +1669,7 @@
   <!-- countUp.js -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.tubular.1.0.js"></script>
   <script>
     
     
@@ -1665,6 +1678,12 @@
       delay: 10,
       time: 1000
     });
+
+    $('.test').tubular({videoId:'zVb5BWmzAPk'})
+
+
+
+
     
   </script>
 </html>

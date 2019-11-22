@@ -75,3 +75,60 @@
 .display_none {
   display: none !important;
 }
+
+/* --비디오 배경화면-- */
+body {
+  position: relative;
+}
+
+/* #video_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#video_bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+} */
+
+#header {
+  position: relative;
+}
+
+/* #video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+.section-intro-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/section-intro-bg.png) no-repeat;
+  background-size: cover;
+  z-index: -100;
+}

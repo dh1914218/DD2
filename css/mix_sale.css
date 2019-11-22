@@ -9,7 +9,7 @@
 }
 
 /* --믹스하면 할인이 가득가득 */
-.mixsale.estimate h1 {
+.mixsale.estimate > h1 {
   text-align: left;
 }
 
@@ -111,6 +111,10 @@
   margin-left: 10px;
 }
 
+/* __믹스상품견적 부분 */
+.mixsale_materials.estimate h1 {
+  text-align: left;
+}
 /*  _믹스상품 탭메뉴 */
 .mixsale_materials > .tab {
   width: 40%;
@@ -126,6 +130,11 @@
   color: #111111;
   font-size: 20px;
   cursor: pointer;
+  padding: 20px 0;
+}
+
+.mixsale_materials .materials_veiw ul {
+  width: 1180px;
 }
 
 /* _믹스상품 엑티브 */

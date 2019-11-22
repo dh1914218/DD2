@@ -114,6 +114,8 @@ $(".m_menu_icon > a").click(function() {
   $(".m_nav").animate({
     marginLeft: "100%"
   });
+
+  var hieht = console.log();
 });
 
 // __백그라운드
@@ -425,20 +427,21 @@ $(".furniture_plan ul li").click(function() {
   }
 });
 
-// 가구시공면적구분
-$(".furniture_area .cover").click(function() {
+// 가구 시공면적구분
+$(".furniture_area .form").click(function() {
   $(this)
     .find("ul.area_list")
     .stop()
     .toggle();
 });
 
-// 가구시공면적 cm 고르기
-var cm = "cm";
-var selctorFurnitureArea = 0;
-$(".furniture_area .form2 >ul >li").click(function() {
-  selctorFurnitureArea = $(this).index();
-  $(".furniture_area .form2 .cover").text(selctorFurnitureArea + 15 + cm);
+// 가구 시공면적 mm 고르기
+var selctorFurnitureInnerText = 0;
+$(".furniture_area .form >ul >li").click(function() {
+  selctorFurnitureInnerText = $(this).text();
+  $(".furniture_area .form .cover").text(selctorFurnitureInnerText);
+  $(".furniture_area .form").css("border", "1px solid #111111");
+  $(".furniture_area .form").css("color", "#111111");
 });
 
 // 싱크대 시공면적구분
@@ -763,3 +766,5 @@ $(window).scroll(function() {
 //     $(this).hide();
 //   });
 // });
+
+// -----테스트------

@@ -1,7 +1,7 @@
 /* 미디어쿼리 삭제 */
 /* _모바일 견적산출 버튼 */
-.estimate_result .m_btn {
-  display: none;
+.estimate_selector_wrap .m_btn {
+  display: none !important;
 }
 
 /* _모바일 견적산출 후 h1 arrow */
@@ -30,6 +30,7 @@
 
 #estimate_aside .wrap > div {
 }
+/* ---ul li- */
 
 /* --셀렉터 특이사항 span-- */
 .area > span {
@@ -410,8 +411,29 @@
 }
 
 /* --가구시공면적구분-- */
-.estimate_selector_wrap .furniture_area .form2 {
+/* .estimate_selector_wrap .furniture_area .form2 {
   margin-top: 5px;
+  width: 50%;
+} */
+
+.estimate_selector_wrap.furniture .wrap.furniture_area {
+  width: 38%;
+}
+
+.estimate_selector_wrap.furniture .wrap.furniture_area .form {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #b6b6b6;
+  border: 1px solid #b6b6b6;
+  position: relative;
+  border: 1px solid red;
+  color: red;
+  background-color: #ffffff;
+}
+
+.estimate_selector_wrap.furniture .wrap.furniture_area .form .area_list li {
+  text-align: center;
 }
 
 /* --싱크대 면적구분-- */
@@ -551,7 +573,7 @@
 .estimate_result {
   animation-name: mixsale;
   animation-duration: 0.75s;
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
   animation-play-state: running;

@@ -26,18 +26,18 @@
     <script src="js/wow.min.js"></script>
   </head>
   
-  <body style="height: 100vh;">
+  <body>
 
     <div id="popUp_consultFirst">
           <div class="backgorund_black"></div>
           <!-- 배경화면 -->
           <div class="popUp_consultFirst">
             <div class="wrap">
-              <h1><em>바로견적</em>에서 최대한 <br> 빨리 연락드리겠습니다 : )</h1>
+              <h2>결정이 어려우신가요??</h2>
+              <h1><em>바로견적</em>에서 최대한 빨리 연락드리겠습니다 : )</h1>
               <img src="img/close.svg" alt="">
               <div class="blank50"></div>
-              <input type="text" placeholder="연락처">
-              <div class="m_blank20"></div>
+              <input type="text" placeholder="연락처" class="phone">
               <div class="blank20"></div>
               <div class="agree">
                 <input type="checkBox" id="personal_data">
@@ -47,7 +47,6 @@
                 <span>더보기</span>
               </div>
               <!-- //개인정보동의 -->
-              <div class="m_blank20"></div>
               <div class="blank20"></div>
               <div class="confirm_btn">
                 신청완료
@@ -341,27 +340,27 @@
     <!-- //#탭메뉴 -->
 
     <section id="m_tab_menu_draw">
-        <div>
-          <div>
-            <a href="estimate_maru.html" >마루</a>
-          </div>
-          <div><a href="estimate_dacotile.html">데코타일</a></div>
-          <div><a href="estimate_linoleum.html">장판</a></div>
-          <div><a href="estimate_paper.html">도배</a></div>
-          <div><a href="estimate_film.html">필름</a></div>
-          <div><a href="estimate_toilet.html">화장실</a></div>
-          <div><a href="estimate_furniture.html" style="color: #3f3fff; font-weight: 500;">가구</a></div>
-          <div><a href="estimate_sink.html">싱크대</a></div>
-          <div><a href="estimate_mixsale.html">믹스상품</a></div>
+        <div class="m_tab_menu_draw estimate">
+          <ul class="clearfix">
+            <li><a href="estimate_mixsale.html">믹스상품</a></li>
+            <li><a href="estimate_maru.html" >마루</a></li>
+            <li><a href="estimate_dacotile.html">데코타일</a></li>
+            <li><a href="estimate_linoleum.html">장판</a></li>
+            <li><a href="estimate_paper.html">도배</a></li>
+            <li><a href="estimate_film.html">필름</a></li>
+            <li><a href="estimate_furniture.html" style="color: #3f3fff; font-weight: 500;">가구</a></li>
+            <li><a href="estimate_sink.html">싱크대</a></li>
+            <li><a href="estimate_toilet.html">화장실</a></li>
+          </ul>
         </div>
     </section>
-    <!-- //모바일 탭메뉴 드로어 -->
+    <!-- //모바일 가로스크롤 메뉴 -->
 
     <section id="estimate_selector">
       <div class="container">
         <div class="row">
           <div class="estimate_selector">
-            <div class="estimate_selector_wrap maru clearfix">
+            <div class="estimate_selector_wrap furniture clearfix">
               <h1>
                 <em>가구시공</em> 견적내기
                 <img class="m_arrow" src="/img/arrow_down_black.png" alt="" />
@@ -369,40 +368,39 @@
               <div class="blank30"></div>
 
               <div class="m_estimate_selector_box">
-                <div class="wrap furniture_plan">
+                <!-- <div class="wrap furniture_plan">
                   <div class="tit">플랜구분</div>
                   <ul class="form clearfix">
                     <li class="box box1 box_active">여닫이장</li>
                     <li class="box box2">슬라이드장</li>
                   </ul>
-                </div>
+                </div> -->
                 <!-- //가구플랜구분 -->
 
                 <div class="m_blank10"></div>
 
-                <div class="wrap area furniture_area">
-                    <div class="tit">면적구분</div>
-                    
-                  <div class="form2">
-                    <div class="cover">
-                        가로사이즈cm(자)
+                <div class="m_estimate_selector_box">
+                    <div class="wrap furniture_area">
+                      <div class="tit">면적구분</div>
+                      <div class="form">
+                        <div class="cover">
+                          가로사이즈cm (자)
+                        </div>
+                        <img src="img/arrow_down_black.png" alt="" />
+    
+                        <ul class="area_list">
+                          <li>테스트</li>
+                          <li>테스트2</li>
+                          <li>테스트3</li>
+                          <li>테스트4</li>
+                          <li>1</li>
+                          <li>1</li>
+                          <li>1</li>
+                          <li>1</li>
+                          <li>1</li>
+                        </ul>
+                      </div>
                     </div>
-                    <img src="img/arrow_down_black.png" alt="" />
-
-                    <ul class="area_list" >
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                      <li>1</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- //가구시공면적구분 -->
 
               
                 <div class="blank50"></div>
@@ -432,7 +430,7 @@
                 <a href="#a" class="consultFirst">
                 <div class="img"><img src="img/materialsEx7.jpg" alt=""></div>
                 <div class="desc">
-                  <div class="tit">보급형</div>
+                  <div class="tit">슬라이드장형</div>
                   <div class="sub_tit"></div>
                   <div class="blank5"></div>
                   <div class="price">
@@ -450,7 +448,7 @@
                 <a href="#a" class="consultFirst">
                 <div class="img"><img src="img/materialsEx7.jpg" alt=""></div>
                 <div class="desc">
-                  <div class="tit">고급형</div>
+                  <div class="tit">여닫이형</div>
                   <div class="sub_tit"></div>
                   <div class="blank5"></div>
                   <div class="price">

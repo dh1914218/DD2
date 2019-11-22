@@ -234,9 +234,9 @@
 }
 
 .materials_veiw ul li {
-  width: 18.8%;
+  width: 19%;
   height: auto;
-  margin-right: 1.5%;
+  margin: 0 0.5%;
   float: left;
   transition: all 0.5s ease-in-out;
 }
@@ -253,10 +253,6 @@
 
 .materials_veiw ul li .img:hover img {
   transform: scale(1.2);
-}
-
-.materials_veiw ul li:nth-child(5n + 0) {
-  margin-right: 0;
 }
 
 .materials_veiw ul li .desc {

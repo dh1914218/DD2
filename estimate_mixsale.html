@@ -36,31 +36,27 @@
         <script src="js/wow.min.js"></script>
       </head>
 
-      <body style="height: 100vh;">
+      <body>
 
         <div id="popUp_consultFirst">
               <div class="backgorund_black"></div>
               <!-- 배경화면 -->
               <div class="popUp_consultFirst">
                 <div class="wrap">
-                  <h1>
-                    <em>바로견적</em>에서 최대한 <br />
-                    빨리 연락드리겠습니다 : )
-                  </h1>
-                  <img src="img/close.svg" alt="" />
+                  <h2>결정이 어려우신가요??</h2>
+                  <h1><em>바로견적</em>에서 최대한 빨리 연락드리겠습니다 : )</h1>
+                  <img src="img/close.svg" alt="">
                   <div class="blank50"></div>
-                  <input type="text" placeholder="연락처" />
-                  <div class="m_blank20"></div>
+                  <input type="text" placeholder="연락처" class="phone">
                   <div class="blank20"></div>
                   <div class="agree">
-                    <input type="checkBox" id="personal_data" />
+                    <input type="checkBox" id="personal_data">
                     <label for="personal_data">
                       개인정보수집동의
                     </label>
                     <span>더보기</span>
                   </div>
                   <!-- //개인정보동의 -->
-                  <div class="m_blank20"></div>
                   <div class="blank20"></div>
                   <div class="confirm_btn">
                     신청완료
@@ -127,9 +123,9 @@
             <div class="row">
               <div class="header_sub">
                 <ul class="clearfix">
-                  <li><a href="builder_recruit.html">반장님모집</a></li>
+                  <li><a href="builder_recruit.html" >반장님모집</a></li>
                   <li><a href="#a">시공안내문 다운로드</a></li>
-                  <li class="personalData"><a href="#a">개인정보 처리방침</a></li>
+                  <li><a href="#a">개인정보 처리방침</a></li>
                 </ul>
               </div>
               <!-- //헤더 서브 -->
@@ -161,7 +157,7 @@
                     <li><a href="estimate_dacotile.html">바로견적</a></li>
                     <li><a href="build_review.html">시공사례</a></li>
                     <li><a href="materials_view_maru.html">자재구경</a></li>
-                    <li class="personalData"><a href="#">상담먼저</a></li>
+                    <li class="personalData "><a href="#a">상담먼저</a></li>
                     <li><a href="faq.html">자주묻는질문</a></li>
                   </ul>
                 </div>
@@ -202,7 +198,7 @@
                 <!-- //모바일 네비게이션 드로어_바로견적 -->
               
                 <div class="wrap item1">
-                  <a href="#">자재구경</a>
+                  <a href="#a">자재구경</a>
                   <img src="img/arrow_down_black.png" alt="">
                   <div class="m_nav_sub">
                     <div><a href="materials_view_maru.html".html">마루</a></div>
@@ -379,21 +375,21 @@
          <!-- //#탭메뉴 -->
       
          <section id="m_tab_menu_draw">
-          <div>
-            <div>
-              <a href="estimate_maru.html">마루</a>
+            <div class="m_tab_menu_draw estimate">
+              <ul class="clearfix">
+                <li><a href="estimate_mixsale.html"  style="color: #3f3fff; font-weight: 500;">믹스상품</a></li>
+                <li><a href="estimate_maru.html" >마루</a></li>
+                <li><a href="estimate_dacotile.html">데코타일</a></li>
+                <li><a href="estimate_linoleum.html">장판</a></li>
+                <li><a href="estimate_paper.html">도배</a></li>
+                <li><a href="estimate_film.html">필름</a></li>
+                <li><a href="estimate_furniture.html">가구</a></li>
+                <li><a href="estimate_sink.html">싱크대</a></li>
+                <li><a href="estimate_toilet.html">화장실</a></li>
+              </ul>
             </div>
-            <div><a href="estimate_maru.html">데코타일</a></div>
-            <div><a href="estimate_linoleum.html">장판</a></div>
-            <div><a href="estimate_paper.html">도배</a></div>
-            <div><a href="estimate_film.html">필름</a></div>
-            <div><a href="estimate_toilet.html">화장실</a></div>
-            <div><a href="estimate_furniture.html">가구</a></div>
-            <div><a href="estimate_sink.html">싱크대</a></div>
-            <div><a href="estimate_mixsale.html" style="color: #3f3fff; font-weight: 500;">믹스상품</a></div>
-          </div>
-         </section>
-         <!-- //모바일 탭메뉴 드로어 -->
+        </section>
+        <!-- //모바일 가로스크롤 메뉴 -->
           
          <section id="estimate_selector">
           <div class="container">
@@ -534,181 +530,197 @@
          <div class="m_blank20 a" style="background-color: #f6f9ff;"></div>
          <div class="blank70"></div>
          <section id="mixsale_materials">
-           <div class="container">
-             <div class="row">
-               <div class="mixsale_materials estimate">
-                 <h1>믹스상품 <em>자재보기</em><span>해당상품에 한하여 할인 가능합니다</span></h1>
-                 <div class="blank20"></div>
-                 <div class="tab">
-                   <ul class="clearfix">
-                     <li class="active_mix_sale">전체보기</li>
-                     <li>마루</li>
-                     <li>데코타일</li>
-                     <li>장판 </li>
-                     <li>벽지</li>
-                   </ul>
-                 </div>
-                 <div class="blank10"></div>
-                 <div class="materials_veiw">
-                   <ul class="clearfix">
-                  <li class="materials_maru">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx2.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                             <span class="icon_mix">믹스상품</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_maru">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx1.jpg" alt="">
-                         <div class="icon">
-                             <!-- <span class="icon_md">MD추천</span> -->
-                             <span class="icon_cheap">가성비갑</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_maru">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx6.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                             <span class="icon_cheap">가성비갑</span>
-                             <span class="icon_mix">믹스상품</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_dacotile">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx5.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                             <span class="icon_cheap">가성비갑</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_dacotile">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx7.jpg" alt="">
-                         <div class="icon">
-                             <!-- <span class="icon_md">MD추천</span> -->
-                             <span class="icon_cheap">가성비갑</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_dacotile">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx3.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                             <span class="icon_cheap">가성비갑</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_dacotile">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx2.jpg" alt="">
-                         <div class="icon">
-                             <!-- <span class="icon_md">MD추천</span> -->
-                             <span class="icon_cheap">가성비갑</span>
-                             <span class="icon_mix">믹스상품</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_linoleum">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx4.jpg" alt="">
-                         <div class="icon">
-                             <!-- <span class="icon_md">MD추천</span> -->
-                             <span class="icon_cheap">가성비갑</span>
-                             <span class="icon_mix">믹스상품</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_linoleum">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx3.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                             <span class="icon_cheap">가성비갑</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->
-                  <li class="materials_paper">
-                     <a href="materials_view_maru.html">
-                       <div class="img"><img src="img/materialsEx2.jpg" alt="">
-                         <div class="icon">
-                             <span class="icon_md">MD추천</span>
-                           </div>
-                         </div>
-                         <div class="desc">
-                           <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
-                           <div class="tit">kkd-1023</div>
-                         </div>
-                       </a>
-                    </li>
-                   <!-- 아이템 -->        
-                 </ul>
-                 </div>
-     
-               </div>
-             </div>
-           </div>
+      <div class="container">
+        <div class="row">
+          <div class="mixsale_materials estimate">
+            <h1>믹스상품 <em>자재보기</em><span>해당상품에 한하여 할인 가능합니다</span></h1>
+            <!-- <div class="blank20"></div> -->
+            <div class="tab">
+              <ul class="clearfix">
+                <li class="active_mix_sale">전체보기</li>
+                <li>마루</li>
+                <li>데코타일</li>
+                <li>장판 </li>
+                <li>벽지</li>
+              </ul>
+            </div>
+            <!-- <div class="blank10"></div> -->
+            <div class="materials_veiw">
+            
+            <ul class="clearfix">
+             <li class="materials_maru">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx2.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_mix">믹스상품</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_maru">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx1.jpg" alt="">
+                    <div class="icon">
+                        <!-- <span class="icon_md">MD추천</span> -->
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_maru">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx6.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_cheap">가성비갑</span>
+                        <span class="icon_mix">믹스상품</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_dacotile">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx5.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_dacotile">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx7.jpg" alt="">
+                    <div class="icon">
+                        <!-- <span class="icon_md">MD추천</span> -->
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_dacotile">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx3.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_dacotile">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx2.jpg" alt="">
+                    <div class="icon">
+                        <!-- <span class="icon_md">MD추천</span> -->
+                        <span class="icon_cheap">가성비갑</span>
+                        <span class="icon_mix">믹스상품</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_linoleum">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx4.jpg" alt="">
+                    <div class="icon">
+                        <!-- <span class="icon_md">MD추천</span> -->
+                        <span class="icon_cheap">가성비갑</span>
+                        <span class="icon_mix">믹스상품</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_linoleum">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx3.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_paper">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx3.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                        <span class="icon_cheap">가성비갑</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->
+             <li class="materials_paper">
+                <a href="materials_view_maru.html">
+                  <div class="img"><img src="img/materialsEx2.jpg" alt="">
+                    <div class="icon">
+                        <span class="icon_md">MD추천</span>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="type">강화마루 <span class="brand">LG하우시스</span></div>
+                      <div class="tit">kkd-1023</div>
+                    </div>
+                  </a>
+               </li>
+              <!-- 아이템 -->        
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
          </section>
          <!-- //믹스자재 -->
 
