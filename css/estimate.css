@@ -9,6 +9,11 @@
   display: none;
 }
 
+/* _ */
+.estimate_result .m_btn {
+  display: none;
+}
+
 /* --aside-- */
 #estimate_aside {
 }
