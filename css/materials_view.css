@@ -304,25 +304,9 @@
   font-size: 13px;
 }
 
-/* _가성비갑 */
-.materials_veiw .icon .icon_cheap {
-  padding: 1px 5px;
-  background-color: #0ad98c;
-  color: #ffffff;
-}
-
 /* _믹스상품 */
 .materials_veiw .icon .icon_mix {
   padding: 1px 5px;
   background-color: #35c5f0;
   color: #ffffff;
-}
-
-/* --방염벽지-- */
-.resist_div h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 50px;
-  font-weight: 300;
-  color: #9b9b9b;
 }

@@ -53,6 +53,21 @@
   font-weight: 500;
 }
 
+/* span */
+.estimate_selector_wrap .wrap.area {
+  position: relative;
+}
+
+.estimate_selector_wrap.floor .wrap.area span {
+  font-size: 13px;
+  color: red;
+  font-weight: 500;
+  position: absolute !important;
+  top: 67px;
+  left: 0;
+  display: none;
+}
+
 /* 셀렉터 엑티브 */
 .box_active {
   border-color: #3f3fff !important;
@@ -627,7 +642,7 @@
 }
 
 .estimate_result .desc .sub_tit {
-  font-size: 13px;
+  font-size: 16px;
   color: #9b9b9b;
   font-weight: 400;
 }
@@ -635,6 +650,11 @@
 .estimate_result .desc .price {
   font-size: 20px;
   font-weight: 500;
+}
+.estimate_result .desc .add_price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9b9b9b;
 }
 .estimate_result .desc .price .per {
   font-weight: 500;

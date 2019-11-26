@@ -259,6 +259,39 @@ $(".place ul li").click(function() {
   }
 });
 
+// --------지금하는중
+var floorPalce = 0;
+var florrArea = 0;
+
+// __바닥 상업공간 클릭시
+$(".estimate_selector_wrap.floor .place ul li").click(function() {
+  floorPalce = $(this).index();
+  if (floorPalce == 1) {
+    console.log(1);
+
+    $(".estimate_selector_wrap.floor .area ul li").removeClass("box_active");
+
+    $(".estimate_selector_wrap.floor .area ul li")
+      .eq(1)
+      .addClass("box_active");
+    $(".estimate_selector_wrap.floor .area ul li")
+      .eq(0)
+      .css("border-right", "1px solid #3f3fff");
+
+    $(".estimate_selector_wrap.floor .area ul li").css(
+      "pointer-events",
+      "none"
+    );
+    $(".estimate_selector_wrap.floor .wrap.area span").css("display", "block");
+  } else {
+    $(".estimate_selector_wrap.floor .area ul li").css(
+      "pointer-events",
+      "auto"
+    );
+    $(".estimate_selector_wrap.floor .wrap.area span").css("display", "none");
+  }
+});
+
 // 면적구분
 var selctorArea = 0;
 $(".area >ul >li ").click(function() {
@@ -731,6 +764,28 @@ $(window).scroll(function() {
   } else {
     $(".go_top").fadeOut();
   }
+});
+
+// ----------- 페이지네이션 ----------
+
+var paginationCss = {
+  color: "#ffffff"
+};
+
+// var paginationCss2 = {
+//   backgroundColor = '#3f3fff'
+// };
+
+$(".pagination ul li").click(function() {
+  // $(this)
+  //   .find("a")
+  //   .css(paginationCss);
+  // $(this)
+  //   .find("a")
+  //   .css("backgroundColor", "#3f3fff");
+  // $(this)
+  //   .find("a")
+  //   .addClass("pagination_active");
 });
 
 // if (height > 0) {
