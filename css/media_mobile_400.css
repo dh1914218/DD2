@@ -1244,9 +1244,9 @@
   }
 
   /* --blank 삭제-- */
-  .m_blank20.a {
+  /* .m_blank20.a {
     display: none;
-  }
+  } */
 
   /* --견적결과버튼-- */
   .estimate_selector .m_btn {
@@ -1405,8 +1405,18 @@
     display: none;
   }
 
+  .estimate_result {
+    padding-top: 20px;
+  }
+
   .estimate_result h1 {
-    display: none;
+    font-size: 20px;
+  }
+
+  .estimate_result h1 span {
+    font-size: 13px;
+    display: block;
+    margin-left: 0;
   }
 
   .estimate_result ul li {
@@ -1414,6 +1424,9 @@
     padding: 20px 0;
     overflow: hidden;
     border-bottom: 1px solid #e8e8ed;
+  }
+  .estimate_result ul li:nth-last-of-type(-n + 2) {
+    border: 0;
   }
 
   .estimate_result ul li:nth-last-of-type(-n + 2) {
@@ -1445,6 +1458,7 @@
   }
 
   /* ----------견적 믹스상품---------*/
+
   /* --믹스상품 hide-- */
   .mixsale.estimate {
     display: none;
@@ -1453,18 +1467,23 @@
   /* --믹스상품-- */
   .mixsale.estimate {
     padding: 20px 0;
-    border-bottom: 1px solid #e8e8ed;
+    /* border-bottom: 1px solid #e8e8ed; */
   }
 
   .mixsale.estimate h1 {
     font-size: 20px;
+  }
+  .mixsale.estimate h1 div {
+    font-size: 13px;
+    display: block;
+    margin-left: 0;
   }
 
   .mixsale.estimate .blank30 {
     display: none;
   }
   .mixsale.estimate ul {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   /* --견적 믹스상품 자재보기-- */

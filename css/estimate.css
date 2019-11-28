@@ -609,6 +609,11 @@
 .estimate_result h1 em {
   font-weight: 500;
 }
+.estimate_result h1 > span {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-left: 10px;
+}
 
 /* _wrap */
 .estimate_result ul li {
@@ -724,5 +729,11 @@
 
 /* --함께하면 할인이 가득가득 텍스트 */
 .estimate.mixsale h1 {
-  text-align-last: left;
+}
+
+.estimate.mixsale h1 > div {
+  display: inline;
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-left: 10px;
 }
