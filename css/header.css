@@ -83,8 +83,16 @@
   height: 450px;
 }
 
+.swiper-container {
+  width: 100%;
+  min-width: 450px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
 .slider_item1 {
-  background: url(/img/banner_main1.jpg) no-repeat center center;
+  background: url(/img/test_banner.jpg) no-repeat center;
   background-size: cover;
 }
 

@@ -10,9 +10,9 @@ $(window).scroll(function() {
 
 // --메인슬라이드--
 var swiper = new Swiper(".swiper-container", {
-  autoplay: {
-    delay: 3000
-  },
+  // autoplay: {
+  //   delay: 3000
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev1"
