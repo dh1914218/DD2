@@ -37,14 +37,14 @@
 }
 #estimate_aside {
   height: 450px;
-  background: url(/img/estimate_aside.jpg) no-repeat top;
+  background: url(../img/estimate_aside.jpg) no-repeat top;
   background-size: cover;
   /* background-color: #3f3fff; */
 }
 
 #materials_aside {
   height: 450px;
-  background: url(/img/materials_aside.jpg) center no-repeat;
+  background: url(../img/materials_aside.jpg) center no-repeat;
   background-size: cover;
 }
 
