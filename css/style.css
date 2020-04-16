@@ -32,7 +32,7 @@
 
 #index_bigBuild_consult {
   /* background: url(/img/bigbuild_consult.png) center center; */
-  background: url(/img/bigbuild_consult.jpg) no-repeat center center;
+  background: url(../img/bigbuild_consult.jpg) no-repeat center center;
   background-size: cover;
 }
 #estimate_aside {
