@@ -139,8 +139,12 @@
   .m_nav .wrap a {
     font-size: 16px;
     display: inline-block;
-    padding: 20px 100px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 100%;
     font-weight: 400;
+    /* padding: 20px 50px 20px 20px; */
   }
 
   .m_nav .m_nav_sub > div {
@@ -149,7 +153,11 @@
   .m_nav .m_nav_sub > div > a {
     font-weight: 300;
     font-size: 16px;
-    padding: 20px 150px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 100%;
+    /* padding: 20px 150px 20px 20px; */
   }
 
   /* ----------모바일 탭메뉴---------- */
