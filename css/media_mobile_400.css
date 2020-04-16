@@ -120,6 +120,7 @@
     background: #ffffff;
     z-index: 90;
     display: block;
+    overflow-y: scroll;
   }
 
   .m_nav .wrap {
