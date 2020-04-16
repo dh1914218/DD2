@@ -90,6 +90,12 @@
 .mixsale .desc .price .won {
   font-weight: 300;
 }
+.mixsale .desc .price .add_price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9b9b9b;
+  text-decoration: line-through;
+}
 
 /* --믹스상품-- */
 .mixsale_materials {

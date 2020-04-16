@@ -312,6 +312,10 @@
     font-size: 15px;
     font-weight: 300;
   }
+  .mixsale ul li .desc .price .add_price {
+    font-size: 13px;
+    font-weight: 300;
+  }
 
   /* ----------수치---------- */
   .numerical {

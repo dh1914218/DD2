@@ -660,6 +660,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #9b9b9b;
+  text-decoration: line-through;
 }
 .estimate_result .desc .price .per {
   font-weight: 500;
