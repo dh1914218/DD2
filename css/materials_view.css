@@ -271,8 +271,13 @@
 }
 
 .materials_veiw ul li .desc .tit {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 300;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* --자재 아이콘-- */
