@@ -23,15 +23,18 @@
     
     <!-- 미디어쿼리 -->
     <link rel="stylesheet" href="css/media_blank.css" />
-    <!-- <link rel="stylesheet" href="css/media_index.css"> -->
     <link rel="stylesheet" href="css/media_mobile_400.css">
-    <!-- <link rel="stylesheet" href="css/mtest.css"> -->
-    <!-- <link rel="stylesheet" href="css/media_mobile.css"> -->
+  
+    
 
 
 
     <!-- 스와이퍼 -->
     <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
 
     
     <!-- WOW.js -->
@@ -240,7 +243,22 @@
     </section>
     <!-- //#모바일 네비게이션 드로어 -->
 
-    <div class="slider">
+
+
+    <section class="banner-index">
+      <div>
+        <img src="img/banner-index.jpg" alt="">
+      </div>
+      <div>
+        <img src="img/banner-index_2.jpg" alt="">
+      </div>
+      <div>
+        <img src="img/banner-index_3.jpg" alt="">
+      </div>
+    </section>
+  
+
+    <!-- <div class="slider">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider_item1">
@@ -256,8 +274,9 @@
           <div class="swiper-slide slider_item3"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- //슬라이드 -->
+    <!-- //메인배너 -->
 
 
     <div id="tab_menu">
@@ -1759,11 +1778,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+
   <!-- countUp.js -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/jquery.tubular.1.0.js"></script>
-  <script>
+  <script type=""> 
     
     
     // --cupuntUp.js
@@ -1773,9 +1794,12 @@
     });
 
     $('.test').tubular({videoId:'zVb5BWmzAPk'})
-
-
-
+    $(".banner-index").slick({
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed:3000
+    });
+    
 
     
   </script>

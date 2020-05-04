@@ -75,3 +75,53 @@
 .display_none {
   display: none !important;
 }
+
+/* index */
+.banner-index {
+  margin-top: 1px;
+  position: relative;
+  /* width: 100%; */
+  /* height: 450px; */
+  /* width: 1920px; */
+}
+
+.banner-index img {
+  display: block;
+  width: 100% !important;
+  height: 450px;
+}
+
+.banner-index button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner-index button.slick-prev {
+  font-size: 0;
+  color: transparent;
+  left: 50px;
+}
+
+.banner-index button.slick-prev::before {
+  content: "\e93d";
+  font-family: "xeicon";
+  font-size: 25px;
+  color: #ffffff;
+}
+.banner-index button.slick-next {
+  right: 50px;
+  font-size: 0;
+  color: transparent;
+}
+.banner-index button.slick-next::before {
+  content: "\e940";
+  font-family: "xeicon";
+  font-size: 25px;
+  color: #ffffff;
+}

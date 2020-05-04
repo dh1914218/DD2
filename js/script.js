@@ -1,5 +1,7 @@
+// --하이루--
+
 // --헤더고정--
-$(window).scroll(function() {
+$(window).scroll(function () {
   var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
   if (height > 0) {
     $("#header").addClass("fixed");
@@ -9,44 +11,44 @@ $(window).scroll(function() {
 });
 
 // --메인슬라이드--
-var swiper = new Swiper(".swiper-container", {
-  // autoplay: {
-  //   delay: 3000
-  // },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev1"
-  }
-});
+// var swiper = new Swiper(".swiper-container", {
+//   // autoplay: {
+//   //   delay: 3000
+//   // },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev1",
+//   },
+// });
 
 // --추천시공사례--
 var swiper = new Swiper(".swiper-container2", {
   // slidesPerView: 3,
   // spaceBetween: 20,
   autoplay: {
-    delay: 2500
+    delay: 2500,
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 1.2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 3,
-      spaceBetween: 20
-    }
-  }
+      spaceBetween: 20,
+    },
+  },
 });
 
 // --유저리뷰--
@@ -54,53 +56,41 @@ var swiper = new Swiper(".swiper-container3", {
   slidesPerView: 4,
   spaceBetween: 15,
   autoplay: {
-    delay: 1500
+    delay: 1500,
   },
   breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 1.2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 4,
-      spaceBetween: 15
-    }
-  }
+      spaceBetween: 15,
+    },
+  },
 });
 
 // --탭메뉴 아이콘 ON&OFF--
-$(".tab_menu  .wrap > a").mouseover(function() {
+$(".tab_menu  .wrap > a").mouseover(function () {
   if ($(this).hasClass("none") != true) {
     $(this)
       .find("img")
-      .attr(
-        "src",
-        $(this)
-          .find("img")
-          .attr("src")
-          .replace("_off", "_on")
-      );
+      .attr("src", $(this).find("img").attr("src").replace("_off", "_on"));
   }
 });
 
-$(".tab_menu  .wrap > a").mouseout(function() {
+$(".tab_menu  .wrap > a").mouseout(function () {
   if ($(this).hasClass("none") != true) {
     $(this)
       .find("img")
-      .attr(
-        "src",
-        $(this)
-          .find("img")
-          .attr("src")
-          .replace("_on", "_off")
-      );
+      .attr("src", $(this).find("img").attr("src").replace("_on", "_off"));
   }
 });
 
@@ -109,33 +99,30 @@ new WOW().init();
 
 // ----------모바일 네비게이션드로어----------
 // __드로어 on&off
-$(".m_menu_icon > a").click(function() {
+$(".m_menu_icon > a").click(function () {
   $(".m_backgorund_black").show();
   $(".m_nav").animate({
-    marginLeft: "100%"
+    marginLeft: "100%",
   });
 
   var hieht = console.log();
 });
 
 // __백그라운드
-$(".m_backgorund_black").click(function() {
+$(".m_backgorund_black").click(function () {
   $(".m_backgorund_black").hide();
   $(".m_nav").animate({
-    marginLeft: "-100%"
+    marginLeft: "-100%",
   });
 });
 
 // __서브메뉴 on&off
-$(".m_nav > .wrap").click(function() {
-  $(this)
-    .find(".m_nav_sub")
-    .stop()
-    .slideToggle();
+$(".m_nav > .wrap").click(function () {
+  $(this).find(".m_nav_sub").stop().slideToggle();
 
   $(this)
     .find("img")
-    .attr("src", function(index, attr) {
+    .attr("src", function (index, attr) {
       if (attr.match("up")) {
         return attr.replace("up", "down");
       } else {
@@ -146,14 +133,12 @@ $(".m_nav > .wrap").click(function() {
 
 // ----------자주묻는질문----------
 // desc on&off , 섹션 화살표 변경
-$(".question .tit").click(function() {
-  $(this)
-    .find(".desc")
-    .slideToggle(200);
+$(".question .tit").click(function () {
+  $(this).find(".desc").slideToggle(200);
 
   $(this)
     .find(">img")
-    .attr("src", function(index, attr) {
+    .attr("src", function (index, attr) {
       if (attr.match("up")) {
         return attr.replace("up", "down");
       } else {
@@ -163,13 +148,13 @@ $(".question .tit").click(function() {
 });
 
 // topic리스트 on&off 및 화살표변경
-$(".topic_form").click(function() {
+$(".topic_form").click(function () {
   $(".topic_list").toggle();
   // : 자주묻는질문 form 리스트 토글
 
   $(".topic")
     .find("img")
-    .attr("src", function(index, attr) {
+    .attr("src", function (index, attr) {
       if (attr.match("up")) {
         return attr.replace("up", "down");
       } else {
@@ -181,7 +166,7 @@ $(".topic_form").click(function() {
 
 // topic_form 텍스트 입력 및 섹션 none,block 및 화살표변경
 var topicListIndex = 0;
-$(".topic_list > div").click(function() {
+$(".topic_list > div").click(function () {
   topicListIndex = $(this).index();
 
   if (topicListIndex == 0) {
@@ -204,7 +189,7 @@ $(".topic_list > div").click(function() {
 
   $(".topic")
     .find("img")
-    .attr("src", function(index, attr) {
+    .attr("src", function (index, attr) {
       if (attr.match("up")) {
         return attr.replace("up", "down");
       } else {
@@ -216,7 +201,7 @@ $(".topic_list > div").click(function() {
 
 // ----------견적셀렉터----------
 // --예상견적확인버튼 btn 클릭시--
-$(".estimate_selector .m_btn").click(function() {
+$(".estimate_selector .m_btn").click(function () {
   console.log(11);
 
   $(".estimate_result").show();
@@ -232,7 +217,7 @@ $(".estimate_selector .m_btn").click(function() {
 });
 
 // --화삺표 클릭시--
-$(".estimate_selector h1").click(function() {
+$(".estimate_selector h1").click(function () {
   $(".estimate_result").slideUp();
   $(".mixsale.estimate").slideUp();
   $(".m_blank20.a").slideUp();
@@ -247,15 +232,13 @@ $(".estimate_selector h1").click(function() {
 
 // 공간구분
 var selctorPlace = 0;
-$(".place ul li").click(function() {
+$(".place ul li").click(function () {
   selctorPlace = $(this).index();
   $(".place ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorPlace == 1) {
-    $(".place ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".place ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
@@ -264,16 +247,14 @@ var floorPalce = 0;
 var florrArea = 0;
 
 // __바닥 상업공간 클릭시
-$(".estimate_selector_wrap.floor .place ul li").click(function() {
+$(".estimate_selector_wrap.floor .place ul li").click(function () {
   floorPalce = $(this).index();
   if (floorPalce == 1) {
     console.log(1);
 
     $(".estimate_selector_wrap.floor .area ul li").removeClass("box_active");
 
-    $(".estimate_selector_wrap.floor .area ul li")
-      .eq(1)
-      .addClass("box_active");
+    $(".estimate_selector_wrap.floor .area ul li").eq(1).addClass("box_active");
     $(".estimate_selector_wrap.floor .area ul li")
       .eq(0)
       .css("border-right", "1px solid #3f3fff");
@@ -294,29 +275,24 @@ $(".estimate_selector_wrap.floor .place ul li").click(function() {
 
 // 면적구분
 var selctorArea = 0;
-$(".area >ul >li ").click(function() {
+$(".area >ul >li ").click(function () {
   selctorArea = $(this).index();
   $(".area >ul >li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorArea == 1) {
-    $(".area ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".area ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
-$(".area .form2").click(function() {
-  $(this)
-    .find(".area_list")
-    .stop()
-    .toggle();
+$(".area .form2").click(function () {
+  $(this).find(".area_list").stop().toggle();
 });
 
 // 평수고르기 , 선택후 css
 var space = "평";
 var selctorAreaSpace = 0;
-$(".area .form2 >ul >li").click(function() {
+$(".area .form2 >ul >li").click(function () {
   selctorAreaSpace = $(this).index();
   $(".area .form2 .cover").text(selctorAreaSpace + 15 + text);
 
@@ -325,17 +301,14 @@ $(".area .form2 >ul >li").click(function() {
 });
 
 // 방개수 리스트 on&off
-$(".area .form3").click(function() {
-  $(this)
-    .find(".area_list")
-    .stop()
-    .toggle();
+$(".area .form3").click(function () {
+  $(this).find(".area_list").stop().toggle();
 });
 
 // 방개수고르기 , 선택후 css
 var room = " 개";
 var selctorAreaRoom = 0;
-$(".area .form3 >ul >li").click(function() {
+$(".area .form3 >ul >li").click(function () {
   selctorAreaRoom = $(this).index();
   $(".area .form3 .cover").text(selctorAreaRoom + room);
 
@@ -346,7 +319,7 @@ $(".area .form3 >ul >li").click(function() {
 var col3Index = 0;
 var text = "평";
 var text2 = "개";
-$(".selecteditem_list > div").click(function() {
+$(".selecteditem_list > div").click(function () {
   col3Index = $(this).index();
   console.log(col3Index);
 
@@ -356,20 +329,18 @@ $(".selecteditem_list > div").click(function() {
 
 // 배란다 확장여부
 var selctorBananda = 0;
-$(".bananda ul li").click(function() {
+$(".bananda ul li").click(function () {
   selctorBananda = $(this).index();
   $(".bananda ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorBananda == 1) {
-    $(".bananda ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".bananda ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
 //배란다확장여부 on_off (index값은 전역변수 사용)
-$(".place  ul li").click(function() {
+$(".place  ul li").click(function () {
   selctorPlace = $(this).index();
   if (selctorPlace == 0) {
     $(".estimate_selector_wrap.maru .bananda").show();
@@ -382,60 +353,48 @@ $(".place  ul li").click(function() {
 
 // 빈집 , 공실여부
 var selctorEmptyHouse = 0;
-$(".empty_house ul li").click(function() {
+$(".empty_house ul li").click(function () {
   selctorEmptyHouse = $(this).index();
   $(".empty_house ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorEmptyHouse == 1) {
-    $(".empty_house ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".empty_house ul li").eq(0).css("border-right", "1px solid #3f3fff");
   } else if (selctorEmptyHouse == 2) {
-    $(".empty_house ul li")
-      .eq(1)
-      .css("border-right", "1px solid #3f3fff");
+    $(".empty_house ul li").eq(1).css("border-right", "1px solid #3f3fff");
 
-    $(".empty_house ul li")
-      .eq(0)
-      .css("border-right", "1px solid #b6b6b6");
+    $(".empty_house ul li").eq(0).css("border-right", "1px solid #b6b6b6");
   } else {
-    $(".empty_house ul li")
-      .eq(1)
-      .css("border-right", "1px solid #b6b6b6");
+    $(".empty_house ul li").eq(1).css("border-right", "1px solid #b6b6b6");
   }
 });
 
 // 덧방여부
 var selctoraddFloor = 0;
-$(".add_floor ul li").click(function() {
+$(".add_floor ul li").click(function () {
   selctoraddFloor = $(this).index();
   $(".add_floor ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctoraddFloor == 1) {
-    $(".add_floor ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".add_floor ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
 // 시공범위
 var selctorbuildRange = 0;
-$(".build_range ul li ").click(function() {
+$(".build_range ul li ").click(function () {
   selctorbuildRange = $(this).index();
   $(".build_range ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorbuildRange == 1) {
-    $(".build_range ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".build_range ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
 //시공범위(거실만) on_off (index값은 공간구분 전역변수 사용)
-$(".place  ul li").click(function() {
+$(".place  ul li").click(function () {
   selctorPlace = $(this).index();
   if (selctorPlace == 0) {
     $(".estimate_selector_wrap.maru .build_range").show();
@@ -448,29 +407,24 @@ $(".place  ul li").click(function() {
 
 // 가구시공 플랜구분
 var selctorFurniturePlan = 0;
-$(".furniture_plan ul li").click(function() {
+$(".furniture_plan ul li").click(function () {
   selctorFurniturePlan = $(this).index();
   $(".furniture_plan ul li").removeClass("box_active");
   $(this).addClass("box_active");
 
   if (selctorFurniturePlan == 1) {
-    $(".furniture_plan ul li")
-      .eq(0)
-      .css("border-right", "1px solid #3f3fff");
+    $(".furniture_plan ul li").eq(0).css("border-right", "1px solid #3f3fff");
   }
 });
 
 // 가구 시공면적구분
-$(".furniture_area .form").click(function() {
-  $(this)
-    .find("ul.area_list")
-    .stop()
-    .toggle();
+$(".furniture_area .form").click(function () {
+  $(this).find("ul.area_list").stop().toggle();
 });
 
 // 가구 시공면적 mm 고르기
 var selctorFurnitureInnerText = 0;
-$(".furniture_area .form >ul >li").click(function() {
+$(".furniture_area .form >ul >li").click(function () {
   selctorFurnitureInnerText = $(this).text();
   $(".furniture_area .form .cover").text(selctorFurnitureInnerText);
   $(".furniture_area .form").css("border", "1px solid #111111");
@@ -478,16 +432,13 @@ $(".furniture_area .form >ul >li").click(function() {
 });
 
 // 싱크대 시공면적구분
-$(".sink_area .form").click(function() {
-  $(this)
-    .find("ul.area_list")
-    .stop()
-    .toggle();
+$(".sink_area .form").click(function () {
+  $(this).find("ul.area_list").stop().toggle();
 });
 
 // 싱크대 시공면적 mm 고르기
 var selctorSinkInnerText = 0;
-$(".sink_area .form >ul >li").click(function() {
+$(".sink_area .form >ul >li").click(function () {
   selctorSinkInnerText = $(this).text();
   $(".sink_area .form .cover").text(selctorSinkInnerText);
   $(".sink_area .form").css("border", "1px solid #111111");
@@ -495,16 +446,13 @@ $(".sink_area .form >ul >li").click(function() {
 });
 
 // 화장실 시공면적구분
-$(".toilet_area .form").click(function() {
-  $(this)
-    .find("ul.area_list")
-    .stop()
-    .toggle();
+$(".toilet_area .form").click(function () {
+  $(this).find("ul.area_list").stop().toggle();
 });
 
 // 화장실 시공면적 mm 고르기
 var selctorToiletInnerText = 0;
-$(".toilet_area .form >ul >li").click(function() {
+$(".toilet_area .form >ul >li").click(function () {
   selctorToiletInnerText = $(this).text();
   $(".toilet_area .form .cover").text(selctorToiletInnerText);
   $(".toilet_area .form").css("border", "1px solid #111111");
@@ -512,21 +460,16 @@ $(".toilet_area .form >ul >li").click(function() {
 });
 
 //시공사례 셀렉터 리스트 on&off
-$(".build_review_selector >.wrap > .item").click(function() {
-  $(this)
-    .find(".list")
-    .toggle();
+$(".build_review_selector >.wrap > .item").click(function () {
+  $(this).find(".list").toggle();
 
-  $(".build_review_selector >.wrap > .item")
-    .not($(this))
-    .find(".list")
-    .hide();
+  $(".build_review_selector >.wrap > .item").not($(this)).find(".list").hide();
 });
 
 // ----------시공사례-----------
 // __드롭다운
 let tagPlaceText = 0;
-$(".build_review_selector_list.place > div").click(function() {
+$(".build_review_selector_list.place > div").click(function () {
   tagPlaceText = $(this).text();
 
   // let tagInnerText = $(this).text();
@@ -538,7 +481,7 @@ $(".build_review_selector_list.place > div").click(function() {
 });
 
 let tagWorkingText = 0;
-$(".build_review_selector_list.working > div").click(function() {
+$(".build_review_selector_list.working > div").click(function () {
   tagWorkingText = $(this).text();
 
   // let tagInnerText = $(this).text();
@@ -551,7 +494,7 @@ $(".build_review_selector_list.working > div").click(function() {
 });
 
 let tagAreaText = 0;
-$(".build_review_selector_list.area > div").click(function() {
+$(".build_review_selector_list.area > div").click(function () {
   tagAreaText = $(this).text();
 
   // let tagInnerText = $(this).text();
@@ -565,38 +508,38 @@ $(".build_review_selector_list.area > div").click(function() {
 
 // -----------상담먼저----------//
 // _클래스추가
-$(".consultFirst").click(function() {
+$(".consultFirst").click(function () {
   $("#popUp_consultFirst").show();
 });
 
 // _취소버튼
-$("#popUp_consultFirst img").click(function() {
+$("#popUp_consultFirst img").click(function () {
   $("#popUp_consultFirst").hide();
 });
 
 // _견적신청버튼
-$("#popUp_consultFirst .confirm_btn").click(function() {
+$("#popUp_consultFirst .confirm_btn").click(function () {
   $("#popUp_consultFirst").hide();
 });
 
 // _개인정보보수집동의 더보기 클릭시
-$("#popUp_consultFirst .wrap span").click(function() {
+$("#popUp_consultFirst .wrap span").click(function () {
   $("#popUp_personal_data").show();
 });
 
 // _클래스추가 개인정보처리방침
-$(".personalData").click(function() {
+$(".personalData").click(function () {
   $("#popUp_personal_data").show();
 });
 
 // __취소버튼
-$("#popUp_personal_data .wrap img").click(function() {
+$("#popUp_personal_data .wrap img").click(function () {
   $("#popUp_personal_data").hide();
 });
 
 // ----------자재구경----------
 //_자재종류 active
-$(".materials_view_menu .cate_detail .type ul li").click(function() {
+$(".materials_view_menu .cate_detail .type ul li").click(function () {
   $(".materials_view_menu .cate_detail .type ul li").removeClass(
     "materials_active"
   );
@@ -604,7 +547,7 @@ $(".materials_view_menu .cate_detail .type ul li").click(function() {
 });
 
 //_브랜드 active
-$(".materials_view_menu .cate_detail .brand ul li").click(function() {
+$(".materials_view_menu .cate_detail .brand ul li").click(function () {
   $(".materials_view_menu .cate_detail .brand ul li").removeClass(
     "materials_active"
   );
@@ -612,44 +555,40 @@ $(".materials_view_menu .cate_detail .brand ul li").click(function() {
 });
 
 //_색상 active
-$(".materials_view_menu .cate_detail .color ul li").click(function() {
+$(".materials_view_menu .cate_detail .color ul li").click(function () {
   $(".materials_view_menu .cate_detail .color ul li")
     .find("div")
     .removeClass("materials_text_active");
-  $(this)
-    .find("div")
-    .addClass("materials_text_active");
+  $(this).find("div").addClass("materials_text_active");
 });
 
 //_모바일 자재종류 active
-$(".m_cate_detail .type ul li").click(function() {
+$(".m_cate_detail .type ul li").click(function () {
   $(".m_cate_detail .type ul li").removeClass("materials_active");
   $(this).addClass("materials_active");
 });
 
 //_모바일 브랜드 active
-$(".m_cate_detail .brand ul li").click(function() {
+$(".m_cate_detail .brand ul li").click(function () {
   $(".m_cate_detail .brand ul li").removeClass("materials_active");
   $(this).addClass("materials_active");
 });
 //_모바일 색상 active
-$(".m_cate_detail .color ul li").click(function() {
+$(".m_cate_detail .color ul li").click(function () {
   console.log(1);
 
   $(".m_cate_detail .color ul li")
     .find(">div")
     .removeClass("materials_text_active");
-  $(this)
-    .find(">div")
-    .addClass("materials_text_active");
+  $(this).find(">div").addClass("materials_text_active");
 });
 
 // _모바일 화살표 클릭시 슬라이드
-$(".m_cate_detail h1").click(function() {
+$(".m_cate_detail h1").click(function () {
   $(".m_wrap").slideToggle();
   $(this)
     .find("img")
-    .attr("src", function(index, attr) {
+    .attr("src", function (index, attr) {
       if (attr.match("up")) {
         return attr.replace("up", "down");
       } else {
@@ -660,7 +599,7 @@ $(".m_cate_detail h1").click(function() {
 
 // _데코타일 종류별 색상 on_Off\
 var dacotileTypeIndex = 0;
-$(".dacotile .type ul li").click(function() {
+$(".dacotile .type ul li").click(function () {
   dacotileTypeIndex = $(this).index();
   console.log(dacotileTypeIndex);
 
@@ -690,7 +629,7 @@ if ($(".dacotile .type ul li").hasClass("materials_active")) {
 }
 
 // 핸드폰번호 자동하이픈
-$(".phone").keydown(function(event) {
+$(".phone").keydown(function (event) {
   var key = event.charCode || event.keyCode || 0;
   $text = $(this);
   if (key !== 8 && key !== 9) {
@@ -717,7 +656,7 @@ let mixsaleMaterialsIndex = 0;
 // _탭 active
 // _탭클릭시 해당 자재 나오게하기
 
-$(".mixsale_materials .tab > ul > li").click(function() {
+$(".mixsale_materials .tab > ul > li").click(function () {
   mixsaleMaterialsIndex = $(this).index();
 
   $(".mixsale_materials .tab > ul > li").removeClass("active_mix_sale");
@@ -757,7 +696,7 @@ function goTop() {
   $("html").scrollTop(0);
 }
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
   if (height > 0) {
     $(".go_top").fadeIn();
@@ -769,14 +708,14 @@ $(window).scroll(function() {
 // ----------- 페이지네이션 ----------
 
 var paginationCss = {
-  color: "#ffffff"
+  color: "#ffffff",
 };
 
 // var paginationCss2 = {
 //   backgroundColor = '#3f3fff'
 // };
 
-$(".pagination ul li").click(function() {
+$(".pagination ul li").click(function () {
   // $(this)
   //   .find("a")
   //   .css(paginationCss);
