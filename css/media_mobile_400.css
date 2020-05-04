@@ -616,6 +616,9 @@
   .m_cate_detail .wrap {
     float: none;
   }
+  .m_cate_detail .wrap ul li:nth-last-of-type(1) {
+    margin-right: 0px !important;
+  }
 
   .materials_view_menu .cate_icon {
     display: none;
@@ -643,6 +646,7 @@
   .m_cate_detail .color ul li {
     padding: 0;
     width: 20%;
+    margin-top: 10px;
   }
 
   .m_cate_detail {
