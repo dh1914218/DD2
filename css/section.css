@@ -568,20 +568,23 @@ html {
 
 /* ----------페이지네이션---------- */
 .pagination {
+  text-align: center;
   margin: 0 auto;
 }
 
 .pagination ul {
-  width: 40%;
-  text-align: center;
+  /* width: 100%; */
+  /* text-align: center; */
   margin: 0 auto;
+  display: inline-block;
 }
 
 .pagination ul li {
   float: left;
-  width: 14.2% !important;
+  /* width: 14.2% !important; */
   text-align: center;
-  margin-right: 0 !important;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .pagination ul li a {
@@ -593,6 +596,11 @@ html {
 
 .pagination ul li a:hover {
   color: inherit;
+}
+
+.pagination .nnn {
+  padding: 5px 12px;
+  display: inline-block;
 }
 
 .pagination_active {

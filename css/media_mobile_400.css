@@ -1,3 +1,8 @@
+/* 레이아웃 */
+.banner-index {
+  display: none !important;
+}
+
 /* 헤더 햄버거메뉴 */
 .m_menu_icon {
   display: none;
@@ -388,6 +393,7 @@
   /* --공통-- */
   .build_review ul li {
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .build_review ul li .desc {
@@ -1547,17 +1553,26 @@
   }
 
   /* ---------- 페이지네이션 ---------- */
-  .pagination ul {
-    width: 100%;
-    padding: 40px 0;
+  .pagination {
+    margin-bottom: 30px !important;
   }
 
-  .pagination ul li:nth-of-type(1) a {
+  .pagination ul {
+    /* width: 100%; */
+    /* padding: 40px 0; */
+  }
+
+  .pagination ul li {
+    margin-left: 7px !important;
+    margin-right: 7px !important;
+  }
+
+  /* .pagination ul li:nth-of-type(1) a {
     padding-left: 0;
-  }
-  .pagination ul li:nth-last-of-type(1) a {
+  } */
+  /* .pagination ul li:nth-last-of-type(1) a {
     padding-right: 0;
-  }
+  } */
 
   /* 상담카드*/
   .estimate .consult_card .card {
