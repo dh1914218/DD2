@@ -198,6 +198,11 @@ html {
 }
 
 /* --고객님들의 감동시공후기-- */
+
+.user_review span {
+  font-family: "Noto Sans KR" !important;
+}
+
 .user_review {
   overflow: hidden;
   width: 100%;
@@ -311,6 +316,10 @@ html {
 
 .index_interior_tip ul li:hover a div {
   color: #ffffff;
+}
+
+.index_interior_tip ul li:hover a {
+  color: #ffffff !important;
 }
 
 /* --상담먼저 팝업-- */

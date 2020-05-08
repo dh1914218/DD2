@@ -572,6 +572,7 @@
 
   .build_review_detailview_img img {
     margin-bottom: 0;
+    width: 100% !important;
   }
 
   /* ----------자재구경---------- */
