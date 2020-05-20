@@ -344,11 +344,27 @@ html {
   padding: 100px 150px;
   z-index: 100;
   position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  top: 30%;
+  left: 30%;
   background-color: #ffffff;
   border-radius: 30px;
+  transform: translate(-50%, -50%), translate(-0.1px, -0.1px);
+  /* transform: translateX(calc(-50% + 0.5px)); */
+  /* transform: translateY(calc(-25% + 0.5px)); */
+  /* -webkit-font-smoothing: subpixel-antialiased;
+  transform: translate(-50%, -50%); */
+  /* zoom: 0.5; */
+  /* transform: translate(-0.5%, -0.5%); */
+  /* transform: translate3d("50x", "50x", 0); */
+
+  /* transform: translate(-50%, -50%), translate(-0.5px, -0.5px); */
+  /* transform: translate(-0.5px, -0.5px); */
+
+  /* -webkit-font-smoothing: subpixel-antialiased; */
+  /* -webkit-transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: subpixel-antialiased; */
+  /* -webkit-transform: translateZ(0) scale(1, 1); */
 }
 
 .popUp_consultFirst .wrap {

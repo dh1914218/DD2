@@ -1132,6 +1132,8 @@
     padding: 40px;
     width: calc(100% - 20px);
     border-radius: 5px;
+    top: 30%;
+    left: 3%;
   }
 
   .popUp_consultFirst .wrap h1 {
