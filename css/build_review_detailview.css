@@ -33,6 +33,11 @@
 /* __col1 tit */
 .build_review_detailview .wrap > ul > li.col_list .col1 .tit {
   font-size: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100%;
 }
 
 .build_review_detailview .wrap > ul > li.col_list .col1 .price .num {

@@ -148,6 +148,11 @@
 .build_review ul li .desc .tit {
   font-size: 20px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100%;
 }
 
 .build_review ul li .desc .price {
