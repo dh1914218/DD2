@@ -22,6 +22,10 @@
   display: none;
 }
 
+.m_back {
+  display: none;
+}
+
 #numerical {
   background-color: #f6f9ff;
 }
