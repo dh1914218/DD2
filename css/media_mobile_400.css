@@ -120,6 +120,29 @@
     padding: 17px 15px 8px 0;
   }
 
+  .header > .header_tit {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    line-height: 55px;
+    font-size: 18px;
+  }
+
+  .m_back {
+    float: left;
+    display: block;
+  }
+
+  .m_back button {
+    background-color: #ffffff;
+    padding: 15px 0;
+  }
+  .m_back img {
+    width: 24px;
+    height: 24px;
+  }
   /* ----------네비게이션드로어------------ */
   .m_backgorund_black {
     width: 100%;
