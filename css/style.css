@@ -1,3 +1,10 @@
+/* active */
+
+.font-color__blue--500 {
+  color: #3f3fff;
+  font-weight: 500;
+}
+
 /* --레이아웃-- */
 #header_sub {
   background-color: #f7f7f7;
