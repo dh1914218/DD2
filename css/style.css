@@ -101,6 +101,7 @@
   display: block;
   width: 100% !important;
   height: 450px;
+  width: 1920px;
 }
 
 .header-index > div {
@@ -142,8 +143,8 @@
 }
 
 .banner-index .banner-index__img-1 {
-  background: url("../img/banner-index.jpg") no-repeat center;
-  height: 450px;
+  /* background: url("../img/banner-index.jpg") no-repeat center;
+  height: 450px; */
 }
 
 .banner-index .text {
