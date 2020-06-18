@@ -61,6 +61,56 @@
 
 /* ------미디어쿼리 400px-------- */
 @media (max-width: 500px) {
+  /* --지도-- */
+
+  .showroom_aside {
+    height: 450px;
+    background: url(../img/bgImg_estimate2.png) no-repeat top;
+    background-size: cover;
+    /* position: relative; */
+  }
+
+  .showroom-view {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .showroom-view__desktop-img {
+    display: none;
+  }
+  .showroom-view__mobile-img {
+    display: block;
+  }
+
+  .showroom_aside .wrap {
+    font-size: 40px;
+    padding-top: 180px;
+  }
+
+  .showroom_aside .wrap > div:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .showroom-info {
+  }
+  .showroom-info ul li {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .showroom-map {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .root_daum_roughmap {
+    width: 100% !important;
+    /* height: auto !important; */
+  }
+
+  /* ---------------------------- */
+
   @keyframes showromm__banner {
     0% {
       bottom: 50px !important;

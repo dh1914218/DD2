@@ -1,3 +1,128 @@
+/* 쇼룸 */
+.showroom_aside {
+  height: 450px;
+  background: url(../img/estimate_aside.jpg) no-repeat top;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.showroom_aside .wrap {
+  /* text-align: center; */
+  color: #ffffff;
+  /* font-weight: 40px; */
+  padding-top: 150px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.showroom_aside .wrap > div:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.showroom_aside__inner {
+  position: relative;
+}
+
+.dim {
+  background-color: #111111;
+  height: 450px;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.showroom-view {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.showroom-view .tit {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.showroom-view__desktop-img img {
+  max-width: 720px !important;
+}
+
+.showroom-view__mobile-img {
+  display: none;
+}
+
+.showroom-info {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.showroom-info img {
+  width: 80px;
+}
+
+.showroom-info ul {
+  text-align: center !important;
+}
+
+.showroom-info ul li {
+  float: left;
+  width: 33.2%;
+  padding: 20px 0;
+}
+.showroom-info ul li .tit {
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.showroom-info ul li .sub-tit {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.showroom-info ul li .desc {
+  margin-top: 10px;
+  color: #666666;
+}
+
+.showroom-map {
+  margin-top: 50px;
+  text-align: center;
+}
+.showroom-map .tit {
+  margin-top: 30px;
+  font-size: 25px;
+}
+.showroom-map .sub-tit {
+  margin-top: 30px;
+}
+.showroom-map .btn {
+  margin-top: 30px;
+}
+
+.showroom-map .btn a {
+  display: inline-block;
+  width: 300px;
+  height: 56px;
+  text-align: center;
+  background-color: #9b9b9b;
+  color: #ffffff;
+  line-height: 56px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.showroom-map .btn a:hover {
+  background-color: #3f3fff;
+}
+
+.showroom-map .root_daum_roughmap {
+  margin: 0 auto;
+}
+
 /* active */
 
 .font-color__blue--500 {
