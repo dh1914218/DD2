@@ -61,8 +61,6 @@
 
 /* ------미디어쿼리 400px-------- */
 @media (max-width: 500px) {
-  /* --지도-- */
-
   .showroom_aside {
     height: 450px;
     background: url(../img/m_showroom-banner.jpg) no-repeat top;
@@ -104,6 +102,8 @@
     margin-top: 30px;
     margin-bottom: 50px;
   }
+
+  /* --지도-- */
   .root_daum_roughmap {
     width: 100% !important;
     /* height: auto !important; */
