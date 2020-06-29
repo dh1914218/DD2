@@ -1,13 +1,8 @@
-// --하이루--
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1592490686146",
-		"key" : "yuja",
-		"mapWidth" : "640",
-		"mapHeight" : "360"
-	}).render();
-</script>
-
+// --이벤트 팝업 닫기--
+$(".popup-event img").click(function () {
+  $(this).hide();
+  $(".dim2").hide();
+});
 
 // --헤더고정--
 $(window).scroll(function () {
