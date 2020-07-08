@@ -1,3 +1,12 @@
+.d {
+  margin: 0 auto !important;
+  width: 1000px;
+}
+
+.d img {
+  width: 1000px;
+}
+
 /* --시공사례배너-- */
 .build-review__banner .inner {
   background-color: #144fff;
