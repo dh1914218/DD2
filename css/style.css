@@ -1,10 +1,93 @@
-.d {
-  margin: 0 auto !important;
-  width: 1000px;
+/* --------------시공 상세페이지-------- */
+
+.tab-fiexd {
+  /* position: fixed; */
+  position: fixed;
+  top: 1000px;
+  left: 1000px;
 }
 
-.d img {
+.estimate_result-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: #e8f3ff;
+  color: #144fff;
+  cursor: pointer;
+}
+
+.estimate_result-btn:hover {
+  color: #e8f3ff;
+  background-color: #144fff;
+}
+
+.working-detail-img {
+  margin: 0 auto !important;
   width: 1000px;
+  position: relative;
+}
+
+.working-detail-img img {
+  width: 1000px;
+}
+.working-detail-img__tab {
+  margin-top: 50px;
+}
+
+.working-detail-img__tab ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  height: 56px;
+  line-height: 56px;
+}
+.working-detail-img__tab ul li button {
+  text-align: center;
+  background-color: #e8e8ed;
+  height: 56px;
+  line-height: 56px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.working-detail-img__wroking-area {
+  margin-top: 80px;
+}
+
+.working-detail-img__wroking-area .area-tit {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.working-detail-img__wroking-area .area__article-inner {
+  margin-top: 50px;
+}
+
+.working-detail-img__wroking-area article {
+  margin: 0 auto;
+  display: flex;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #e8f3ff;
+  width: 700px;
+}
+.working-detail-img__wroking-area .area-tit {
+  color: #1b64da !important;
+}
+
+.working-detail-img__wroking-area article .area-article__tit {
+  text-align: center;
+  background-color: #e8f3ff;
+  width: 200px;
+  color: #1b64da;
+}
+
+.working-detail-img__wroking-area article .area-article__cont {
+  color: #1b64da;
+  flex: 1;
+  padding-left: 20px;
 }
 
 /* --시공사례배너-- */
@@ -207,6 +290,14 @@
 }
 
 /* active */
+
+.ftc-white {
+  color: #ffffff;
+}
+
+.bgc-black {
+  background-color: #454f5d !important;
+}
 
 .font-color__blue--500 {
   color: #3f3fff;

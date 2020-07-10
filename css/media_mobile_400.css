@@ -1,5 +1,26 @@
 /* ---쇼룸배너--- */
 
+.callcenter-floating-btn {
+  width: 50px;
+  height: 50px;
+  /* background-color: red; */
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: rgba(27, 29, 31, 0.12) 0px 2px 10px;
+  z-index: 70;
+  background-color: #3f3fff;
+}
+
+.callcenter-floating-btn img {
+  width: 20px !important;
+  z-index: 80;
+  margin-top: 5px;
+}
+
 /* 레이아웃 */
 .banner-index {
   /* display: none !important; */
@@ -269,6 +290,22 @@
   }
 
   /* _헤더 네비 아이콘 (햄버거메뉴) */
+
+  .m_call {
+    float: right;
+    line-height: 60px;
+  }
+
+  .m_call button {
+    height: 30px;
+    line-height: 30px;
+    background-color: #e8f3ff;
+    color: #144fff;
+    width: 80px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
   .m_menu_icon {
     float: left;
     display: block;

@@ -1,3 +1,15 @@
+// 견적상세페이지 탭 픽스드
+var lnb = $(".working-detail-img__tab").offset().top;
+$(window).scroll(function () {
+  var window = $(this).scrollTop();
+
+  if (lnb <= window) {
+    $(".working-detail-img__tab").addClass("tab-fiexd");
+  } else {
+    $(".working-detail-img__tab").removeClass("tab-fiexd");
+  }
+});
+
 // --이벤트 팝업 닫기--
 $(".popup-event img").click(function () {
   $(this).hide();
