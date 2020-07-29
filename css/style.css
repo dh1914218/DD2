@@ -1,20 +1,26 @@
 /* --------------시공 상세페이지-------- */
 
 .tab-fiexd {
-  /* position: fixed; */
   position: fixed;
   top: 1000px;
   left: 1000px;
 }
 
-.estimate_result-btn {
-  margin-top: 10px;
+.estimate_result-btn__wrap {
+}
+
+.estimate_result-btn__wrap button {
+  width: 48%;
+}
+
+.estimate_result-btn--1 {
   width: 100%;
-  height: 56px;
-  line-height: 56px;
+  height: 44px;
+  line-height: 44px;
   background-color: #e8f3ff;
   color: #144fff;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .estimate_result-btn:hover {
